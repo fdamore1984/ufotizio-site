@@ -17,8 +17,9 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 
 - **Supabase**: tabella `saves` con RLS (SQL in `docs/web.md` dei giochi);
   in *Authentication → URL Configuration* Site URL `https://ufotizio.com` e
-  Redirect URLs `https://ufotizio.com/**` (più l'indirizzo `*.workers.dev`
-  per le prove). URL del progetto e chiave publishable stanno in
+  Redirect URLs `https://ufotizio.com/**`, `https://www.ufotizio.com/**` e
+  `https://ufotizio-site.fabriziodamore1984.workers.dev/**` per le prove (mai
+  `*.workers.dev` generico: accetterebbe Worker di chiunque). URL del progetto e chiave publishable stanno in
   `public/account/cloud.js` (sono pubbliche).
 - **Cloudflare Worker** `ufotizio-site`: collegato a questo repo, deploy
   con `npx wrangler deploy` a ogni push su `main`; il bucket R2 è collegato
