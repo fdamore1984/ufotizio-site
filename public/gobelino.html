@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-titolo="gobelino.pagina">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gobelino · Ufotizio</title>
 <link rel="stylesheet" href="/assets/style.css">
+<script type="module" src="/assets/lingua.js"></script>
 </head>
 <body>
 <header><a class="logo" href="/">Ufotizio</a><div id="account"></div></header>
@@ -12,12 +13,11 @@
   <iframe id="game" title="Gobelino" allow="gamepad; fullscreen; autoplay"></iframe>
   <div class="bar">
     <span id="hint"></span>
-    <button id="fullscreen">Schermo intero</button>
+    <button id="fullscreen" data-testo="gioco.schermo">Schermo intero</button>
   </div>
-  <button id="exit-fullscreen">Esci</button>
-  <section class="itch" data-game="gobelino">
-    <h2>Dalla pagina itch.io</h2>
-    <p>Il gioco si scarica anche per Windows e Linux da <a href="https://fdamore1984.itch.io/gobelino">Gobelino su itch.io</a>. La descrizione è quella della pagina itch.io, in inglese.</p>
+  <button id="exit-fullscreen" data-testo="gioco.esci">Esci</button>
+  <section class="itch" data-game="gobelino" data-nome="gobelino.nome" data-itch="https://fdamore1984.itch.io/gobelino">
+    <h2 data-testo="itch.titolo">Il gioco</h2>
   </section>
 </main>
 <script type="module" src="/assets/itch.js"></script>

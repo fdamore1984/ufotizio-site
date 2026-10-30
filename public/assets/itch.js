@@ -1,14 +1,22 @@
-// Pagina itch.io del gioco, sotto il gioco: testi e immagini vengono dal
-// README della pagina itch.io nel repo del gioco (store/itch/README.md),
-// caricato nel bucket R2 insieme al gioco (tools/carica-giochi.sh), così il
-// sito mostra sempre la stessa pagina di itch.io senza copiarla qui.
-// Il testo è in inglese come su itch.io; si inserisce solo come testo.
+// Sotto il gioco: una descrizione brevissima nella lingua del sito, le
+// immagini e il link per scaricarlo da itch.io. Testi e immagini vengono dal
+// README della pagina itch.io nel repo del gioco (store/itch/README.md,
+// sezione "Sito ufotizio.com"), caricato nel bucket R2 insieme al gioco
+// (tools/carica-giochi.sh), così non si copiano qui. Si inseriscono solo
+// come testo.
+import { lingua, t } from "/assets/lingua.js";
+
 const section = document.querySelector(".itch");
 const base = "/games/" + section.dataset.game + "/itch/";
+const readme = fetch(base + "README.md").then((response) => {
+  if (!response.ok) throw new Error(response.status);
+  return response.text();
+});
 
-// Primo blocco ``` dopo il titolo indicato.
-function block(text, heading) {
-  const start = text.indexOf(heading);
+// Primo blocco ``` dopo il titolo indicato (e dopo after, se c'è).
+function block(text, heading, after) {
+  const from = after ? text.indexOf(after) : 0;
+  const start = from < 0 ? -1 : text.indexOf(heading, from);
   if (start < 0) return "";
   const match = text.slice(start).match(/```[^\n]*\n([\s\S]*?)```/);
   return match ? match[1].trim() : "";
@@ -27,49 +35,38 @@ function element(tag, text, className) {
   return node;
 }
 
-// Descrizione: righe in maiuscolo = titoli, righe "- " = elenchi, il resto paragrafi.
-function description(text) {
-  const box = element("div", "", "description");
-  box.lang = "en";
-  let list = null;
-  for (const raw of text.split("\n")) {
-    const line = raw.trim();
-    if (line === "") { list = null; continue; }
-    if (line.startsWith("- ")) {
-      if (!list) box.append((list = element("ul")));
-      list.append(element("li", line.slice(2)));
-      continue;
+// Si rifà a ogni cambio di lingua (anche quando la cambia il gioco); vale
+// solo l'ultima chiamata.
+let current = 0;
+async function render() {
+  const id = ++current;
+  let text = null;
+  try { text = await readme; } catch (e) { /* README non disponibile */ }
+  if (id !== current) return;
+  for (const node of [...section.children]) if (node.tagName !== "H2") node.remove();
+  if (text !== null) {
+    const heading = lingua === "it" ? "### Italiano" : "### English";
+    const blurb = block(text, heading, "## Sito ufotizio.com") || block(text, "## Short description");
+    if (blurb) section.append(element("p", blurb, "tagline"));
+    // Le immagini della pagina sono in inglese (en_*); quelle it_* sono le stesse in italiano.
+    const shots = element("div", "", "shots");
+    for (const name of field(text, "Screenshots")) {
+      const img = element("img");
+      img.src = base + (lingua === "it" ? name.replace(/^en_/, "it_") : name);
+      img.alt = "";
+      img.loading = "lazy";
+      shots.append(img);
     }
-    list = null;
-    const upper = line.replace(/\(.*\)/, "");
-    box.append(element(upper === upper.toUpperCase() && /[A-Z]/.test(upper) ? "h3" : "p", line));
+    if (shots.childElementCount) section.append(shots);
+  } else {
+    section.append(element("p", t("itch.non_disponibile")));
   }
-  return box;
+  const download = element("p", t("itch.scarica"));
+  const link = element("a", t(section.dataset.nome) + " · itch.io");
+  link.href = section.dataset.itch;
+  download.append(link);
+  section.append(download);
 }
 
-try {
-  const response = await fetch(base + "README.md");
-  if (!response.ok) throw new Error(response.status);
-  const text = await response.text();
-  const tagline = block(text, "## Short description");
-  if (tagline) section.append(Object.assign(element("p", tagline, "tagline"), { lang: "en" }));
-  const shots = element("div", "", "shots");
-  for (const name of field(text, "Screenshots")) {
-    const img = element("img");
-    img.src = base + name;
-    img.alt = "";
-    img.loading = "lazy";
-    shots.append(img);
-  }
-  if (shots.childElementCount) section.append(shots);
-  const body = block(text, "## Description");
-  if (body) section.append(description(body));
-  const tags = block(text, "### Tags").split(",").map((t) => t.trim()).filter(Boolean);
-  if (tags.length) {
-    const list = element("ul", "", "tags");
-    for (const tag of tags) list.append(element("li", tag));
-    section.append(list);
-  }
-} catch (e) {
-  section.append(element("p", "La pagina itch.io non è disponibile in questo momento."));
-}
+window.addEventListener("ufotizio-lingua", render);
+render();

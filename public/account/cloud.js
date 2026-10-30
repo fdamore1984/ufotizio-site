@@ -1,8 +1,10 @@
 // Account del sito (Supabase) e salvataggi dei giochi.
 // Ogni pagina lo importa come modulo: crea il client, aggiorna l'intestazione
 // (Accedi / nome · Esci) e definisce window.ufotizioCloud, l'oggetto che i
-// giochi usano per i salvataggi (contratto in docs/web.md nei repo dei giochi).
+// giochi usano per i salvataggi e la lingua (contratto in docs/web.md nei repo
+// dei giochi).
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm";
+import { lingua, imposta, t } from "/assets/lingua.js";
 
 const SUPABASE_URL = "https://wbxgjxlhxuxrfzpihikq.supabase.co";
 // Chiave pubblica (publishable): fatta per stare nel sito, le regole RLS
@@ -27,7 +29,7 @@ function updateHeader() {
     const name = document.createElement("span");
     name.textContent = userName();
     const out = document.createElement("button");
-    out.textContent = "Esci";
+    out.textContent = t("account.esci");
     out.addEventListener("click", async () => {
       await supabase.auth.signOut();
       location.reload();
@@ -36,7 +38,7 @@ function updateHeader() {
   } else {
     const login = document.createElement("a");
     login.href = "/account.html?back=" + encodeURIComponent(location.pathname);
-    login.textContent = "Accedi";
+    login.textContent = t("account.accedi");
     box.append(login);
   }
 }
@@ -44,6 +46,10 @@ function updateHeader() {
 window.ufotizioCloud = {
   signedIn: () => session != null,
   userName,
+  // Lingua del sito, che il gioco usa al posto della sua; se il giocatore la
+  // cambia dalle Opzioni del gioco, la cambia anche il sito.
+  language: () => lingua,
+  setLanguage: (code) => imposta(code, false),
   async loadFiles(game) {
     const { data, error } = await supabase
       .from("saves")
@@ -77,3 +83,5 @@ supabase.auth.onAuthStateChange((_event, newSession) => {
   session = newSession;
   updateHeader();
 });
+
+window.addEventListener("ufotizio-lingua", updateHeader);
