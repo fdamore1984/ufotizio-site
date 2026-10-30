@@ -1,0 +1,9 @@
+// Configurazione del Worker "ufotizio-site" (deploy automatico da Cloudflare
+// a ogni push su main, con "npx wrangler deploy").
+{
+  "name": "ufotizio-site",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-10-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "r2_buckets": [{ "binding": "GAMES", "bucket_name": "ufotizio-games" }]
+}

@@ -1,5 +1,5 @@
 // I file dei giochi stanno nel bucket R2 "ufotizio-games" (binding GAMES),
-// perché index.wasm supera i 25 MB che Cloudflare Pages accetta per file.
+// perché index.wasm supera i 25 MB che Cloudflare accetta per file statico.
 // Qui si servono sotto /games/<gioco>/..., sullo stesso indirizzo del sito,
 // così il gioco dentro l'iframe vede window.ufotizioCloud della pagina.
 
@@ -12,11 +12,11 @@ const TYPES = {
   json: "application/json",
 };
 
-export async function onRequest({ request, params, env }) {
+export async function serveGame(request, env) {
   if (request.method !== "GET" && request.method !== "HEAD") {
     return new Response("Method not allowed", { status: 405 });
   }
-  let key = (params.path || []).join("/");
+  let key = decodeURIComponent(new URL(request.url).pathname.slice("/games/".length));
   if (key === "" || key.endsWith("/")) key += "index.html";
   if (key.split("/").includes("..")) return new Response("Not found", { status: 404 });
 
