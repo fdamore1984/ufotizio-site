@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accedi · Ufotizio</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header><a class="logo" href="/">Ufotizio</a><div id="account"></div></header>
+<main>
+  <h1>Accedi</h1>
+  <p>Scrivi la tua email: ti mandiamo un link per entrare, senza password. Se non hai ancora un account, viene creato al primo accesso.</p>
+  <form id="login">
+    <input id="email" type="email" required placeholder="nome@esempio.it" autocomplete="email">
+    <button type="submit">Mandami il link</button>
+  </form>
+  <p id="status"></p>
+</main>
+<script type="module">
+// Accesso con link via email (magic link di Supabase): il link riporta qui
+// e poi alla pagina da cui si è partiti (?back=).
+import { supabase, ready } from "/account/cloud.js";
+const back = new URLSearchParams(location.search).get("back") || "/";
+const target = back.startsWith("/") && !back.startsWith("//") ? back : "/";
+const status = document.getElementById("status");
+await ready;
+const { data } = await supabase.auth.getSession();
+if (data.session) {
+  location.replace(target);
+} else {
+  document.getElementById("login").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    status.textContent = "Invio in corso…";
+    const { error } = await supabase.auth.signInWithOtp({
+      email: document.getElementById("email").value,
+      options: { emailRedirectTo: location.origin + "/account.html?back=" + encodeURIComponent(target) },
+    });
+    status.textContent = error ? "Errore: " + error.message : "Fatto! Apri l'email e clicca sul link (controlla anche lo spam).";
+  });
+}
+</script>
+</body>
+</html>
