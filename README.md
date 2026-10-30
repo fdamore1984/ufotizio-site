@@ -6,12 +6,13 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 | File | Cosa fa |
 |---|---|
 | `wrangler.jsonc` | Configurazione del Worker: pagine in `public/`, bucket R2 `ufotizio-games` col nome `GAMES` |
-| `src/worker.js`, `src/games.js` | Serve `/games/<gioco>/...` dal bucket R2: `index.wasm` supera i 25 MB per file statico |
+| `src/worker.js`, `src/games.js` | Serve `/games/<gioco>/...` dal bucket R2 (`index.wasm` supera i 25 MB per file statico) e `/api/lingua`, la lingua del paese da cui ci si collega |
+| `public/assets/lingua.js` | Lingua del sito (italiano o inglese) e tutti i suoi testi: la prima volta dal paese (`/api/lingua`: italiano per Italia, San Marino e Vaticano), poi quella scelta col pulsante IT / EN; i giochi usano la stessa |
 | `public/index.html` | Home con i giochi |
 | `public/account.html` | Accesso con link via email (magic link di Supabase) |
 | `public/ciccio-massacro.html`, `public/gobelino.html` | Pagina di un gioco: il gioco in un iframe e il pulsante Schermo intero (`public/assets/play.js`) |
-| `public/account/cloud.js` | Client Supabase, intestazione (Accedi / Esci) e `window.ufotizioCloud` per i salvataggi dei giochi (contratto in `docs/web.md` nei repo dei giochi) |
-| `public/assets/itch.js` | Sotto il gioco, la sua pagina itch.io: testi e immagini da `store/itch/` del repo del gioco, caricati in R2 sotto `<gioco>/itch/` |
+| `public/account/cloud.js` | Client Supabase, intestazione (Accedi / Esci) e `window.ufotizioCloud` per i salvataggi e la lingua dei giochi (contratto in `docs/web.md` nei repo dei giochi) |
+| `public/assets/itch.js` | Sotto il gioco una descrizione brevissima nella lingua del sito, le immagini e il link a itch.io: da `store/itch/` del repo del gioco (sezione "Sito ufotizio.com"), caricato in R2 sotto `<gioco>/itch/` |
 | `tools/carica-giochi.sh` | Carica nel bucket R2 l'export Web di un gioco e la sua pagina itch.io |
 
 ## Configurazione

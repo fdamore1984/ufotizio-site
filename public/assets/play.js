@@ -1,15 +1,20 @@
 // Pagina di un gioco: apre il gioco nell'iframe solo quando si sa se il
 // giocatore ha fatto l'accesso, così il gioco trova subito i salvataggi
-// dell'account (window.ufotizioCloud, vedi account/cloud.js).
+// dell'account e la lingua del sito (window.ufotizioCloud, vedi
+// account/cloud.js).
 import { ready } from "/account/cloud.js";
+import { t } from "/assets/lingua.js";
 
 const game = document.querySelector("script[data-game]").dataset.game;
 const frame = document.getElementById("game");
 
 await ready;
-document.getElementById("hint").textContent = window.ufotizioCloud.signedIn()
-  ? "I salvataggi vanno sul tuo account."
-  : "Senza accesso i salvataggi restano solo in questo browser.";
+const hint = document.getElementById("hint");
+const showHint = () => {
+  hint.textContent = t(window.ufotizioCloud.signedIn() ? "gioco.account" : "gioco.browser");
+};
+showHint();
+window.addEventListener("ufotizio-lingua", showHint);
 frame.src = "/games/" + game + "/index.html";
 frame.addEventListener("load", () => frame.focus());
 
