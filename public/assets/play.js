@@ -13,10 +13,35 @@ document.getElementById("hint").textContent = window.ufotizioCloud.signedIn()
 frame.src = "/games/" + game + "/index.html";
 frame.addEventListener("load", () => frame.focus());
 
-// Schermo intero: con la Keyboard Lock (Chrome, Edge) Esc arriva al gioco
-// (per uscire si tiene premuto Esc).
-document.getElementById("fullscreen").addEventListener("click", async () => {
-  await frame.requestFullscreen();
+// Schermo intero, sempre in orizzontale: i giochi sono fatti per lo schermo
+// largo. Dove si può (Chrome ed Edge su Android) lo schermo intero è quello
+// del browser e l'orientamento si blocca in orizzontale; altrove (iPhone,
+// che non fa lo schermo intero degli elementi, o se il blocco non riesce)
+// il gioco riempie la pagina e, col telefono in verticale, si ruota da
+// solo (CSS, body.full). Con la Keyboard Lock (Chrome, Edge) Esc arriva al
+// gioco (per uscire si tiene premuto Esc).
+const body = document.body;
+
+async function enterFullscreen() {
+  body.classList.add("full");
+  try {
+    await document.documentElement.requestFullscreen({ navigationUI: "hide" });
+  } catch (e) { /* non supportato: resta lo schermo intero della pagina */ }
+  try { await screen.orientation.lock("landscape"); } catch (e) { /* non supportato: ruota il CSS */ }
   try { await navigator.keyboard?.lock(["Escape"]); } catch (e) { /* non supportato */ }
   frame.focus();
+}
+
+async function exitFullscreen() {
+  body.classList.remove("full");
+  try { screen.orientation.unlock(); } catch (e) { /* non supportato */ }
+  if (document.fullscreenElement) await document.exitFullscreen().catch(() => {});
+  frame.focus();
+}
+
+document.getElementById("fullscreen").addEventListener("click", enterFullscreen);
+document.getElementById("exit-fullscreen").addEventListener("click", exitFullscreen);
+// Uscita dallo schermo intero del browser (Esc tenuto, gesto Indietro).
+document.addEventListener("fullscreenchange", () => {
+  if (!document.fullscreenElement && body.classList.contains("full")) exitFullscreen();
 });

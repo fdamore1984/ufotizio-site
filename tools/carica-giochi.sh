@@ -1,14 +1,29 @@
 #!/usr/bin/env bash
-# Carica le cartelle web dei giochi nel bucket R2 "ufotizio-games".
-# Uso: tools/carica-giochi.sh <cartella-ciccio-massacro> <cartella-gobelino>
-# (le cartelle con index.html, index.wasm, ...). Serve Node.js: la prima
-# volta wrangler apre il browser per l'accesso a Cloudflare.
+# Carica un gioco nel bucket R2 "ufotizio-games".
+# Uso: tools/carica-giochi.sh <gioco> <cartella-web> [<repo-del-gioco>]
+#   <gioco>          ciccio-massacro o gobelino (la cartella nel bucket)
+#   <cartella-web>   l'export Web (index.html, index.wasm, ...)
+#   <repo-del-gioco> facoltativo: carica anche la pagina itch.io
+#                    (store/itch/README.md e immagini) che il sito mostra
+#                    sotto il gioco (public/assets/itch.js)
+# Serve Node.js: wrangler usa CLOUDFLARE_API_TOKEN se c'è, altrimenti la
+# prima volta apre il browser per l'accesso a Cloudflare.
 set -euo pipefail
-upload() {
-  local game="$1" dir="$2"
-  for file in "$dir"/*; do
-    npx wrangler r2 object put "ufotizio-games/$game/$(basename "$file")" --file "$file" --remote
+game="$1" web="$2" repo="${3:-}"
+# Cloudflare rifiuta i caricamenti troppo ravvicinati (429): si riprova
+# aspettando un po' di più ogni volta.
+put() {
+  for wait in 0 10 30 60; do
+    sleep "$wait"
+    npx wrangler r2 object put "ufotizio-games/$game/$1" --file "$2" --remote && return
   done
+  return 1
 }
-upload ciccio-massacro "$1"
-upload gobelino "$2"
+for file in "$web"/*; do
+  put "$(basename "$file")" "$file"
+done
+if [ -n "$repo" ]; then
+  for file in "$repo"/store/itch/README.md "$repo"/store/itch/*.png; do
+    put "itch/$(basename "$file")" "$file"
+  done
+fi

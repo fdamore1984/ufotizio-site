@@ -10,6 +10,7 @@ const TYPES = {
   pck: "application/octet-stream",
   png: "image/png",
   json: "application/json",
+  md: "text/markdown; charset=utf-8",
 };
 
 export async function serveGame(request, env) {
