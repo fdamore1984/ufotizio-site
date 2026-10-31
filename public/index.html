@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="it" data-titolo="home.titolo">
+<html lang="it" data-pagina="home" data-titolo="home.titolo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ufotizio</title>
+<title>Ufotizio · Giochi gratis da giocare nel browser</title>
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -13,7 +13,7 @@
 <script type="module" src="/account/cloud.js"></script>
 </head>
 <body>
-<header><a class="logo" href="/"><img src="/assets/ufotizio.png" alt=""><span>Ufotizio</span></a><div id="account"></div></header>
+<header><a class="logo" href="/" data-link="home"><img src="/assets/ufotizio.png" alt=""><span>Ufotizio</span></a><nav class="menu"><a href="/devlog" data-link="devlog" data-testo="nav.devlog">Devlog</a><a id="lingua" class="lingua" href="/en/">EN</a></nav><div id="account"></div></header>
 <main>
   <section class="benvenuto">
     <img src="/assets/ufotizio.png" alt="">
@@ -23,15 +23,24 @@
     </div>
   </section>
   <div class="games">
-    <a class="game" href="/ciccio-massacro">
-      <img src="/assets/ciccio-massacro-it.png" data-immagine="/assets/ciccio-massacro-{lingua}.png" alt="">
+    <a class="game" href="/ciccio-massacro" data-link="ciccio">
+      <img src="/assets/ciccio-massacro-it.png" data-immagine="/assets/ciccio-massacro-{lingua}.png" alt="Copertina di Ciccio Massacro" data-testo-alt="ciccio.copertina" width="630" height="500">
       <div><h2 data-testo="ciccio.nome">Ciccio Massacro</h2><p data-testo="ciccio.descrizione">Action RPG post-apocalittico: motosega, bazooka e una città in rovina.</p></div>
     </a>
-    <a class="game" href="/gobelino">
-      <img src="/assets/gobelino-it.png" data-immagine="/assets/gobelino-{lingua}.png" alt="">
+    <a class="game" href="/gobelino" data-link="gobelino">
+      <img src="/assets/gobelino-it.png" data-immagine="/assets/gobelino-{lingua}.png" alt="Copertina di Gobelino" data-testo-alt="gobelino.copertina" width="630" height="500">
       <div><h2 data-testo="gobelino.nome">Gobelino</h2><p data-testo="gobelino.descrizione">Action RPG fantasy con un goblin, spada e magia.</p></div>
     </a>
   </div>
+  <section class="novita">
+    <h2 data-testo="home.novita">Ultime novità</h2>
+    <ul id="novita"></ul>
+    <a class="button" href="/devlog" data-link="devlog" data-testo="home.tutte">Tutto il devlog</a>
+  </section>
 </main>
+<footer>
+  <nav><a href="/" data-link="home" data-testo="nav.giochi">Giochi</a> · <a href="/ciccio-massacro" data-link="ciccio" data-testo="ciccio.nome">Ciccio Massacro</a> · <a href="/gobelino" data-link="gobelino" data-testo="gobelino.nome">Gobelino</a> · <a href="/devlog" data-link="devlog" data-testo="nav.devlog">Devlog</a> · <a href="https://fdamore1984.itch.io">itch.io</a></nav>
+  <p data-testo="footer.creato">Giochi creati da fdamore1984 con Claude Code.</p>
+</footer>
 </body>
 </html>

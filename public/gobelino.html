@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="it" data-titolo="gobelino.pagina">
+<html lang="it" data-pagina="gobelino" data-titolo="gobelino.pagina">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gobelino · Ufotizio</title>
+<title>Gobelino: action RPG fantasy da giocare nel browser · Ufotizio</title>
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -12,18 +12,29 @@
 <script type="module" src="/assets/lingua.js"></script>
 </head>
 <body>
-<header><a class="logo" href="/"><img src="/assets/ufotizio.png" alt=""><span>Ufotizio</span></a><div id="account"></div></header>
+<header><a class="logo" href="/" data-link="home"><img src="/assets/ufotizio.png" alt=""><span>Ufotizio</span></a><nav class="menu"><a href="/devlog" data-link="devlog" data-testo="nav.devlog">Devlog</a><a id="lingua" class="lingua" href="/en/">EN</a></nav><div id="account"></div></header>
 <main class="play">
-  <iframe id="game" title="Gobelino" allow="gamepad; fullscreen; autoplay"></iframe>
+  <h1 class="titolo-gioco" data-testo="gobelino.nome">Gobelino</h1>
+  <iframe id="game" title="Gobelino" data-testo-title="gobelino.nome" allow="gamepad; fullscreen; autoplay"></iframe>
   <div class="bar">
     <span id="hint"></span>
     <button id="fullscreen" data-testo="gioco.schermo">Schermo intero</button>
   </div>
   <button id="exit-fullscreen" data-testo="gioco.esci">Esci</button>
+  <section class="scheda">
+    <p data-testo="gobelino.intro">Gobelino è un action RPG fantasy medievale 2D con visuale isometrica. Un goblin selvaggio con la spada e le palle di fuoco esplora terre senza confini, grotte e catacombe piene di mostri e di non morti. I combattimenti sono veloci e mortali, in stile Souls. È un prototipo: grafica e suoni sono provvisori.</p>
+    <h2 data-testo="gioco.cosa_titolo">Cosa puoi fare</h2>
+    <ul data-lista="gobelino.cosa"></ul>
+    <p data-testo="gioco.dove">Si gioca gratis qui nel browser, con tastiera e mouse, controller o touch, in italiano o in inglese; con un account i salvataggi ti seguono su ogni dispositivo. Le versioni per Windows, Linux e Steam Deck si scaricano da itch.io.</p>
+  </section>
   <section class="itch" data-game="gobelino" data-nome="gobelino.nome" data-itch="https://fdamore1984.itch.io/gobelino">
     <h2 data-testo="itch.titolo">Il gioco</h2>
   </section>
 </main>
+<footer>
+  <nav><a href="/" data-link="home" data-testo="nav.giochi">Giochi</a> · <a href="/ciccio-massacro" data-link="ciccio" data-testo="ciccio.nome">Ciccio Massacro</a> · <a href="/gobelino" data-link="gobelino" data-testo="gobelino.nome">Gobelino</a> · <a href="/devlog" data-link="devlog" data-testo="nav.devlog">Devlog</a> · <a href="https://fdamore1984.itch.io">itch.io</a></nav>
+  <p data-testo="footer.creato">Giochi creati da fdamore1984 con Claude Code.</p>
+</footer>
 <script type="module" src="/assets/itch.js"></script>
 <script type="module" src="/assets/play.js" data-game="gobelino"></script>
 </body>
