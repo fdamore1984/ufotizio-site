@@ -110,3 +110,13 @@ body.full footer { display: none; }
   .fumetto::after { left: 50%; top: -14px; margin-left: -7px; border: 7px solid transparent; border-bottom: 9px solid var(--text); }
   .ciao { font-size: 22px; }
 }
+/* Banner dei cookie (assets/consenso.js). */
+.cookie { position: fixed; z-index: 50; left: 16px; right: 16px; bottom: 16px; max-width: 720px; margin: 0 auto; display: flex; flex-wrap: wrap;
+  align-items: center; gap: 12px 16px; padding: 14px 18px; color: var(--text); background: var(--panel) var(--grana);
+  border: 4px solid var(--ink); border-radius: 18px; box-shadow: 5px 5px 0 var(--ink); }
+.cookie p { flex: 1 1 280px; margin: 0; }
+.cookie a { color: var(--text); }
+.cookie div { display: flex; gap: 10px; margin-left: auto; }
+/* Pagina della privacy. */
+main.privacy { max-width: 760px; }
+main.privacy h2 { margin: 28px 0 6px; }

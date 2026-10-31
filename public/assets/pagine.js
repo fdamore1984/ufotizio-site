@@ -38,4 +38,11 @@ export const PAGINE = {
     descrizione: "devlog.meta",
     immagine: "/assets/ufotizio.png",
   },
+  privacy: {
+    percorso: { it: "/privacy", en: "/en/privacy" },
+    modello: "/privacy",
+    titolo: "privacy.pagina",
+    descrizione: "privacy.meta",
+    immagine: "/assets/ufotizio.png",
+  },
 };

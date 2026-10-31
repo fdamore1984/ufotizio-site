@@ -17,10 +17,10 @@ export const DEVLOG = [
     id: "2026-10-31-sito-analytics",
     data: "2026-10-31",
     progetto: "sito",
-    titolo: { it: "Statistiche delle visite", en: "Visit statistics" },
+    titolo: { it: "Statistiche delle visite e pagina della privacy", en: "Visit statistics and privacy page" },
     punti: {
-      it: ["Il sito ora usa Google Analytics per contare le visite alle pagine."],
-      en: ["The site now uses Google Analytics to count page visits."],
+      it: ["Il sito usa Google Analytics per contare le visite, ma solo se accetti nel nuovo banner dei cookie.", "Nuova pagina Privacy e cookie, con il link nel piè di pagina per cambiare la scelta."],
+      en: ["The site uses Google Analytics to count visits, but only if you accept in the new cookie banner.", "New Privacy and cookies page, with a footer link to change your choice."],
     },
   },
   {

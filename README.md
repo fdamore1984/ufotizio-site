@@ -16,6 +16,7 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 | `public/404.html` | Pagina non trovata |
 | `public/assets/style.css` | Tema del sito preso dal logo: verdi, contorni neri spessi, ombre piene, carattere Fredoka (Google Fonts) |
 | `public/assets/ufotizio.png`, `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` | Logo di Ufotizio (i tre UFO verdi) e le sue icone per il browser e per iPhone |
+| `public/privacy.html` | Privacy e cookie; il banner del consenso a Google Analytics è `public/assets/consenso.js` |
 | `public/account.html` | Accesso con link via email (magic link di Supabase) |
 | `public/ciccio-massacro.html`, `public/gobelino.html` | Pagina di un gioco: il gioco in un iframe, il pulsante Schermo intero (`public/assets/play.js`) e cosa si può fare nel gioco |
 | `public/account/cloud.js` | Client Supabase, intestazione (Accedi / Esci) e `window.ufotizioCloud` per i salvataggi e la lingua dei giochi (contratto in `docs/web.md` nei repo dei giochi) |
