@@ -14,6 +14,42 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-10-31-ciccio-mondo-fumetto",
+    data: "2026-10-31",
+    progetto: "ciccio",
+    titolo: { it: "Anche la città di Ciccio è a fumetto", en: "Cheech's city turns into a comic too" },
+    punti: {
+      it: [
+        "Contorni a inchiostro su Ciccio, predoni, motoseghe, mazze, pistole, lampioni, macerie e palazzi.",
+        "Occhi grandi da fumetto: i predoni li hanno arrabbiati, sotto occhiali da sole e bende.",
+        "Ombre a terra piene, come nei fumetti.",
+      ],
+      en: [
+        "Ink outlines on Cheech, raiders, chainsaws, clubs, guns, street lamps, rubble and buildings.",
+        "Big cartoon eyes: the raiders' are angry, under sunglasses and eyepatches.",
+        "Solid shadows on the ground, like in comics.",
+      ],
+    },
+  },
+  {
+    id: "2026-10-31-gobelino-mondo-fumetto",
+    data: "2026-10-31",
+    progetto: "gobelino",
+    titolo: { it: "Anche il mondo di Gobelino è a fumetto", en: "Gobelino's world turns into a comic too" },
+    punti: {
+      it: [
+        "Contorni a inchiostro su Gobelino, nemici, spade, alberi, rocce, casse, mercanti e pareti del terreno.",
+        "Occhi grandi da fumetto: quelli di Gobelino guardano dove va, quelli dei nemici sono arrabbiati.",
+        "Ombre a terra piene, come nei fumetti.",
+      ],
+      en: [
+        "Ink outlines on Gobelino, enemies, swords, trees, rocks, chests, merchants and terrain walls.",
+        "Big cartoon eyes: Gobelino's look where he goes, the enemies' are angry.",
+        "Solid shadows on the ground, like in comics.",
+      ],
+    },
+  },
+  {
     id: "2026-10-31-ciccio-stile-fumetto",
     data: "2026-10-31",
     progetto: "ciccio",
