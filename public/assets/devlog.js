@@ -14,6 +14,46 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-10-31-ciccio-stile-fumetto",
+    data: "2026-10-31",
+    progetto: "ciccio",
+    titolo: { it: "Ciccio Massacro diventa un fumetto (nero e rosso)", en: "Cheech Carnage turns into a comic (black and red)" },
+    punti: {
+      it: [
+        "Interfaccia nello stile del sito: font Fredoka, contorni neri spessi, ombre piene e pulsanti a pillola.",
+        "Più cupo di Gobelino: pannelli rosso scurissimo e rosso sangue per la scelta.",
+        "Nuovo menù iniziale con il retino da fumetto, schizzi di sangue, Ciccio e un punk arrabbiato.",
+        "Rifatti anche barre della vita, barra delle azioni, minimappa e schermate di comandi, opzioni e tutorial.",
+      ],
+      en: [
+        "Interface in the style of the site: Fredoka font, thick black outlines, solid shadows and pill buttons.",
+        "Darker than Gobelino: very dark red panels and blood red for the selection.",
+        "New main menu with comic halftone dots, blood splats, Cheech and an angry punk.",
+        "Health bars, action bar, minimap and the controls, options and tutorial screens are redone too.",
+      ],
+    },
+  },
+  {
+    id: "2026-10-31-gobelino-stile-fumetto",
+    data: "2026-10-31",
+    progetto: "gobelino",
+    titolo: { it: "Gobelino diventa un fumetto", en: "Gobelino turns into a comic" },
+    punti: {
+      it: [
+        "Interfaccia nello stile del sito: font Fredoka, contorni neri spessi, ombre piene e pulsanti a pillola color crema.",
+        "Pannelli coi verdi del sito e giallo per la scelta.",
+        "Nuovo menù iniziale con i raggi, il titolo storto, Gobelino e un demone arrabbiato.",
+        "Rifatti anche barre della vita, barra delle azioni, minimappa e schermate di comandi, opzioni e tutorial.",
+      ],
+      en: [
+        "Interface in the style of the site: Fredoka font, thick black outlines, solid shadows and cream pill buttons.",
+        "Panels in the site's greens and yellow for the selection.",
+        "New main menu with rays, a tilted title, Gobelino and an angry demon.",
+        "Health bars, action bar, minimap and the controls, options and tutorial screens are redone too.",
+      ],
+    },
+  },
+  {
     id: "2026-10-31-sito-motori-di-ricerca",
     data: "2026-10-31",
     progetto: "sito",
