@@ -14,6 +14,16 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-10-31-sito-analytics",
+    data: "2026-10-31",
+    progetto: "sito",
+    titolo: { it: "Statistiche delle visite", en: "Visit statistics" },
+    punti: {
+      it: ["Il sito ora usa Google Analytics per contare le visite alle pagine."],
+      en: ["The site now uses Google Analytics to count page visits."],
+    },
+  },
+  {
     id: "2026-10-31-ciccio-muri-trasparenti",
     data: "2026-10-31",
     progetto: "ciccio",
