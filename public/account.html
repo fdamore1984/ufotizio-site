@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Accedi · Ufotizio</title>
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
@@ -12,7 +13,7 @@
 <script type="module" src="/assets/lingua.js"></script>
 </head>
 <body>
-<header><a class="logo" href="/"><img src="/assets/ufotizio.png" alt=""><span>Ufotizio</span></a><div id="account"></div></header>
+<header><a class="logo" href="/" data-link="home"><img src="/assets/ufotizio.png" alt=""><span>Ufotizio</span></a><nav class="menu"><a href="/devlog" data-link="devlog" data-testo="nav.devlog">Devlog</a></nav><div id="account"></div></header>
 <main>
   <h1 data-testo="account.titolo">Accedi</h1>
   <p data-testo="account.spiegazione">Scrivi la tua email: ti mandiamo un link per entrare, senza password. Se non hai ancora un account, viene creato al primo accesso.</p>
@@ -22,6 +23,10 @@
   </form>
   <p id="status"></p>
 </main>
+<footer>
+  <nav><a href="/" data-link="home" data-testo="nav.giochi">Giochi</a> · <a href="/ciccio-massacro" data-link="ciccio" data-testo="ciccio.nome">Ciccio Massacro</a> · <a href="/gobelino" data-link="gobelino" data-testo="gobelino.nome">Gobelino</a> · <a href="/devlog" data-link="devlog" data-testo="nav.devlog">Devlog</a> · <a href="https://fdamore1984.itch.io">itch.io</a></nav>
+  <p data-testo="footer.creato">Giochi creati da fdamore1984 con Claude Code.</p>
+</footer>
 <script type="module">
 // Accesso con link via email (magic link di Supabase): il link riporta qui
 // e poi alla pagina da cui si è partiti (?back=).

@@ -53,7 +53,7 @@ async function render() {
     for (const name of field(text, "Screenshots")) {
       const img = element("img");
       img.src = base + (lingua === "it" ? name.replace(/^en_/, "it_") : name);
-      img.alt = "";
+      img.alt = t("itch.screenshot") + t(section.dataset.nome);
       img.loading = "lazy";
       shots.append(img);
     }
