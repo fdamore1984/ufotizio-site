@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-10-31-ciccio-nuovo-look",
+    data: "2026-10-31",
+    progetto: "ciccio",
+    titolo: { it: "Ciccio ha una faccia nuova", en: "Cheech gets a new face" },
+    punti: {
+      it: [
+        "Il nuovo Ciccio nasce da un disegno di Valentina: una palla color pesca con gli occhioni cattivi e un ghigno pieno di denti, braccia e gambe lunghe come linee e i guanti bianchi.",
+        "La motosega è rossa, con la maniglia nera e i denti a punta che girano.",
+        "Il ghigno si spalanca negli attacchi e nello slam, e ogni tanto Ciccio sbatte le palpebre.",
+        "Niente più naso: dove guarda lo dice la faccia, che resta sempre ben visibile anche mentre mena colpi.",
+        "Nello slam la motosega sale dietro la testa e cala di lato con tutto il peso del corpo.",
+        "Anche il ritratto in alto a sinistra ha la faccia nuova.",
+      ],
+      en: [
+        "The new Cheech comes from a drawing by Valentina: a peach-colored ball with big mean eyes and a toothy grin, long line arms and legs and white gloves.",
+        "The chainsaw is red, with a black handle and spiky teeth that spin.",
+        "The grin opens wide when he attacks and slams, and every now and then Cheech blinks.",
+        "No more nose: his face shows where he's looking, and it always stays clearly visible, even mid-swing.",
+        "In the slam the chainsaw goes up behind his head and comes down from the side with all his weight.",
+        "The portrait in the top left has the new face too.",
+      ],
+    },
+  },
+  {
     id: "2026-10-31-sito-analytics",
     data: "2026-10-31",
     progetto: "sito",
