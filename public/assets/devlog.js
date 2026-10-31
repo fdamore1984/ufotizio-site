@@ -14,6 +14,46 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-10-31-ciccio-muri-trasparenti",
+    data: "2026-10-31",
+    progetto: "ciccio",
+    titolo: { it: "Muri trasparenti e torcia con l'alone", en: "See-through walls and a flashlight glow" },
+    punti: {
+      it: [
+        "Quando Ciccio passa dietro a un palazzo, il muro davanti a lui diventa trasparente attorno a lui.",
+        "La sagoma dietro ai muri non ha più le gambe ferme: solo corpo e naso.",
+        "La torcia elettrica illumina anche un piccolo cerchio attorno a Ciccio.",
+        "Steam Deck: i collegamenti a Steam creati col vecchio nome del file (CiccioMassacro.x86_64) funzionano di nuovo anche in modalità gioco.",
+      ],
+      en: [
+        "When Cheech walks behind a building, the wall in front of him turns see-through around him.",
+        "The outline behind walls no longer has frozen legs: just body and nose.",
+        "The flashlight also lights a small circle around Cheech.",
+        "Steam Deck: Steam shortcuts made with the old file name (CiccioMassacro.x86_64) work again, in Game Mode too.",
+      ],
+    },
+  },
+  {
+    id: "2026-10-31-gobelino-luce-colline",
+    data: "2026-10-31",
+    progetto: "gobelino",
+    titolo: { it: "La torcia sale sulle colline", en: "The torch climbs the hills" },
+    punti: {
+      it: [
+        "In cima a colline e altopiani la luce della torcia parte dai piedi di Gobelino, non più dal terreno più in basso.",
+        "La torcia illumina anche un piccolo cerchio attorno a Gobelino.",
+        "Dietro a montagne e pareti il muro davanti a Gobelino diventa trasparente attorno a lui.",
+        "La sagoma dietro ai muri non ha più le gambe ferme: solo corpo e naso.",
+      ],
+      en: [
+        "On top of hills and plateaus the torchlight starts at Gobelino's feet, no longer from the lowest ground.",
+        "The torch also lights a small circle around Gobelino.",
+        "Behind mountains and walls, the wall in front of Gobelino turns see-through around him.",
+        "The outline behind walls no longer has frozen legs: just body and nose.",
+      ],
+    },
+  },
+  {
     id: "2026-10-31-ciccio-mondo-fumetto",
     data: "2026-10-31",
     progetto: "ciccio",
