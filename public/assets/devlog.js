@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-01-ciccio-furioso",
+    data: "2026-11-01",
+    progetto: "ciccio",
+    titolo: { it: "Ciccio è sempre più furioso", en: "Cheech is angrier than ever" },
+    punti: {
+      it: [
+        "Ciccio non si calma mai: occhioni enormi, fusi in un'unica forma, con lo sguardo cattivo e le pupille che puntano dove va.",
+        "La bocca è diventata enorme: occupa tutta la parte bassa della palla, con i denti serrati o spalancata in un urlo.",
+        "Contorni neri molto più spessi, così Ciccio si vede bene anche nel caos della battaglia.",
+        "Braccia e gambe sono solo linee nere: niente più guanti né piedi.",
+        "Anche il ritratto in alto a sinistra, la copertina e le immagini del tutorial mostrano il nuovo Ciccio.",
+      ],
+      en: [
+        "Cheech never calms down: huge eyes merged into a single shape, with a mean glare and pupils that point where he's going.",
+        "His mouth is now enormous: it fills the whole bottom of the ball, with clenched teeth or wide open in a scream.",
+        "Much thicker black outlines, so Cheech stands out even in the chaos of battle.",
+        "Arms and legs are just black lines: no more gloves or feet.",
+        "The portrait in the top left, the cover and the tutorial images show the new Cheech too.",
+      ],
+    },
+  },
+  {
     id: "2026-10-31-ciccio-nuovo-look",
     data: "2026-10-31",
     progetto: "ciccio",
