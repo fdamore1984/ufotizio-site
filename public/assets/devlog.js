@@ -14,6 +14,54 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-01-ciccio-modalita-touch",
+    data: "2026-11-01",
+    progetto: "ciccio",
+    titolo: { it: "Ciccio si gioca col pollice", en: "Cheech, now with just your thumb" },
+    punti: {
+      it: [
+        "Dal telefono o dal tablet, senza controller né tastiera e mouse, il gioco parte da solo in Modalità Touch.",
+        "Pochi tasti: Menù, Zaino e Mappa in alto a sinistra, la levetta in basso a sinistra, Attacco e Schivata in basso a destra.",
+        "Tieni premuto Attacco e Ciccio fa tutto da solo: combo di motosega, colpo potente, salto e slam, finché regge la batteria; da lontano spara il bazooka.",
+        "Salto, parata, piastre di kevlar, torcia, kit medici, taniche e batterie di scorta sono automatici.",
+        "I tasti gialli e rossi di Bomba H e Frenesia compaiono solo quando puoi usarli, e c'è un tutorial apposta per il touch.",
+        "Sul PC non cambia niente: controller, oppure tastiera e mouse.",
+      ],
+      en: [
+        "On a phone or tablet, with no controller or keyboard and mouse, the game starts in Touch Mode by itself.",
+        "Just a few buttons: Menu, Bag and Map in the top left, the stick in the bottom left, Attack and Dodge in the bottom right.",
+        "Hold Attack and Cheech does it all: chainsaw combo, power strike, jump and slam, as long as the battery lasts; from afar he fires the bazooka.",
+        "Jumping, parrying, Kevlar plates, flashlight, medkits, fuel cans and spare batteries are automatic.",
+        "The yellow and red H-bomb and Frenzy buttons show up only when you can use them, and there's a tutorial made for touch.",
+        "Nothing changes on PC: controller, or keyboard and mouse.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-01-gobelino-modalita-touch",
+    data: "2026-11-01",
+    progetto: "gobelino",
+    titolo: { it: "Gobelino si gioca col pollice", en: "Gobelino, now with just your thumb" },
+    punti: {
+      it: [
+        "Dal telefono o dal tablet, senza controller né tastiera e mouse, il gioco parte da solo in Modalità Touch.",
+        "Pochi tasti: Menù, Zaino e Mappa in alto a sinistra, la levetta in basso a sinistra, Attacco e Schivata in basso a destra.",
+        "Tieni premuto Attacco e il goblin fa tutto da solo: combo di spada, colpo potente, salto e slam, finché regge il vigore; da lontano lancia palle di fuoco.",
+        "Salto, parata, bolla magica, torcia e pozioni sono automatici.",
+        "I tasti arancione e rosso di Runa e Frenesia compaiono solo quando puoi usarli, e c'è un tutorial apposta per il touch.",
+        "Sul PC non cambia niente: controller, oppure tastiera e mouse.",
+      ],
+      en: [
+        "On a phone or tablet, with no controller or keyboard and mouse, the game starts in Touch Mode by itself.",
+        "Just a few buttons: Menu, Bag and Map in the top left, the stick in the bottom left, Attack and Dodge in the bottom right.",
+        "Hold Attack and the goblin does it all: sword combo, power strike, jump and slam, as long as stamina lasts; from afar he throws fireballs.",
+        "Jumping, parrying, the magic bubble, torch and potions are automatic.",
+        "The orange and red Rune and Frenzy buttons show up only when you can use them, and there's a tutorial made for touch.",
+        "Nothing changes on PC: controller, or keyboard and mouse.",
+      ],
+    },
+  },
+  {
     id: "2026-11-01-ciccio-furioso",
     data: "2026-11-01",
     progetto: "ciccio",
