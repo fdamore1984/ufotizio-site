@@ -14,6 +14,60 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-01-ciccio-nemici-somiglianti",
+    data: "2026-11-01",
+    progetto: "ciccio",
+    titolo: { it: "I nemici somigliano a Ciccio", en: "The enemies look like Cheech" },
+    punti: {
+      it: [
+        "I nemici ora hanno gli stessi occhioni e la stessa boccaccia di Ciccio, ognuno con qualcosa di suo: occhi più grandi o più piccoli, di colore diverso, denti serrati o un urlo, cicatrici, capelli, cappelli e occhiali come prima.",
+        "Urlano mentre attaccano, e gli zombie hanno gli occhi verdastri.",
+        "Braccia e gambe di Ciccio e dei nemici sono lunghe la metà.",
+        "Gli occhi dei nemici stanno sempre sopra le armi, e il triangolo che indicava la direzione non c'è più: dove vanno lo dicono gli occhi.",
+        "Continua ora mostra gli slot, con già selezionata la partita più recente, invece di caricarla da sola.",
+        "Nuovo tasto Carica partita, nel menù iniziale e in quello di pausa: dalla pausa chiede conferma, perché i progressi non salvati si perdono.",
+        "Col touch inventario e mappa hanno un tasto Chiudi: prima non c'era modo di uscirne.",
+        "Nel browser niente più scatti esplorando: il terreno nuovo si prepara poco per volta mentre giochi, la schermata di caricamento ai bordi del mondo non compare quasi più e gli effetti si preparano all'avvio.",
+      ],
+      en: [
+        "Enemies now have Cheech's huge eyes and big mouth, each with something of their own: bigger or smaller eyes in different colors, clenched teeth or a scream, scars, plus hair, hats and glasses as before.",
+        "They scream while attacking, and zombies have greenish eyes.",
+        "Cheech's and the enemies' arms and legs are half as long.",
+        "The enemies' eyes always stay on top of their weapons, and the triangle that showed their direction is gone: their eyes show where they're going.",
+        "Continue now shows the save slots, with the latest game already selected, instead of loading it right away.",
+        "New Load game button, in the main menu and in the pause menu: from the pause menu it asks for confirmation, since unsaved progress is lost.",
+        "With touch controls the inventory and the map have a Close button: before there was no way out.",
+        "No more stutters while exploring in the browser: new terrain is prepared bit by bit while you play, the loading screen at the edges of the world almost never shows up and effects are prepared at startup.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-01-gobelino-goblin",
+    data: "2026-11-01",
+    progetto: "gobelino",
+    titolo: { it: "Un mondo di goblin", en: "A world of goblins" },
+    punti: {
+      it: [
+        "Niente più forme geometriche: i nemici sono goblin come Gobelino, con le orecchie a punta e gli occhioni, e ognuno è diverso: orecchie lunghe, pendenti o strappate, occhi grandi o piccoli, ghigni, zanne, cicatrici, bende e porri.",
+        "Gobelino ha le orecchie e un sorriso, e il triangolo che indicava la direzione non c'è più: dove va lo dicono gli occhi, che la spada non copre mai.",
+        "Le gambe sono lunghe la metà, per Gobelino e per i nemici.",
+        "Continua ora mostra gli slot, con già selezionata la partita più recente, invece di caricarla da sola.",
+        "Nuovo tasto Carica partita, nel menù iniziale e in quello di pausa: dalla pausa chiede conferma, perché i progressi non salvati si perdono.",
+        "Col touch inventario e mappa hanno un tasto Chiudi: prima non c'era modo di uscirne.",
+        "Nel browser niente più scatti esplorando: il terreno nuovo si prepara poco per volta mentre giochi, la schermata di caricamento ai bordi del mondo non compare quasi più e gli effetti si preparano all'avvio.",
+      ],
+      en: [
+        "No more geometric shapes: enemies are goblins like Gobelino, with pointy ears and big eyes, and each one is different: long, droopy or torn ears, big or small eyes, grins, fangs, scars, eye patches and warts.",
+        "Gobelino has ears and a smile, and the triangle that showed his direction is gone: his eyes show where he's going, and the sword never covers them.",
+        "Legs are half as long, for Gobelino and for the enemies.",
+        "Continue now shows the save slots, with the latest game already selected, instead of loading it right away.",
+        "New Load game button, in the main menu and in the pause menu: from the pause menu it asks for confirmation, since unsaved progress is lost.",
+        "With touch controls the inventory and the map have a Close button: before there was no way out.",
+        "No more stutters while exploring in the browser: new terrain is prepared bit by bit while you play, the loading screen at the edges of the world almost never shows up and effects are prepared at startup.",
+      ],
+    },
+  },
+  {
     id: "2026-11-01-ciccio-modalita-touch",
     data: "2026-11-01",
     progetto: "ciccio",
