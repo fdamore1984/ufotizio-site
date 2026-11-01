@@ -14,6 +14,38 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-01-ciccio-interagisci-touch",
+    data: "2026-11-01",
+    progetto: "ciccio",
+    titolo: { it: "Interagire col touch", en: "Interacting with touch" },
+    punti: {
+      it: [
+        "Col touch, vicino a casse, mercanti e ingressi compare un tasto verde Interagisci, e il suggerimento sopra l'oggetto dice solo \"Interagisci\", senza il tasto della tastiera.",
+        "Il pulsante Chiudi di inventario, mappa e negozio ora sta in alto a destra, così non finisce mai fuori dallo schermo.",
+      ],
+      en: [
+        "With touch controls a green Interact button shows up near chests, merchants and entrances, and the prompt above the object just says \"Interact\", without the keyboard key.",
+        "The Close button of the inventory, the map and the shop is now in the top right, so it never ends up off screen.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-01-gobelino-interagisci-touch",
+    data: "2026-11-01",
+    progetto: "gobelino",
+    titolo: { it: "Interagire col touch", en: "Interacting with touch" },
+    punti: {
+      it: [
+        "Col touch, vicino a casse, mercanti e ingressi compare un tasto verde Interagisci, e il suggerimento sopra l'oggetto dice solo \"Interagisci\", senza il tasto della tastiera.",
+        "Il pulsante Chiudi di inventario, mappa e negozio ora sta in alto a destra, così non finisce mai fuori dallo schermo.",
+      ],
+      en: [
+        "With touch controls a green Interact button shows up near chests, merchants and entrances, and the prompt above the object just says \"Interact\", without the keyboard key.",
+        "The Close button of the inventory, the map and the shop is now in the top right, so it never ends up off screen.",
+      ],
+    },
+  },
+  {
     id: "2026-11-01-ciccio-nemici-somiglianti",
     data: "2026-11-01",
     progetto: "ciccio",
