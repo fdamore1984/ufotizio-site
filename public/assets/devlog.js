@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-01-sito-chi-ha-creato-ufotizio",
+    data: "2026-11-01",
+    progetto: "sito",
+    titolo: { it: "Chi ha creato Ufotizio", en: "Who made Ufotizio" },
+    punti: {
+      it: [
+        "In home, sotto il saluto di Ufotizio, mi presento con foto, nome e cognome: cos'è il progetto, un portale di giochi fatti con Claude Code e altri agenti AI per divertimento e per studio, e cosa so fare.",
+        "La presentazione si può nascondere e riaprire quando vuoi dalla pillola \"Chi ha creato Ufotizio?\"; il sito si ricorda la scelta.",
+      ],
+      en: [
+        "On the home page, under Ufotizio's greeting, I introduce myself with a photo and my full name: what the project is, a games portal made with Claude Code and other AI agents for fun and for study, and what I do.",
+        "You can hide the introduction and open it again whenever you like from the \"Who made Ufotizio?\" pill; the site remembers your choice.",
+      ],
+    },
+  },
+  {
     id: "2026-11-01-ciccio-interagisci-touch",
     data: "2026-11-01",
     progetto: "ciccio",

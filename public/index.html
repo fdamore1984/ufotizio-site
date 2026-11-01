@@ -29,6 +29,33 @@
       <p class="info" data-testo="home.info">Si gioca nel browser con tastiera e mouse, controller o touch. Con un account i salvataggi ti seguono su ogni dispositivo.</p>
     </div>
   </section>
+  <!-- Chi ha creato Ufotizio: si può nascondere e riaprire dalla pillola;
+       la scelta resta in questo browser (ufotizio-autore). -->
+  <details class="autore" id="autore" open>
+    <summary data-testo="home.autore.domanda">Chi ha creato Ufotizio?</summary>
+    <div class="presentazione">
+      <img src="/assets/fabrizio.webp" alt="Fabrizio D’Amore con gli occhiali da sole" data-testo-alt="home.autore.foto" width="320" height="320">
+      <div>
+        <h2 data-testo="home.autore.nome">Ciao, sono Fabrizio D’Amore</h2>
+        <p class="ruolo" data-testo="home.autore.ruolo">Sviluppatore software senior, a Parma.</p>
+        <p data-testo="home.autore.progetto">Ufotizio.com è il mio portale di giochi, che realizzo io usando Claude Code e altri agenti AI. È un progetto personale, fatto per divertimento e per studio: mi serve per imparare a orchestrare gli agenti AI e acquisire nuove competenze.</p>
+        <h3 data-testo="home.autore.competenze">Cosa so fare</h3>
+        <ul data-lista="home.autore.elenco"></ul>
+      </div>
+      <button class="chiudi" type="button" data-testo="home.autore.chiudi">Nascondi</button>
+    </div>
+  </details>
+  <script>
+    (function () {
+      var autore = document.getElementById("autore");
+      try { if (localStorage.getItem("ufotizio-autore") === "chiuso") autore.open = false; } catch (e) { /* storage bloccato */ }
+      autore.querySelector(".chiudi").addEventListener("click", function () { autore.open = false; });
+      autore.addEventListener("toggle", function () {
+        try { localStorage.setItem("ufotizio-autore", autore.open ? "aperto" : "chiuso"); } catch (e) { /* storage bloccato */ }
+        if (autore.open) autore.querySelector(".chiudi").focus();
+      });
+    })();
+  </script>
   <div class="games">
     <a class="game" href="/ciccio-massacro" data-link="ciccio">
       <img src="/assets/ciccio-massacro-it.png" data-immagine="/assets/ciccio-massacro-{lingua}.png" alt="Copertina di Ciccio Massacro" data-testo-alt="ciccio.copertina" width="630" height="500">

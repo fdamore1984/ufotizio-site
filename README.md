@@ -11,7 +11,7 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 | `public/assets/pagine.js` | Le pagine e i loro indirizzi: `/` e `/en/`, `/ciccio-massacro` e `/en/cheech-carnage`, `/gobelino` e `/en/gobelino`, `/devlog` e `/en/devlog` |
 | `public/assets/testi.js`, `public/assets/devlog.js` | Tutti i testi del sito e le voci del devlog, in italiano e in inglese |
 | `public/assets/lingua.js` | Lingua nel browser: la prima volta dal paese (italiano per Italia, San Marino e Vaticano), poi quella scelta col pulsante IT / EN; chi arriva su una pagina nell'altra lingua passa a quella giusta (i motori di ricerca no); i giochi usano la stessa lingua e, se la cambiano, cambia anche l'indirizzo |
-| `public/index.html` | Home con i giochi e le ultime novità: Ufotizio saluta da un fumetto |
+| `public/index.html` | Home con i giochi e le ultime novità: Ufotizio saluta da un fumetto e sotto Fabrizio si presenta (`public/assets/fabrizio.webp`), con la presentazione che si nasconde e si riapre dalla pillola "Chi ha creato Ufotizio?" |
 | `public/devlog.html` | Devlog dei giochi e del sito |
 | `public/404.html` | Pagina non trovata |
 | `public/assets/style.css` | Tema del sito preso dal logo: verdi, contorni neri spessi, ombre piene, carattere Fredoka (Google Fonts) |
