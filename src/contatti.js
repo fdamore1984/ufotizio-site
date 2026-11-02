@@ -1,8 +1,10 @@
 // Modulo "Contattami" (public/contatti.html, public/assets/contatti.js): il
 // browser manda nome, email e messaggio a POST /api/contatti e il Worker li
-// gira per email a Fabrizio con Cloudflare Email Routing (binding EMAIL in
-// wrangler.jsonc, con l'indirizzo di destinazione in EMAIL_DESTINATARIO: sta
-// solo lì e non arriva mai nella pagina).
+// gira per email a Fabrizio con Resend (api.resend.com, chiave nel segreto
+// RESEND_API_KEY). Il dominio ufotizio.com è verificato su Resend con record
+// DNS solo su sottodomini (send., resend._domainkey.), così la posta di Aruba
+// del dominio resta com'è. L'indirizzo di destinazione sta solo in
+// EMAIL_DESTINATARIO (wrangler.jsonc) e non arriva mai nella pagina.
 //
 // Controlli, in ordine:
 // - solo POST dallo stesso sito (Origin), solo JSON e al massimo 16 KB;
@@ -15,9 +17,9 @@
 //   caratteri invisibili che girano il testo (spoofing), email del mittente
 //   con un formato rigido, al massimo 3 link;
 // - l'email esce solo come testo semplice (niente HTML, niente allegati: il
-//   modulo non ne accetta) e tutto quello che scrive il visitatore, oggetto
-//   compreso, è codificato in base64, così non può aggiungere intestazioni
-//   (header injection) né codice che il programma di posta esegua.
+//   modulo non ne accetta), con nome ed email del visitatore su una riga sola
+//   e controllati, così non può aggiungere intestazioni (header injection) né
+//   codice che il programma di posta esegua.
 
 const MAX_CORPO = 16 * 1024;
 const MAX_NOME = 80;
@@ -28,6 +30,7 @@ const MAX_LINK = 3;
 const MITTENTE = "contatti@ufotizio.com";
 const AZIONE = "contatti";
 const VERIFICA = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+const RESEND = "https://api.resend.com/emails";
 
 // Email del visitatore (per rispondergli): un formato volutamente stretto,
 // senza spazi, virgolette, < > , ; né a capo.
@@ -75,22 +78,11 @@ export function controlla(dati) {
   return { campi: { nome, email, messaggio, lingua, token: dati.token } };
 }
 
-function base64(testo) {
-  const byte = new TextEncoder().encode(testo);
-  let binario = "";
-  for (let i = 0; i < byte.length; i += 0x8000) binario += String.fromCharCode(...byte.subarray(i, i + 0x8000));
-  return btoa(binario);
-}
-
-// Intestazione codificata (RFC 2047): il testo del visitatore non può
-// contenere a capo né aprire nuove intestazioni.
-function intestazione(testo) {
-  return `=?UTF-8?B?${base64(testo)}?=`;
-}
-
-// L'email completa (MIME), solo testo, con il corpo in base64 a righe di 76.
-export function componi({ nome, email, messaggio, lingua }, destinatario, paese, adesso = new Date()) {
-  const corpo = [
+// L'email per Resend: solo testo (niente HTML, niente allegati). Nome ed
+// email arrivano qui già su una riga sola e controllati, così non possono
+// aggiungere intestazioni; il resto lo codifica Resend.
+export function componi({ nome, email, messaggio, lingua }, destinatario, paese) {
+  const testo = [
     "Nuovo messaggio dal modulo Contattami di ufotizio.com.",
     "",
     `Nome: ${nome}`,
@@ -106,22 +98,14 @@ export function componi({ nome, email, messaggio, lingua }, destinatario, paese,
     "solo testo: nessun allegato, nessun HTML. Per rispondere usa \"Rispondi\":",
     "va all'email scritta nel modulo, che però non è verificata.",
   ].join("\n");
-  const righe = base64(corpo.replace(/\n/g, "\r\n")).match(/.{1,76}/g).join("\r\n");
-  return [
-    `From: ${intestazione("Ufotizio · Contattami")} <${MITTENTE}>`,
-    `To: <${destinatario}>`,
-    `Reply-To: <${email}>`,
-    `Subject: ${intestazione(`[ufotizio.com] Messaggio da ${nome}`)}`,
-    `Date: ${adesso.toUTCString()}`,
-    `Message-ID: <${crypto.randomUUID()}@ufotizio.com>`,
-    "MIME-Version: 1.0",
-    "Content-Type: text/plain; charset=UTF-8",
-    "Content-Transfer-Encoding: base64",
-    "Auto-Submitted: auto-generated",
-    "",
-    righe,
-    "",
-  ].join("\r\n");
+  return {
+    from: `Ufotizio · Contattami <${MITTENTE}>`,
+    to: [destinatario],
+    reply_to: email,
+    subject: `[ufotizio.com] Messaggio da ${nome}`,
+    text: testo,
+    headers: { "Auto-Submitted": "auto-generated" },
+  };
 }
 
 async function verificaUmana(token, ip, hostname, segreto) {
@@ -144,7 +128,7 @@ export async function contatti(request, env) {
   if (request.method !== "POST") return risposta(405, { errore: "metodo" }, { allow: "POST" });
   if (request.headers.get("origin") !== url.origin) return risposta(403, { errore: "origine" });
   if (!(request.headers.get("content-type") || "").toLowerCase().startsWith("application/json")) return risposta(415, { errore: "richiesta" });
-  if (!env.EMAIL || !env.EMAIL_DESTINATARIO || !env.TURNSTILE_SECRET) return risposta(503, { errore: "non-attivo" });
+  if (!env.RESEND_API_KEY || !env.EMAIL_DESTINATARIO || !env.TURNSTILE_SECRET) return risposta(503, { errore: "non-attivo" });
   const dichiarata = Number(request.headers.get("content-length") || 0);
   if (dichiarata > MAX_CORPO) return risposta(413, { errore: "richiesta" });
 
@@ -172,10 +156,14 @@ export async function contatti(request, env) {
   if (!(await verificaUmana(campi.token, ip, url.hostname, env.TURNSTILE_SECRET))) return risposta(403, { errore: "verifica" });
 
   try {
-    const { EmailMessage } = await import("cloudflare:email");
-    const destinatario = env.EMAIL_DESTINATARIO;
-    const email = componi(campi, destinatario, request.cf?.country || "");
-    await env.EMAIL.send(new EmailMessage(MITTENTE, destinatario, email));
+    const email = componi(campi, env.EMAIL_DESTINATARIO, request.cf?.country || "");
+    const esito = await fetch(RESEND, {
+      method: "POST",
+      headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json", "idempotency-key": crypto.randomUUID() },
+      body: JSON.stringify(email),
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!esito.ok) throw new Error(`Resend ${esito.status}: ${(await esito.text()).slice(0, 300)}`);
   } catch (e) {
     console.error("contatti: email non inviata", e);
     return risposta(502, { errore: "invio" });
