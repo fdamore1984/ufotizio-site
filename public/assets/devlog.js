@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-02-sito-contattami-profilo",
+    data: "2026-11-02",
+    progetto: "sito",
+    titolo: { it: "Pagina Contattami e icona del profilo", en: "Contact page and profile icon" },
+    punti: {
+      it: [
+        "Nuova pagina Contattami: scrivi nome, email e messaggio e mi arriva direttamente per email. Un controllo di Cloudflare Turnstile ferma i bot, e il modulo accetta solo testo, niente allegati.",
+        "Con l'accesso fatto, nell'intestazione c'è solo l'icona del profilo: toccandola si apre un riquadro con la tua email e il pulsante Esci.",
+      ],
+      en: [
+        "New Contact me page: write your name, email and message and it comes straight to my inbox. A Cloudflare Turnstile check stops bots, and the form only accepts text, no attachments.",
+        "When you're signed in, the header just shows a profile icon: tap it to open a box with your email and the Sign out button.",
+      ],
+    },
+  },
+  {
     id: "2026-11-01-sito-chi-ha-creato-ufotizio",
     data: "2026-11-01",
     progetto: "sito",
