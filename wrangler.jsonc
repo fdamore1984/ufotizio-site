@@ -1,5 +1,6 @@
 // Configurazione del Worker "ufotizio-site" (deploy automatico da Cloudflare
-// a ogni push su main, con "npx wrangler deploy").
+// a ogni push su main, con "npx wrangler deploy"; gli altri branch diventano
+// anteprime con "npx wrangler preview", vedi "previews").
 {
   "name": "ufotizio-site",
   "main": "src/worker.js",
@@ -13,6 +14,14 @@
     "not_found_handling": "404-page"
   },
   "r2_buckets": [{ "binding": "GAMES", "bucket_name": "ufotizio-games" }],
+  // Anteprime dei branch diversi da main (Cloudflare costruisce ogni push con
+  // "npx wrangler preview"): i bucket R2 non passano da soli alle anteprime e
+  // vanno ripetuti qui, altrimenti la build fallisce. Stesso bucket dei giochi:
+  // il Worker lo legge soltanto (src/games.js), quindi un'anteprima non può
+  // rovinarlo.
+  "previews": {
+    "r2_buckets": [{ "binding": "GAMES", "bucket_name": "ufotizio-games" }]
+  },
   // Modulo Contattami (src/contatti.js): le email partono con Resend verso
   // EMAIL_DESTINATARIO. I segreti non stanno qui: si impostano con
   // "npx wrangler secret put RESEND_API_KEY" e "... TURNSTILE_SECRET" (o dal

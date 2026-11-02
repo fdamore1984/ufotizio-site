@@ -35,7 +35,12 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 - **Cloudflare Worker** `ufotizio-site`: collegato a questo repo, deploy
   con `npx wrangler deploy` a ogni push su `main`; il bucket R2 è collegato
   da `wrangler.jsonc` (deve esistere prima del deploy); domini
-  `ufotizio.com` e `www.ufotizio.com`.
+  `ufotizio.com` e `www.ufotizio.com`. Ogni push su un altro branch diventa
+  un'anteprima con `npx wrangler preview`, che non eredita il bucket R2:
+  per questo `wrangler.jsonc` lo ripete nel blocco `previews` (senza, la
+  build dell'anteprima fallisce con "missing a `previews` block"). Le
+  anteprime non hanno i segreti di Resend e Turnstile: lì il modulo
+  Contattami non invia.
 - **Modulo Contattami**: le email partono con **Resend** (la posta del
   dominio resta su Aruba, quindi niente Cloudflare Email Routing). Su Resend
   il dominio `ufotizio.com` è verificato con i record DNS che indica, tutti su
