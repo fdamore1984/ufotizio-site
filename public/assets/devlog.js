@@ -14,6 +14,34 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-02-ciccio-tutorial-nemici",
+    data: "2026-11-02",
+    progetto: "ciccio",
+    titolo: { it: "Tutorial con nemici veri", en: "Tutorial with real enemies" },
+    punti: {
+      it: [
+        "Nel tutorial giocabile arrivano predoni veri invece degli zombie, che correvano addosso a Ciccio e si spappolavano subito: ora c'è il tempo di provare parate, schivate, missili e Frenesia.",
+      ],
+      en: [
+        "The playable tutorial now sends real raiders instead of zombies, which ran into Cheech and burst right away: now there's time to try parries, dodges, missiles and Frenzy.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-02-gobelino-tutorial-nemici",
+    data: "2026-11-02",
+    progetto: "gobelino",
+    titolo: { it: "Tutorial con nemici veri", en: "Tutorial with real enemies" },
+    punti: {
+      it: [
+        "Nel tutorial giocabile i combattimenti si fanno contro guerrieri, gli altri passi contro esploratori: mai i non morti delle orde, che si spappolano subito.",
+      ],
+      en: [
+        "In the playable tutorial the fights are against warriors and the other steps against scouts: never the undead from the hordes, which burst right away.",
+      ],
+    },
+  },
+  {
     id: "2026-11-02-ciccio-tutorial-giocabile",
     data: "2026-11-02",
     progetto: "ciccio",
