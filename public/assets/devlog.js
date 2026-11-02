@@ -14,6 +14,46 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-02-ciccio-tutorial-giocabile",
+    data: "2026-11-02",
+    progetto: "ciccio",
+    titolo: { it: "Tutorial giocabile e bomba H con L2 + R2", en: "Playable tutorial and H-bomb on L2 + R2" },
+    punti: {
+      it: [
+        "Nel tutorial del menù iniziale c'è Inizia il tutorial giocabile: una partita a parte, che non si salva, in cui Ciccio non muore e impari le mosse una alla volta, con controller, tastiera e mouse o col touch.",
+        "La bomba H ora si fa a mezz'aria premendo insieme colpo potente e focus (L2 + R2); il colpo potente da solo in aria è sempre lo slam, e parte subito.",
+        "Col touch: kit medici, taniche e batterie in basso al centro da toccare per usarli, un nuovo tasto blu Slam e, su telefoni e tablet, la telecamera più vicina.",
+        "Nel browser il gioco non si blocca più un attimo la prima volta che si spara col bazooka.",
+      ],
+      en: [
+        "The tutorial in the main menu now has Start the playable tutorial: a separate game, never saved, where Cheech can't die and you learn the moves one at a time, with a controller, keyboard and mouse or touch.",
+        "The H-bomb now comes from pressing power strike and focus together in mid-air (L2 + R2); the power strike alone in mid-air is always the slam, and it starts right away.",
+        "With touch: medkits, fuel cans and batteries at the bottom center that you tap to use, a new blue Slam button and, on phones and tablets, a closer camera.",
+        "In the browser the game no longer freezes for a moment the first time you fire the bazooka.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-02-gobelino-tutorial-giocabile",
+    data: "2026-11-02",
+    progetto: "gobelino",
+    titolo: { it: "Tutorial giocabile e runa con L2 + R2", en: "Playable tutorial and rune on L2 + R2" },
+    punti: {
+      it: [
+        "Nel tutorial del menù iniziale c'è Inizia il tutorial giocabile: una partita a parte, che non si salva, in cui il goblin non muore e impari le mosse una alla volta, con controller, tastiera e mouse o col touch.",
+        "La runa del Cataclisma ora si spacca a mezz'aria premendo insieme colpo potente e focus (L2 + R2); il colpo potente da solo in aria è sempre lo slam, e parte subito.",
+        "Col touch: pozioni di vita, mana e vigore in basso al centro da toccare per berle, un nuovo tasto blu Slam e, su telefoni e tablet, la telecamera più vicina.",
+        "Nel browser il gioco non si blocca più un attimo la prima volta che si lancia la palla di fuoco.",
+      ],
+      en: [
+        "The tutorial in the main menu now has Start the playable tutorial: a separate game, never saved, where the goblin can't die and you learn the moves one at a time, with a controller, keyboard and mouse or touch.",
+        "The Cataclysm rune is now smashed by pressing power strike and focus together in mid-air (L2 + R2); the power strike alone in mid-air is always the slam, and it starts right away.",
+        "With touch: health, mana and stamina potions at the bottom center that you tap to drink, a new blue Slam button and, on phones and tablets, a closer camera.",
+        "In the browser the game no longer freezes for a moment the first time you cast a fireball.",
+      ],
+    },
+  },
+  {
     id: "2026-11-02-sito-contattami-profilo",
     data: "2026-11-02",
     progetto: "sito",
