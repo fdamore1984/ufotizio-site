@@ -38,6 +38,13 @@ export const PAGINE = {
     descrizione: "devlog.meta",
     immagine: "/assets/ufotizio.png",
   },
+  contatti: {
+    percorso: { it: "/contattami", en: "/en/contact" },
+    modello: "/contatti",
+    titolo: "contatti.pagina",
+    descrizione: "contatti.meta",
+    immagine: "/assets/ufotizio.png",
+  },
   privacy: {
     percorso: { it: "/privacy", en: "/en/privacy" },
     modello: "/privacy",

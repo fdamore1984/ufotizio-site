@@ -14,7 +14,18 @@ header { display: flex; align-items: center; justify-content: space-between; gap
 header .logo { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; font-size: 26px; text-decoration: none; letter-spacing: .5px;
   text-shadow: 2px 2px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink); }
 header .logo img { width: 46px; height: 46px; border-radius: 12px; border: 3px solid var(--ink); }
-#account { display: flex; align-items: center; gap: 10px; color: var(--muted); }
+#account { position: relative; display: flex; align-items: center; gap: 10px; color: var(--muted); }
+/* Con l'accesso fatto: icona del profilo e, sotto, il riquadro con email ed
+   Esci (account/cloud.js). */
+#account .profilo { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border-radius: 50%; }
+#account .profilo svg { width: 26px; height: 26px; }
+#account .profilo[aria-expanded="true"] { background: var(--bg2); }
+.riquadro-account { position: absolute; z-index: 40; top: calc(100% + 12px); right: 0; width: max-content; max-width: min(320px, calc(100vw - 32px));
+  padding: 12px 16px 14px; color: var(--ink); background: var(--text); border: 4px solid var(--ink); border-radius: 16px; box-shadow: 5px 5px 0 var(--ink); }
+.riquadro-account[hidden] { display: none; }
+.riquadro-account::before { content: ""; position: absolute; top: -14px; right: 14px; border: 6px solid transparent; border-bottom: 8px solid var(--ink); }
+.riquadro-account .etichetta { margin: 0; color: var(--soft); font-size: 14px; }
+.riquadro-account .email { margin: 0 0 10px; font-weight: 600; overflow-wrap: anywhere; }
 header .menu { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 header .menu a { color: var(--text); font-weight: 600; text-decoration: none; padding: 4px 10px; }
 header .menu a:hover { text-decoration: underline; }
@@ -140,6 +151,23 @@ body.full footer { display: none; }
 .cookie p { flex: 1 1 280px; margin: 0; }
 .cookie a { color: var(--text); }
 .cookie div { display: flex; gap: 10px; margin-left: auto; }
+/* Home: link a Contattami nella presentazione. */
+.presentazione .scrivimi { margin: 14px 0 0; }
+/* Pagina Contattami (assets/contatti.js). */
+main.contatti { max-width: 640px; }
+main.contatti h1 { margin: 0 0 4px; font-size: 34px; }
+main.contatti > .info { margin: 0 0 20px; }
+main.contatti form { max-width: none; background: var(--panel) var(--grana); color: var(--text); border: 4px solid var(--ink); border-radius: 20px;
+  padding: 18px 20px; box-shadow: 8px 8px 0 var(--ombra); }
+main.contatti label { display: flex; flex-direction: column; gap: 4px; font-weight: 600; }
+main.contatti textarea { padding: 10px 14px; border-radius: 12px; border: 3px solid var(--ink); background: var(--text); color: var(--ink); font: inherit; resize: vertical; min-height: 140px; }
+main.contatti input:disabled, main.contatti textarea:disabled, main.contatti button:disabled { opacity: .6; cursor: not-allowed; }
+main.contatti .esca { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+main.contatti #verifica:empty { display: none; }
+main.contatti .stato { margin: 0; min-height: 1.5em; }
+main.contatti .stato[data-tipo="errore"] { color: #ffd6d6; font-weight: 600; }
+main.contatti .stato[data-tipo="ok"] { color: var(--bg2); font-weight: 600; }
+main.contatti .nota { margin-top: 16px; font-size: 15px; }
 /* Pagina della privacy. */
 main.privacy { max-width: 760px; }
 main.privacy h2 { margin: 28px 0 6px; }

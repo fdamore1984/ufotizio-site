@@ -12,5 +12,13 @@
     "run_worker_first": ["/*", "!/assets/*", "!/account/*"],
     "not_found_handling": "404-page"
   },
-  "r2_buckets": [{ "binding": "GAMES", "bucket_name": "ufotizio-games" }]
+  "r2_buckets": [{ "binding": "GAMES", "bucket_name": "ufotizio-games" }],
+  // Modulo Contattami (src/contatti.js): le email partono con Cloudflare
+  // Email Routing (attivo sul dominio, con l'indirizzo di destinazione
+  // verificato) e solo verso quell'indirizzo. Il segreto di Turnstile non sta
+  // qui: si imposta con "npx wrangler secret put TURNSTILE_SECRET".
+  "send_email": [{ "name": "EMAIL", "destination_address": "fabriziodamore1984@gmail.com" }],
+  "vars": { "EMAIL_DESTINATARIO": "fabriziodamore1984@gmail.com" },
+  // Al massimo 3 invii al minuto per indirizzo IP.
+  "ratelimits": [{ "name": "LIMITE_CONTATTI", "namespace_id": "1001", "simple": { "limit": 3, "period": 60 } }]
 }

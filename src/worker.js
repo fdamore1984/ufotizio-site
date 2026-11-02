@@ -2,6 +2,7 @@
 // /account/ li serve Cloudflare senza passare di qui (run_worker_first in
 // wrangler.jsonc), tutto il resto arriva qui.
 import { serveGame } from "./games.js";
+import { contatti } from "./contatti.js";
 import { PAGINE, SITO } from "../public/assets/pagine.js";
 import { rendi, robots, sitemap, trova } from "./pagine.js";
 
@@ -40,6 +41,7 @@ async function rispondi(request, env) {
     const lingua = linguaPaese(request) || "en";
     return Response.json({ lingua }, { headers: { "cache-control": "private, no-store" } });
   }
+  if (path === "/api/contatti") return contatti(request, env);
   if (path === "/robots.txt") return robots();
   if (path === "/sitemap.xml") return sitemap();
   if (path === "/en") return Response.redirect(url.origin + "/en/" + url.search, 301);
