@@ -10,7 +10,7 @@ import { lingua, t } from "/assets/lingua.js";
 
 // Chiave del widget Turnstile (pubblica, fatta per stare nella pagina; il
 // segreto sta solo nel Worker). Vuota: modulo non ancora attivo.
-const CHIAVE_TURNSTILE = "";
+const CHIAVE_TURNSTILE = "0x4AAAAAAFwQpPF-uQKVasjW";
 const TURNSTILE = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=ufotizioTurnstile";
 
 const form = document.getElementById("contatti");
