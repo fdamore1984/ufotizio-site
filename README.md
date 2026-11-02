@@ -16,7 +16,7 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 | `public/404.html` | Pagina non trovata |
 | `public/assets/style.css` | Tema del sito preso dal logo: verdi, contorni neri spessi, ombre piene, carattere Fredoka (Google Fonts) |
 | `public/assets/ufotizio.png`, `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` | Logo di Ufotizio (i tre UFO verdi) e le sue icone per il browser e per iPhone |
-| `public/contatti.html`, `public/assets/contatti.js`, `src/contatti.js` | Pagina Contattami (`/contattami`, `/en/contact`): il modulo manda nome, email e messaggio a `POST /api/contatti`; il Worker controlla origine, campo esca, limite di invii per IP, verifica umana con Cloudflare Turnstile e campi, e gira il messaggio come email di solo testo con Cloudflare Email Routing (l'indirizzo di destinazione non arriva mai nella pagina) |
+| `public/contatti.html`, `public/assets/contatti.js`, `src/contatti.js` | Pagina Contattami (`/contattami`, `/en/contact`): il modulo manda nome, email e messaggio a `POST /api/contatti`; il Worker controlla origine, campo esca, limite di invii per IP, verifica umana con Cloudflare Turnstile e campi, e gira il messaggio come email di solo testo con Resend (l'indirizzo di destinazione non arriva mai nella pagina) |
 | `public/privacy.html` | Privacy e cookie; il banner del consenso a Google Analytics è `public/assets/consenso.js` |
 | `public/account.html` | Accesso con link via email (magic link di Supabase) |
 | `public/ciccio-massacro.html`, `public/gobelino.html` | Pagina di un gioco: il gioco in un iframe, il pulsante Schermo intero (`public/assets/play.js`) e cosa si può fare nel gioco |
@@ -36,13 +36,15 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
   con `npx wrangler deploy` a ogni push su `main`; il bucket R2 è collegato
   da `wrangler.jsonc` (deve esistere prima del deploy); domini
   `ufotizio.com` e `www.ufotizio.com`.
-- **Modulo Contattami**: in Cloudflare, *Email → Email Routing* attivo su
-  `ufotizio.com` con `fabriziodamore1984@gmail.com` fra gli indirizzi di
-  destinazione verificati (binding `EMAIL` in `wrangler.jsonc`); un widget
-  *Turnstile* per `ufotizio.com` (modalità Managed): la chiave del sito va in
-  `CHIAVE_TURNSTILE` di `public/assets/contatti.js`, il segreto nel Worker con
-  `npx wrangler secret put TURNSTILE_SECRET`. Senza questi pezzi il modulo
-  resta disattivato e `/api/contatti` risponde 503.
+- **Modulo Contattami**: le email partono con **Resend** (la posta del
+  dominio resta su Aruba, quindi niente Cloudflare Email Routing). Su Resend
+  il dominio `ufotizio.com` è verificato con i record DNS che indica, tutti su
+  sottodomini (`send.ufotizio.com`, `resend._domainkey.ufotizio.com`); la
+  chiave API (solo invio) va nel Worker come segreto `RESEND_API_KEY`. Serve
+  anche un widget *Turnstile* per `ufotizio.com` (modalità Managed): la chiave
+  del sito va in `CHIAVE_TURNSTILE` di `public/assets/contatti.js`, il segreto
+  nel Worker come `TURNSTILE_SECRET`. Senza questi pezzi il modulo resta
+  disattivato e `/api/contatti` risponde 503.
 - **Motori di ricerca**: `ufotizio.com` verificato in Google Search Console e
   in Bing Webmaster Tools, con la sitemap `https://ufotizio.com/sitemap.xml`.
 - **R2**: bucket `ufotizio-games` con una cartella per gioco
