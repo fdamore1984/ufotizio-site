@@ -6,7 +6,7 @@
 #   <repo-del-gioco> facoltativo: carica anche la pagina itch.io
 #                    (store/itch/README.md e immagini) che il sito mostra
 #                    sotto il gioco (public/assets/itch.js)
-# Serve Node.js: wrangler usa CLOUDFLARE_API_TOKEN se c'è, altrimenti la
+# Serve Node.js: wrangler (versione fissa, la stessa a ogni caricamento) usa CLOUDFLARE_API_TOKEN se c'è, altrimenti la
 # prima volta apre il browser per l'accesso a Cloudflare.
 set -euo pipefail
 game="$1" web="$2" repo="${3:-}"
@@ -15,7 +15,7 @@ game="$1" web="$2" repo="${3:-}"
 put() {
   for wait in 0 10 30 60; do
     sleep "$wait"
-    npx wrangler r2 object put "ufotizio-games/$game/$1" --file "$2" --remote && return
+    npx --yes wrangler@4.151.2 r2 object put "ufotizio-games/$game/$1" --file "$2" --remote && return
   done
   return 1
 }
