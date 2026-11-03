@@ -15,6 +15,12 @@
 --   deleted     boolean  file cancellato (resta la riga, così la
 --                        cancellazione arriva anche agli altri dispositivi)
 --
+-- Chiave primaria: (user_id, game, name). Un file per giocatore, gioco e
+-- nome: l'upsert di cloud.js sovrascrive solo il file di quell'account, e
+-- due giocatori con lo stesso nome di file non si toccano.
+--
+--   alter table public.saves add primary key (user_id, game, name);
+--
 -- Sicurezza: l'RLS è attiva e c'è una sola regola, per tutte le operazioni.
 -- Ognuno legge, scrive, modifica e cancella solo le righe col proprio
 -- user_id (qual), e non può scrivere righe con lo user_id di un altro
