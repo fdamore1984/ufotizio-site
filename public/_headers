@@ -1,0 +1,7 @@
+# Intestazioni di sicurezza per i file serviti senza passare dal Worker
+# (/assets/ e /account/, vedi run_worker_first in wrangler.jsonc); le altre
+# risposte le prendono da SICUREZZA in src/worker.js.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN

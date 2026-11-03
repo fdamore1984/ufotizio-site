@@ -61,14 +61,26 @@ async function rispondi(request, env) {
   return env.ASSETS.fetch(request);
 }
 
+// Intestazioni di sicurezza su tutto ciò che passa dal Worker (i file di
+// /assets/ e /account/ le prendono da public/_headers): il browser non
+// indovina il tipo dei file, gli altri siti non vedono gli indirizzi
+// completi delle pagine e non possono mettere il sito in un iframe (i giochi
+// stanno in un iframe dello stesso sito, che resta permesso).
+export const SICUREZZA = {
+  "x-content-type-options": "nosniff",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "x-frame-options": "SAMEORIGIN",
+};
+
 export default {
   async fetch(request, env) {
     const risposta = await rispondi(request, env);
+    const headers = new Headers(risposta.headers);
+    for (const [nome, valore] of Object.entries(SICUREZZA)) headers.set(nome, valore);
     // Gli altri indirizzi del Worker (per esempio *.workers.dev per le prove)
     // restano fuori dai motori di ricerca.
-    if (new URL(request.url).host === DOMINIO || risposta.status >= 300 && risposta.status < 400) return risposta;
-    const headers = new Headers(risposta.headers);
-    headers.set("x-robots-tag", "noindex");
+    const redirect = risposta.status >= 300 && risposta.status < 400;
+    if (new URL(request.url).host !== DOMINIO && !redirect) headers.set("x-robots-tag", "noindex");
     return new Response(risposta.body, { status: risposta.status, statusText: risposta.statusText, headers });
   },
 };

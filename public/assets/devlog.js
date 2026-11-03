@@ -14,6 +14,48 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-03-ciccio-licenze",
+    data: "2026-11-03",
+    progetto: "ciccio",
+    titolo: { it: "Licenze in Opzioni", en: "Licenses in Options" },
+    punti: {
+      it: [
+        "In Opzioni c'è Licenze: le note di copyright e le licenze di Godot, il motore con cui è fatto il gioco, dei suoi componenti e dei font.",
+      ],
+      en: [
+        "Options now has Licenses: the copyright notices and licenses of Godot, the engine the game is made with, of its components and of the fonts.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-03-gobelino-licenze",
+    data: "2026-11-03",
+    progetto: "gobelino",
+    titolo: { it: "Licenze in Opzioni", en: "Licenses in Options" },
+    punti: {
+      it: [
+        "In Opzioni c'è Licenze: le note di copyright e le licenze di Godot, il motore con cui è fatto il gioco, dei suoi componenti e dei font.",
+      ],
+      en: [
+        "Options now has Licenses: the copyright notices and licenses of Godot, the engine the game is made with, of its components and of the fonts.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-03-sito-sicurezza",
+    data: "2026-11-03",
+    progetto: "sito",
+    titolo: { it: "Sito più sicuro", en: "A safer site" },
+    punti: {
+      it: [
+        "Dopo l'accesso il sito riporta solo a pagine di ufotizio.com, e le sue pagine non si possono più mettere dentro altri siti.",
+      ],
+      en: [
+        "After signing in, the site only takes you back to ufotizio.com pages, and its pages can no longer be embedded in other sites.",
+      ],
+    },
+  },
+  {
     id: "2026-11-02-ciccio-tutorial-nemici",
     data: "2026-11-02",
     progetto: "ciccio",

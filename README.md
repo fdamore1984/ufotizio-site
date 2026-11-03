@@ -18,7 +18,8 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 | `public/assets/ufotizio.png`, `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` | Logo di Ufotizio (i tre UFO verdi) e le sue icone per il browser e per iPhone |
 | `public/contatti.html`, `public/assets/contatti.js`, `src/contatti.js` | Pagina Contattami (`/contattami`, `/en/contact`): il modulo manda nome, email e messaggio a `POST /api/contatti`; il Worker controlla origine, campo esca, limite di invii per IP, verifica umana con Cloudflare Turnstile e campi, e gira il messaggio come email di solo testo con Resend (l'indirizzo di destinazione non arriva mai nella pagina) |
 | `public/privacy.html` | Privacy e cookie; il banner del consenso a Google Analytics è `public/assets/consenso.js` |
-| `public/account.html` | Accesso con link via email (magic link di Supabase) |
+| `public/account.html` | Accesso con link via email (magic link di Supabase); dopo l'accesso riporta solo a pagine dello stesso sito (`?back=`) |
+| `public/_headers` | Intestazioni di sicurezza (nosniff, Referrer-Policy, niente iframe da altri siti) dei file di `/assets/` e `/account/`; per il resto le mette `src/worker.js` (`SICUREZZA`) |
 | `public/ciccio-massacro.html`, `public/gobelino.html` | Pagina di un gioco: il gioco in un iframe, il pulsante Schermo intero (`public/assets/play.js`) e cosa si può fare nel gioco |
 | `public/account/cloud.js` | Client Supabase, intestazione (Accedi, oppure l'icona del profilo con email ed Esci) e `window.ufotizioCloud` per i salvataggi e la lingua dei giochi (contratto in `docs/web.md` nei repo dei giochi) |
 | `public/assets/itch.js` | Sotto il gioco una descrizione brevissima nella lingua del sito, le immagini e il link a itch.io: da `store/itch/` del repo del gioco (sezione "Sito ufotizio.com"), caricato in R2 sotto `<gioco>/itch/` |
