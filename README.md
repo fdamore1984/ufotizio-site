@@ -22,6 +22,7 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
 | `public/_headers` | Intestazioni di sicurezza (nosniff, Referrer-Policy, niente iframe da altri siti) dei file di `/assets/` e `/account/`; per il resto le mette `src/worker.js` (`SICUREZZA`) |
 | `public/ciccio-massacro.html`, `public/gobelino.html` | Pagina di un gioco: il gioco in un iframe, il pulsante Schermo intero (`public/assets/play.js`) e cosa si può fare nel gioco |
 | `public/account/cloud.js` | Client Supabase, intestazione (Accedi, oppure l'icona del profilo con email ed Esci) e `window.ufotizioCloud` per i salvataggi e la lingua dei giochi (contratto in `docs/web.md` nei repo dei giochi) |
+| `supabase/saves.sql` | Tabella `saves` dei salvataggi e la sua regola RLS (ognuno vede e scrive solo i propri file), come sono su Supabase: va tenuto allineato al pannello |
 | `public/assets/itch.js` | Sotto il gioco una descrizione brevissima nella lingua del sito, le immagini e il link a itch.io: da `store/itch/` del repo del gioco (sezione "Sito ufotizio.com"), caricato in R2 sotto `<gioco>/itch/` |
 | `tools/carica-giochi.sh` | Carica nel bucket R2 l'export Web di un gioco e la sua pagina itch.io |
 
