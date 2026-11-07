@@ -14,6 +14,50 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-07-ciccio-citta-orde",
+    data: "2026-11-07",
+    progetto: "ciccio",
+    titolo: { it: "Città nuova, orde più eque, torcia rifatta", en: "New city, fairer hordes, reworked flashlight" },
+    punti: {
+      it: [
+        "La città non è più una griglia: viali irregolari con incroci sfalsati, strade che finiscono a T o nei vicoli ciechi, piazze con giardini dalle forme irregolari ed edifici a L. Palazzi, alberi, lampioni e macerie sono più grandi, in proporzione con Ciccio.",
+        "Gli interni degli edifici hanno muri crollati e angoli franati; nella metropolitana le gallerie curvano, hanno la passerella e i passaggi trasversali, e sui vagoni abbandonati (anche deragliati) si sale con un salto per combattere dall'alto.",
+        "Orde più piccole (al più 35 zombie vivi insieme) e nessun nemico è più veloce di Ciccio che cammina: correndo si scappa sempre. Colpiti durante un'orda si resta invulnerabili più a lungo e gli zombie vicini vengono respinti.",
+        "La torcia è un solo cono più largo che parte da dietro le spalle, senza alone; il buio è un po' meno fitto e la telecamera è più vicina all'azione.",
+        "La Bomba H (L2 + R2) non fa più partire il colpo potente né la modalità focus. I nemici hanno un aspetto pulito, uguale per tipo, con il contorno spesso come le linee della faccia, e nel menù c'è Ciccio com'è nel gioco. Il gioco è anche più leggero.",
+      ],
+      en: [
+        "The city is no longer a grid: irregular avenues with staggered crossings, streets ending in T-junctions or dead ends, squares with irregular gardens and L-shaped buildings. Buildings, trees, lamps and rubble are bigger, in proportion to Cheech.",
+        "Building interiors have collapsed walls and caved-in corners; in the metro the tunnels bend and have a catwalk and cross passages, and you can jump onto the abandoned carriages (some derailed) to fight from above.",
+        "Smaller hordes (at most 35 zombies alive at once) and no enemy is faster than Cheech walking: running, you always get away. When hit during a horde you stay invulnerable longer and nearby zombies are pushed back.",
+        "The flashlight is a single wider cone starting behind his shoulders, with no halo; the dark is a bit less thick and the camera is closer to the action.",
+        "The H-bomb (L2 + R2) no longer triggers the power strike or focus mode. Enemies have a clean look, the same for each type, with an outline as thick as the lines of their face, and the menu shows Cheech as he is in the game. The game also runs lighter.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-07-gobelino-mondo-orde",
+    data: "2026-11-07",
+    progetto: "gobelino",
+    titolo: { it: "Mondo più vivo, orde più eque, torcia rifatta", en: "Livelier world, fairer hordes, reworked torch" },
+    punti: {
+      it: [
+        "Colline, sentieri e boschi hanno forme irregolari e asimmetriche; alberi, sassi, cespugli e mausolei sono più grandi e le montagne più alte, in proporzione con il goblin.",
+        "Le caverne sono fatte di più lobi, con gallerie che serpeggiano e nicchie; nelle catacombe le gallerie curvano, hanno un camminamento e i cunicoli trasversali, e sulle grandi tombe di pietra si sale con un salto per combattere dall'alto.",
+        "Orde più piccole (al più 35 non morti vivi insieme) e nessun nemico è più veloce del goblin che cammina: correndo si scappa sempre. Colpiti durante un'orda si resta invulnerabili più a lungo e i non morti vicini vengono respinti.",
+        "La torcia è un solo cono più largo che parte da dietro le spalle, senza alone; il buio è un po' meno fitto e la telecamera è più vicina all'azione.",
+        "La runa del cataclisma (L2 + R2) non fa più partire il colpo potente né la modalità focus. I goblin nemici hanno un aspetto pulito, uguale per tipo, e la faccia più leggibile. Il gioco è anche più leggero.",
+      ],
+      en: [
+        "Hills, paths and woods have irregular, asymmetric shapes; trees, rocks, bushes and mausoleums are bigger and the mountains taller, in proportion to the goblin.",
+        "Caves are made of several lobes, with winding tunnels and alcoves; in the catacombs the tunnels bend and have a walkway and cross tunnels, and you can jump onto the great stone tombs to fight from above.",
+        "Smaller hordes (at most 35 undead alive at once) and no enemy is faster than the goblin walking: running, you always get away. When hit during a horde you stay invulnerable longer and nearby undead are pushed back.",
+        "The torch is a single wider cone starting behind your shoulders, with no halo; the dark is a bit less thick and the camera is closer to the action.",
+        "The cataclysm rune (L2 + R2) no longer triggers the power strike or focus mode. Enemy goblins have a clean look, the same for each type, and a more readable face. The game also runs lighter.",
+      ],
+    },
+  },
+  {
     id: "2026-11-03-ciccio-licenze",
     data: "2026-11-03",
     progetto: "ciccio",
