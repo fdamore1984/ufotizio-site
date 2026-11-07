@@ -14,6 +14,32 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-07-ciccio-armi-spappolati",
+    data: "2026-11-07",
+    progetto: "ciccio",
+    titolo: { it: "Predoni armati fino ai denti, nemici che si spappolano e notti più chiare", en: "Raiders armed to the teeth, enemies that burst and brighter nights" },
+    punti: {
+      it: [
+        "I predoni sparano molto di più: arrivano quelli col fucile a pompa e quelli col mitra, pistoleri e fucilieri sono più numerosi e anche chi mena tira fuori la pistola da lontano. Per avvicinarsi bisogna saltare (i proiettili passano sotto) e schivare.",
+        "Morendo, i nemici si spappolano in una bomba di sangue e organi.",
+        "A ogni colpo che va a segno i nemici perdono sferette di carburante e di batteria da raccogliere.",
+        "Più sale il livello di Ciccio, più lui e i nemici diventano veloci.",
+        "Niente più corsa: la torcia si accende e si spegne con un solo tocco di L3.",
+        "La vita è su 100 punti e i suoi potenziamenti sono in percentuale (vita +20%, il kit medico cura il 20% in più). I salvataggi di prima si convertono da soli.",
+        "Di notte, negli edifici e nella metropolitana è meno buio: si vede abbastanza anche senza torcia.",
+      ],
+      en: [
+        "Raiders shoot a lot more: in come shotgunners and submachine gunners, gunmen and riflemen are more common, and even the brawlers draw a pistol from afar. To close in, jump (bullets pass under you) and dodge.",
+        "When they die, enemies burst in a bomb of blood and guts.",
+        "Every hit you land knocks fuel and battery orbs out of enemies.",
+        "The higher Cheech's level, the faster he and the enemies move.",
+        "No more running: the flashlight turns on and off with a single tap of L3.",
+        "Health is out of 100 and its upgrades are percentages (health +20%, medkits heal 20% more). Earlier saves are converted automatically.",
+        "Nights, buildings and the metro are less dark: you can see well enough even without the flashlight.",
+      ],
+    },
+  },
+  {
     id: "2026-11-07-ciccio-scorte-sfere",
     data: "2026-11-07",
     progetto: "ciccio",
