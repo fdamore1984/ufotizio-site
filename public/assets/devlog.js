@@ -14,6 +14,50 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-07-ciccio-colpi-missioni",
+    data: "2026-11-07",
+    progetto: "ciccio",
+    titolo: { it: "Colpi che si sentono, contrattacco, élite e missioni", en: "Hits you can feel, counters, elites and missions" },
+    punti: {
+      it: [
+        "Colpi più soddisfacenti: i predoni vengono respinti (molto di più col colpo finale e con quelli potenti), barcollano, lampeggiano e fanno una smorfia di dolore; il sangue schizza nella direzione del colpo, nel punto d'impatto c'è un lampo e la telecamera trema. Il controller vibra.",
+        "Dopo una parata perfetta hai un secondo per il contrattacco: uno scatto e un colpo critico dorato che fa il triplo dei danni. Gli attacchi che non si parano hanno un triangolo rosso col «!», i nemici grossi una barra di resistenza da rompere, e sopra i nemici compaiono i numeri dei danni.",
+        "Nemici élite più grossi, con l'aura e un anello dorati; orde di zombie a ondate con una ricompensa; missioni dei commercianti (liberare una piazza dai predoni o recuperare una cassa); di notte più nemici ma anche più bottino. La mappa segna i posti ripuliti e le casse ancora chiuse.",
+        "Se cadi riparti vicino all'ultimo posto sicuro e un quarto dei rottami resta in una sacca da andare a riprendere. Nuove opzioni: difficoltà (Facile, Normale, Difficile), vibrazione, numeri dei danni, tremolio della telecamera, sangue e dimensione dell'interfaccia.",
+        "Corretti un raro errore di disegno durante i combattimenti e l'avviso sulle risorse audio alla chiusura del gioco.",
+      ],
+      en: [
+        "More satisfying hits: raiders get knocked back (much further by the finisher and power strikes), stagger, flash and grimace in pain; blood sprays in the direction of the hit, there's a flash at the point of impact and the camera shakes. The controller vibrates.",
+        "After a perfect parry you have one second to counter: a lunge and a golden critical blow with triple damage. Attacks you can't parry show a red triangle with \"!\", big enemies have a poise bar to break, and damage numbers pop up over enemies.",
+        "Bigger elite enemies with a golden aura and ring; zombie hordes in waves with a reward; missions from the traders (clear a square of raiders or recover a crate); more enemies at night, but more loot too. The map marks cleared places and unopened crates.",
+        "If you fall you start again near the last safe spot and a quarter of your scrap stays in a bag you can go back for. New options: difficulty (Easy, Normal, Hard), vibration, damage numbers, camera shake, blood and interface size.",
+        "Fixed a rare drawing error during fights and the audio resources warning when closing the game.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-07-gobelino-colpi-missioni",
+    data: "2026-11-07",
+    progetto: "gobelino",
+    titolo: { it: "Colpi che si sentono, contrattacco, élite e missioni", en: "Hits you can feel, counters, elites and missions" },
+    punti: {
+      it: [
+        "Colpi più soddisfacenti: i nemici vengono respinti (molto di più col colpo finale e con quelli potenti), barcollano, lampeggiano e strizzano gli occhi dal dolore; il sangue schizza nella direzione del colpo, nel punto d'impatto c'è un lampo e la telecamera trema. Il controller vibra.",
+        "Dopo una parata perfetta hai un secondo per il contrattacco: uno scatto e un colpo critico dorato che fa il triplo dei danni. Gli attacchi che non si parano hanno un triangolo rosso col «!», i nemici grossi una barra di resistenza da rompere, e sopra i nemici compaiono i numeri dei danni.",
+        "Le orde di non morti non restano più bloccate dal terreno: compaiono solo dove c'è un percorso fino al goblin, scivolano lungo le pareti e arrivano a ondate, con una ricompensa per chi le sbaraglia.",
+        "Nemici élite più grossi, con l'aura e un anello dorati; missioni dei mercanti (liberare una radura o recuperare un forziere); di notte più nemici ma anche più bottino. La mappa segna i posti ripuliti e i forzieri ancora chiusi.",
+        "Se cadi riparti vicino all'ultimo posto sicuro e un quarto dell'oro resta in una sacca da andare a riprendere. Nuove opzioni: difficoltà (Facile, Normale, Difficile), vibrazione, numeri dei danni, tremolio della telecamera, sangue e dimensione dell'interfaccia. Corretti un raro errore di disegno e l'avviso sulle risorse audio alla chiusura.",
+      ],
+      en: [
+        "More satisfying hits: enemies get knocked back (much further by the finisher and power strikes), stagger, flash and squint in pain; blood sprays in the direction of the hit, there's a flash at the point of impact and the camera shakes. The controller vibrates.",
+        "After a perfect parry you have one second to counter: a lunge and a golden critical blow with triple damage. Attacks you can't parry show a red triangle with \"!\", big enemies have a poise bar to break, and damage numbers pop up over enemies.",
+        "Undead hordes no longer get stuck on the terrain: they only show up where there's a path to the goblin, slide along walls and come in waves, with a reward if you rout them.",
+        "Bigger elite enemies with a golden aura and ring; missions from the merchants (clear a glade or recover a chest); more enemies at night, but more loot too. The map marks cleared places and unopened chests.",
+        "If you fall you start again near the last safe spot and a quarter of your gold stays in a bag you can go back for. New options: difficulty (Easy, Normal, Hard), vibration, damage numbers, camera shake, blood and interface size. Fixed a rare drawing error and the audio resources warning when closing.",
+      ],
+    },
+  },
+  {
     id: "2026-11-07-ciccio-citta-orde",
     data: "2026-11-07",
     progetto: "ciccio",
