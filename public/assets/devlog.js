@@ -14,6 +14,50 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-07-ciccio-livelli-scorte",
+    data: "2026-11-07",
+    progetto: "ciccio",
+    titolo: { it: "Livelli più rapidi e scorte ribilanciate", en: "Faster levels and rebalanced supplies" },
+    punti: {
+      it: [
+        "Si sale di livello più in fretta: serve circa un terzo di esperienza in meno per ogni livello. I salvataggi tengono la stessa parte del livello già fatta.",
+        "La vita torna a essere una barra continua, come batteria e carburante.",
+        "Il bazooka, lo slam e i colpi potenti consumano circa il 40% di carburante in meno. Predoni e casse lasciano più taniche e batterie di ricambio e meno kit medici.",
+        "Nel browser, quando la batteria si scarica, Ciccio usa da solo una batteria di ricambio, se ne ha una.",
+        "Salendo di livello con una bomba H, la scelta dei potenziamenti aspetta che l'esplosione sia finita.",
+      ],
+      en: [
+        "You level up faster: each level needs about a third less experience. Saves keep the same share of the level you'd already done.",
+        "Health is a continuous bar again, like battery and fuel.",
+        "The bazooka, slams and power strikes use about 40% less fuel. Raiders and crates drop more fuel cans and spare batteries and fewer medkits.",
+        "In the browser, when the battery runs flat, Cheech uses a spare battery by himself, if he has one.",
+        "When an H-bomb levels you up, the upgrade choice waits for the explosion to finish.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-07-gobelino-livelli-pozioni",
+    data: "2026-11-07",
+    progetto: "gobelino",
+    titolo: { it: "Livelli più rapidi, pozioni ribilanciate e un nuovo volto", en: "Faster levels, rebalanced potions and a new face" },
+    punti: {
+      it: [
+        "Si sale di livello più in fretta: serve circa un terzo di esperienza in meno per ogni livello. I salvataggi tengono la stessa parte del livello già fatta.",
+        "La vita torna a essere una barra continua, come vigore e mana.",
+        "La palla di fuoco, lo slam e i colpi potenti consumano circa il 40% di mana in meno. Nemici e forzieri lasciano più pozioni di mana e di vigore e meno pozioni di vita.",
+        "Il goblin e tutti i nemici, non morti e ghoul compresi, hanno un volto nuovo: solo due occhi piccoli e neri, senza bocca.",
+        "Nel browser, quando il vigore finisce, il goblin beve da solo una pozione verde, se ne ha una. Salendo di livello con una runa del cataclisma, la scelta dei potenziamenti aspetta che l'esplosione sia finita.",
+      ],
+      en: [
+        "You level up faster: each level needs about a third less experience. Saves keep the same share of the level you'd already done.",
+        "Health is a continuous bar again, like stamina and mana.",
+        "The fireball, slams and power strikes use about 40% less mana. Enemies and chests drop more mana and stamina potions and fewer health potions.",
+        "The goblin and every enemy, undead and ghouls included, have a new face: just two small black eyes, no mouth.",
+        "In the browser, when stamina runs out, the goblin drinks a green potion by himself, if he has one. When a Cataclysm rune levels you up, the upgrade choice waits for the explosion to finish.",
+      ],
+    },
+  },
+  {
     id: "2026-11-07-ciccio-colpi-missioni",
     data: "2026-11-07",
     progetto: "ciccio",
