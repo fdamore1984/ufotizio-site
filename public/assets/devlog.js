@@ -14,6 +14,50 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-07-ciccio-scorte-sfere",
+    data: "2026-11-07",
+    progetto: "ciccio",
+    titolo: { it: "Scorte al volo, sfere d'esperienza e danni enormi", en: "Grab-and-go supplies, experience orbs and huge damage" },
+    punti: {
+      it: [
+        "Niente più cintura delle scorte: predoni e casse lasciano spesso kit medici, taniche e batterie di ricambio, che si usano appena raccolti. Se nessuno li prende spariscono dopo 15 secondi: per curarsi bisogna uccidere in fretta.",
+        "L'esperienza non arriva più uccidendo: nemici e casse lasciano sfere gialle da raccogliere, e i nemici più duri (i più grossi, le élite e i boss) ne lasciano molte di più.",
+        "Passandoci vicino, sfere e oggetti a terra volano verso Ciccio come attirati da una calamita.",
+        "I numeri dei danni mostrano il danno vero dei colpi: un centinaio all'inizio, poi centinaia e migliaia.",
+        "Gli zombie delle orde non restano più bloccati dietro palazzi, muri e rottami: ricalcolano la strada e girano attorno all'ostacolo.",
+      ],
+      en: [
+        "No more supply belt: raiders and crates often drop medkits, fuel cans and spare batteries, used the moment you grab them. If nobody picks them up they vanish after 15 seconds: to heal, you have to kill fast.",
+        "Killing no longer gives experience directly: enemies and crates drop yellow orbs to collect, and tougher enemies (the big ones, elites and bosses) drop many more.",
+        "Walk close and orbs and items on the ground fly to Cheech as if pulled by a magnet.",
+        "Damage numbers show the real damage of your hits: about a hundred at first, then hundreds and thousands.",
+        "Horde zombies no longer get stuck behind buildings, walls and wrecks: they recalculate their route and go around the obstacle.",
+      ],
+    },
+  },
+  {
+    id: "2026-11-07-gobelino-pozioni-sfere",
+    data: "2026-11-07",
+    progetto: "gobelino",
+    titolo: { it: "Pozioni al volo, sfere d'esperienza e danni enormi", en: "Grab-and-go potions, experience orbs and huge damage" },
+    punti: {
+      it: [
+        "Niente più cintura delle pozioni: nemici e forzieri lasciano spesso pozioni di vita, di mana e di vigore, che si bevono appena raccolte. Se nessuno le prende spariscono dopo 15 secondi: per curarsi bisogna uccidere in fretta.",
+        "L'esperienza non arriva più uccidendo: nemici e forzieri lasciano sfere gialle da raccogliere, e i nemici più duri (i più grossi, le élite e i boss) ne lasciano molte di più.",
+        "Passandoci vicino, sfere e oggetti a terra volano verso il goblin come attirati da una calamita.",
+        "I numeri dei danni mostrano il danno vero dei colpi: un centinaio all'inizio, poi centinaia e migliaia.",
+        "I non morti delle orde non restano più bloccati dietro pareti, alberi e massi: ricalcolano la strada e girano attorno all'ostacolo.",
+      ],
+      en: [
+        "No more potion belt: enemies and chests often drop health, mana and stamina potions, drunk the moment you grab them. If nobody picks them up they vanish after 15 seconds: to heal, you have to kill fast.",
+        "Killing no longer gives experience directly: enemies and chests drop yellow orbs to collect, and tougher enemies (the big ones, elites and bosses) drop many more.",
+        "Walk close and orbs and items on the ground fly to the goblin as if pulled by a magnet.",
+        "Damage numbers show the real damage of your hits: about a hundred at first, then hundreds and thousands.",
+        "Horde undead no longer get stuck behind walls, trees and boulders: they recalculate their route and go around the obstacle.",
+      ],
+    },
+  },
+  {
     id: "2026-11-07-ciccio-livelli-scorte",
     data: "2026-11-07",
     progetto: "ciccio",
