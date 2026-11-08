@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-08-ciccio-frenesia-buff",
+    data: "2026-11-08",
+    progetto: "ciccio",
+    titolo: { it: "Frenesia scatenata e gioco più fluido", en: "Frenzy unleashed and a smoother game" },
+    punti: {
+      it: [
+        "La Frenesia cambia: a barra piena L1 + R1 (o il tasto Frenesia sul touch) non ferma più il tempo per una raffica automatica. Per 5 secondi Ciccio corre, mena la motosega e fa danni tre volte tanto, e sei tu a guidarlo nella mischia.",
+        "Mentre la Frenesia è scatenata i colpi di motosega non consumano batteria; la barra si svuota man mano e i secondi rimasti si vedono in basso a destra.",
+        "Il potenziamento della Frenesia ora dà un secondo in più ogni volta; quelli già presi nelle partite salvate valgono subito come secondi.",
+        "Più fluidità con tanti nemici: meno sangue e meno pezzi di corpo a terra, sfere d'esperienza più grandi e meno numerose, e il gioco ridisegna solo quello che serve.",
+      ],
+      en: [
+        "Frenzy has changed: with a full bar, L1 + R1 (or the Frenzy button on touch screens) no longer stops time for an automatic flurry. For 5 seconds Cheech runs, swings his chainsaw and deals damage three times as much, and you steer him through the brawl.",
+        "While Frenzy is unleashed chainsaw strikes use no battery; the bar drains as you go and the seconds left show in the bottom right.",
+        "The Frenzy upgrade now adds one extra second each time; the ones already taken in saved games count as seconds right away.",
+        "Smoother with lots of enemies: less blood and fewer body parts on the ground, bigger and fewer experience orbs, and the game only redraws what it needs to.",
+      ],
+    },
+  },
+  {
     id: "2026-11-08-ciccio-sfere-rosse",
     data: "2026-11-08",
     progetto: "ciccio",
