@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-08-ciccio-musica",
+    data: "2026-11-08",
+    progetto: "ciccio",
+    titolo: { it: "Arriva la musica: il tema di Ciccio segue l'azione", en: "Music is here: Cheech's theme follows the action" },
+    punti: {
+      it: [
+        "Il gioco ha la sua musica: il tema di Ciccio Massacro, che non si ferma mai e cambia con quello che succede.",
+        "Nel menù suona la parte calma, solo chitarra; iniziando una partita partono l'intro e poi la parte ritmata.",
+        "Quando lo scontro si fa frenetico (tanti nemici addosso, un'orda, il boss, poca vita) un fill di batteria porta alla parte più forte, che torna quella ritmata a fine frase quando l'azione cala.",
+        "Cadendo parte la chiusura del brano; in pausa la musica continua più bassa.",
+        "Il volume della musica si sceglie in Opzioni.",
+      ],
+      en: [
+        "The game has its own music: the Cheech Carnage theme, which never stops and changes with what's happening.",
+        "The menu plays the calm, guitar-only part; starting a game brings in the intro and then the driving groove.",
+        "When the fight gets frantic (lots of enemies on you, a horde, the boss, low health) a drum fill leads into the heavy part, which goes back to the groove at the end of the phrase once things calm down.",
+        "When you fall the song's ending plays; while paused the music keeps going, quieter.",
+        "Music volume can be set in Options.",
+      ],
+    },
+  },
+  {
     id: "2026-11-07-ciccio-armi-spappolati",
     data: "2026-11-07",
     progetto: "ciccio",
