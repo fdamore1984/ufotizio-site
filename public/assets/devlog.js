@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-08-ciccio-musica-strati",
+    data: "2026-11-08",
+    progetto: "ciccio",
+    titolo: { it: "Arriva la musica a strati", en: "Layered music is here" },
+    punti: {
+      it: [
+        "Ciccio Massacro ha la sua colonna sonora: canzoni originali divise in strati che seguono l'azione. Quando è tutto calmo suona solo la chitarra, quando i nemici si avvicinano entra il basso, e quando la rissa esplode parte la batteria, preceduta da un colpo di rullante.",
+        "Una canzone per il menù, una per le strade e una per edifici e metropolitana: cambiando posto la musica sfuma sotto la schermata di caricamento e parte quella nuova. Quando l'azione cala, gli strati sfumano dopo qualche secondo di calma.",
+        "Orde, élite, boss, poca vita e la Frenesia fanno salire la musica al massimo; in pausa continua più bassa.",
+        "Nella versione per PC è accesa; qui nel browser per ora parte spenta e si accende da Opzioni → Musica, finché non avremo finito di provarla su computer e telefoni.",
+      ],
+      en: [
+        "Cheech Carnage has its own soundtrack: original songs split into layers that follow the action. When things are calm only the guitar plays, when enemies close in the bass comes in, and when the brawl breaks out the drums kick in after a quick fill.",
+        "One song for the menu, one for the streets and one for buildings and the subway: when you change place the music fades under the loading screen and the new one starts. When the action dies down, the layers fade out after a few calm seconds.",
+        "Hordes, elites, bosses, low health and Frenzy push the music to the top; when paused it keeps playing, quieter.",
+        "It's on in the PC version; here in the browser it starts off for now and you can turn it on from Options → Music, until we've finished testing it on computers and phones.",
+      ],
+    },
+  },
+  {
     id: "2026-11-08-ciccio-arene-grandi",
     data: "2026-11-08",
     progetto: "ciccio",
