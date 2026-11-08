@@ -14,6 +14,20 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-08-ciccio-musica-spenta",
+    data: "2026-11-08",
+    progetto: "ciccio",
+    titolo: { it: "Musica in pausa", en: "Music on hold" },
+    punti: {
+      it: [
+        "La musica di Ciccio Massacro per ora è spenta: nel browser faceva scattare il gioco e si sentiva male. Tornerà, fatta meglio.",
+      ],
+      en: [
+        "Cheech Carnage's music is switched off for now: in the browser it made the game stutter and sounded bad. It will be back, done better.",
+      ],
+    },
+  },
+  {
     id: "2026-11-08-ciccio-musica",
     data: "2026-11-08",
     progetto: "ciccio",
