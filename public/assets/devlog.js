@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-08-ciccio-sfere-rosse",
+    data: "2026-11-08",
+    progetto: "ciccio",
+    titolo: { it: "Ci si cura uccidendo: arrivano le sfere rosse", en: "Heal by killing: red orbs are here" },
+    punti: {
+      it: [
+        "Ogni nemico abbattuto lascia una sfera rossa che vola verso Ciccio e cura il 5% della vita: per restare vivi bisogna continuare a uccidere.",
+        "Kit medici, taniche e batterie di ricambio non cadono più da nemici, casse, sfide e orde: carburante e batteria tornano con le sferette arancioni e verdi che i nemici perdono a ogni colpo.",
+        "Via i potenziamenti \"Il kit medico cura +20%\" e \"La tanica ridà +20%\"; le partite salvate si caricano come prima.",
+        "Solo élite e boss alzano la guardia: i nemici normali non parano più i colpi di motosega.",
+      ],
+      en: [
+        "Every enemy you take down drops a red orb that flies to Cheech and heals 5% of his health: to stay alive you have to keep killing.",
+        "Medkits, fuel cans and spare batteries no longer drop from enemies, crates, challenges and hordes: fuel and battery come back with the orange and green orbs enemies drop on every hit.",
+        "The \"Medkit heals +20%\" and \"Fuel can refills +20%\" upgrades are gone; saved games load just like before.",
+        "Only elites and bosses raise their guard: regular enemies no longer block chainsaw strikes.",
+      ],
+    },
+  },
+  {
     id: "2026-11-08-ciccio-musica-spenta",
     data: "2026-11-08",
     progetto: "ciccio",
