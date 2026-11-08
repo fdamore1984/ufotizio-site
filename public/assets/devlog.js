@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-08-ciccio-arene-grandi",
+    data: "2026-11-08",
+    progetto: "ciccio",
+    titolo: { it: "Più spazio e più nemici", en: "More room, more enemies" },
+    punti: {
+      it: [
+        "La città si allarga: viali, strade e isolati più larghi, piazze più frequenti, vicoli da due rombi e niente più passaggi da uno. Gli ostacoli non sono più ammassati: fra uno e l'altro si passa sempre.",
+        "Edifici e metropolitana più spaziosi: stanze più grandi, corridoi e porte larghi tre rombi, pilastri più distanziati, banchine e passerelle più larghe e arene dei boss più grandi. Crolli e macerie non chiudono più le porte.",
+        "Più nemici deboli da falciare: in strada ce ne sono di più a ogni livello, le orde arrivano fino a 90 zombie con 50 in campo insieme (su telefoni e tablet un po' meno) e le stanze degli edifici sono più affollate.",
+        "Le piazze delle sirene sono più ampie, per le sfide di sopravvivenza in mezzo all'orda.",
+        "Le partite salvate si caricano come prima; la mappa scoperta riparte da zero, perché la città è cambiata.",
+      ],
+      en: [
+        "The city opens up: wider avenues, streets and blocks, more squares, two-tile alleys and no more one-tile passages. Obstacles are no longer piled up: there is always a way between them.",
+        "Roomier buildings and subway: bigger rooms, corridors and doors three tiles wide, pillars further apart, wider platforms and walkways and bigger boss arenas. Collapses and rubble no longer block the doors.",
+        "More weak enemies to mow down: more of them on the streets at every level, hordes of up to 90 zombies with 50 on the field at once (a little fewer on phones and tablets) and more crowded rooms inside buildings.",
+        "Siren squares are larger, for survival challenges in the middle of the horde.",
+        "Saved games load as before; the explored map starts over, because the city has changed.",
+      ],
+    },
+  },
+  {
     id: "2026-11-08-ciccio-frenesia-buff",
     data: "2026-11-08",
     progetto: "ciccio",
