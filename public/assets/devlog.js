@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-avvisi",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Avvisi in partita e livelli più graduali", en: "In-game tips and slower leveling" },
+    punti: {
+      it: [
+        "Nuovi avvisi sotto il pannello in alto a sinistra: benzina finita (con il consiglio di raccogliere le sfere arancioni), Gatling surriscaldata, scudo pronto, Frenesia pronta e nuovo oggetto da usare nello zaino. Si possono spegnere in Opzioni.",
+        "Quando nello zaino c'è un oggetto migliore di quello che indossi, o un libro da leggere, il numero sullo zaino diventa arancione con un punto esclamativo.",
+        "Si sale di livello più piano: serve circa il doppio dell'esperienza, così ogni livello pesa di più. Nei salvataggi la barra dell'esperienza resta riempita nella stessa parte.",
+        "La scritta della sconfitta non esce più dallo schermo: \"Sconfitto!\" in grande e sotto, più piccolo, quanti rottami hai perso.",
+      ],
+      en: [
+        "New tips below the panel in the top left: out of fuel (with a reminder to pick up the orange orbs), Gatling overheated, shield ready, Frenzy ready and new item to use in your bag. You can turn them off in Options.",
+        "When your bag holds an item better than the one you're wearing, or a book to read, the number on the bag turns orange with an exclamation mark.",
+        "Leveling up is slower: it takes about twice the experience, so every level counts more. In your saves the experience bar stays filled by the same share.",
+        "The defeat message no longer spills off the screen: \"Defeated!\" in big letters and, smaller underneath, how much scrap you lost.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-bilanciamento",
     data: "2026-11-09",
     progetto: "ciccio",
