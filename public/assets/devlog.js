@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-musica-tutorial",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Il tutorial ha la sua musica", en: "The tutorial gets its own music" },
+    punti: {
+      it: [
+        "Il tutorial ha una canzone tutta sua, a 104 BPM: qui sul sito suona nel tutorial giocabile, nella versione per PC nel laboratorio iniziale.",
+        "Come le altre è a strati e segue l'azione: solo la chitarra mentre leggi cosa fare, poi entrano basso e batteria quando arrivano i nemici. Nell'arena del Guardiano del laboratorio resta la musica del boss.",
+        "Il giro è più corto di quello delle altre canzoni, così nel browser occupa circa metà della memoria; si carica solo se giochi il tutorial.",
+      ],
+      en: [
+        "The tutorial has a song of its own, at 104 BPM: here on the site it plays in the playable tutorial, in the PC version in the opening lab.",
+        "Like the others it comes in layers and follows the action: just the guitar while you read what to do, then bass and drums kick in when the enemies show up. The Lab Warden's arena keeps the boss music.",
+        "The loop is shorter than the other songs', so in the browser it takes about half the memory, and it only loads if you play the tutorial.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-laboratorio",
     data: "2026-11-09",
     progetto: "ciccio",
