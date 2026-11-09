@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-gatling",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Gatling Gun, colpi potenti a raffica e Frenesia esplosiva", en: "Gatling Gun, nonstop power strikes and an explosive Frenzy" },
+    punti: {
+      it: [
+        "Nuova arma: la Gatling Gun su L2. Tenendola premuta le canne girano e sparano una raffica continua di traccianti, con un lampo diverso a ogni colpo; ogni colpo consuma un po' di carburante.",
+        "Il colpo potente passa su L1 e non si carica più: tenendolo premuto Ciccio concatena colpi potenti a ripetizione, ma ognuno costa molta più benzina. In aria L1 fa lo slam; la bomba H resta L2 + R2.",
+        "Niente più tasto per parare: quando stai fermo Ciccio para da solo, come già succedeva nella versione touch.",
+        "Lo scudo di kevlar ora regge 3 colpi e, finché è alzato, niente ti fa male. La Frenesia si scatena con un urlo, gli occhi rossi e un'onda rossa che sbalza via tutti i nemici attorno.",
+        "In giro ci sono molti più nemici, e chi prende la mira per sparare non fa più nessun suono di avviso. Sulla mappa non ci sono più le spunte verdi dei posti ripuliti.",
+        "Sul telefono: un tasto Gatling, e il tasto Bomba H ora fa da solo tutti i salti e sgancia la bomba dal punto più alto.",
+      ],
+      en: [
+        "New weapon: the Gatling Gun on L2. Hold it and the barrels spin up and fire a nonstop stream of tracers, with a different muzzle flash at every shot; each shot burns a little fuel.",
+        "The power strike moves to L1 and no longer charges: hold it and Cheech chains power strikes over and over, but each one burns a lot more fuel. In mid-air L1 does the slam; the H-bomb stays on L2 + R2.",
+        "No more parry button: when you stand still Cheech parries by himself, just like in the touch version.",
+        "The Kevlar shield now takes 3 hits and, while it's up, nothing can hurt you. Frenzy now kicks off with a scream, red eyes and a red blast that throws back every enemy around.",
+        "There are many more enemies on the streets, and gunmen no longer make a warning sound when they take aim. The green checks on cleared places are gone from the map.",
+        "On phones: a Gatling button, and the H-bomb button now does all the jumps by itself and drops the bomb from the highest point.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-musica-browser",
     data: "2026-11-09",
     progetto: "ciccio",
