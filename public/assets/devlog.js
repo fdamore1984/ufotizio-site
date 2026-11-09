@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-laboratorio",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Si comincia dal laboratorio sotterraneo", en: "It all starts in the underground lab" },
+    punti: {
+      it: [
+        "Nella versione per PC (itch.io) una nuova partita comincia in un laboratorio sotterraneo abbandonato, buio, con le luci d'emergenza rosse e pieno di morti e di sangue: Ciccio esce da una capsula criogenica e si fa strada fino al montacarichi che porta in città.",
+        "Il laboratorio fa da tutorial: 13 stanze e corridoi in fila, ognuno con una cosa sola da imparare (camminare, la torcia, il salto, la motosega, la parata, la schivata, il bazooka, la Gatling, lo scudo, lo slam, la bomba H, la Frenesia, i livelli e lo zaino), e le armi si trovano strada facendo.",
+        "Prima del montacarichi c'è il primo mini-boss, il Guardiano del laboratorio. Se cadi riparti dall'inizio della stanza senza perdere niente, e la partita si salva a ogni stanza superata.",
+        "Chi conosce già il gioco può saltarlo: dopo lo slot si sceglie Inizia dal laboratorio o Salta l'introduzione, e c'è Salta il laboratorio nel menù di pausa. Qui sul sito per ora si parte ancora in città, con il tutorial giocabile.",
+      ],
+      en: [
+        "In the PC version (itch.io) a new game starts in an abandoned underground lab, dark, lit by red emergency lights and full of corpses and blood: Cheech crawls out of a cryo pod and fights his way to the freight elevator up to the city.",
+        "The lab is the tutorial: 13 rooms and corridors in a row, each with one thing to learn (walking, the flashlight, jumping, the chainsaw, parrying, dodging, the bazooka, the Gatling, the shield, the slam, the H-bomb, Frenzy, levels and the bag), and you find your weapons along the way.",
+        "Before the elevator waits the first mini-boss, the Lab Warden. If you fall you start again from the beginning of the room without losing anything, and the game saves after every room you clear.",
+        "Already know the game? Skip it: after the save slot you choose Start in the lab or Skip the intro, and Skip the lab is in the pause menu. Here on the site you still start in the city for now, with the playable tutorial.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-tregue",
     data: "2026-11-09",
     progetto: "ciccio",
