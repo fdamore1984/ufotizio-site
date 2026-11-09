@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-musica-browser",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "La musica si accende anche nel browser", en: "Music is on in the browser too" },
+    punti: {
+      it: [
+        "Ciccio Massacro qui sul sito ora parte con la musica accesa, come nella versione per PC: chitarra quando è calmo, basso quando i nemici si avvicinano, batteria quando la rissa esplode. Si regola o si spegne da Opzioni → Musica, e chi l'aveva già scelta tiene la sua scelta.",
+        "Provandola nel browser abbiamo trovato e corretto due problemi: alla fine di ogni giro della canzone c'era un piccolo buco e gli strati ripartivano sfasati, e il colpo di rullante che annuncia la batteria poteva cadere fuori tempo. Ora gli strati girano senza pause e restano allineati, e il rullante cade sul battere.",
+        "La musica non rallenta il gioco; nel browser occupa un po' di memoria in più, quindi se su un telefono vecchio la pagina fatica, spegnerla da Opzioni aiuta.",
+      ],
+      en: [
+        "Cheech Carnage here on the site now starts with the music on, just like the PC version: guitar when it's calm, bass when enemies close in, drums when the brawl breaks out. You can adjust it or turn it off from Options → Music, and if you'd already picked a setting it stays as you left it.",
+        "Testing it in the browser we found and fixed two problems: at the end of every pass through the song there was a short gap and the layers came back out of sync, and the snare fill that brings in the drums could land off the beat. Now the layers loop without pauses and stay in sync, and the fill lands on the downbeat.",
+        "The music doesn't slow the game down; in the browser it takes a bit more memory, so if the page struggles on an older phone, turning it off from Options helps.",
+      ],
+    },
+  },
+  {
     id: "2026-11-08-ciccio-musica-strati",
     data: "2026-11-08",
     progetto: "ciccio",
