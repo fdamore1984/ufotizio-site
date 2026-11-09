@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-frenesia-l1",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Frenesia su L1 + R1, bomba H su L2 + R2", en: "Frenzy on L1 + R1, H-bomb on L2 + R2" },
+    punti: {
+      it: [
+        "La Frenesia ora si scatena con L1 + R1 insieme (da tastiera L + J), non più con L2 + R1: il colpo potente su L2 parte sempre subito.",
+        "A Frenesia piena la Gatling aspetta un attimo prima di sparare, così premendo L1 e R1 non sprechi colpi né benzina. Sugli schermi touch resta il tasto Frenesia.",
+        "La bomba H passa su L2 + R2 in aria (da tastiera K + V), non più L1 + R2. Con una bomba nella cintura lo slam di L2 in aria aspetta un attimo, così la bomba parte senza sprecare benzina; sugli schermi touch resta il tasto Bomba H.",
+      ],
+      en: [
+        "Frenzy is now unleashed with L1 + R1 together (L + J on the keyboard) instead of L2 + R1: the power strike on L2 always fires right away.",
+        "With a full Frenzy bar the Gatling waits a moment before firing, so pressing L1 and R1 doesn't waste shots or fuel. On touch screens the Frenzy button stays.",
+        "The H-bomb moves to L2 + R2 in mid-air (K + V on the keyboard) instead of L1 + R2. With a bomb in your belt the L2 slam in mid-air waits a moment, so the bomb goes off without wasting fuel; on touch screens the H-bomb button stays.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-musica-tutorial",
     data: "2026-11-09",
     progetto: "ciccio",
