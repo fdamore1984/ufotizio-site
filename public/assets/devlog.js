@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-gatling-calore",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "La Gatling scotta, e si salva quando vuoi", en: "The Gatling runs hot, and you can save anytime" },
+    punti: {
+      it: [
+        "La Gatling Gun ora consuma molta più benzina a ogni colpo e ogni colpo fa meno danno: è un'arma da usare a raffiche, non da tenere sempre premuta.",
+        "Si surriscalda: dopo una quarantina di colpi di fila diventa rovente, fuma, smette di sparare e deve raffreddarsi del tutto prima di ripartire. Il calore si vede sull'arma, che diventa rossa, e in una barra nella sua casella (sul telefono, un anello attorno al tasto).",
+        "Nuovo potenziamento a ogni livello: \"Gatling: colpi prima di surriscaldarsi +25%\", per una Gatling più resistente che si scalda più piano.",
+        "Si salva in qualsiasi momento: dal menù di pausa anche con i nemici addosso, durante una sfida o in pieno salto, e il salvataggio automatico non aspetta più che la zona sia tranquilla.",
+      ],
+      en: [
+        "The Gatling Gun now burns a lot more fuel per shot and each shot deals less damage: it's a weapon for bursts, not for holding the trigger down.",
+        "It overheats: after about forty shots in a row it gets red hot, smokes, stops firing and has to cool down completely before it starts again. You can see the heat on the gun, which turns red, and in a bar in its slot (on phones, a ring around the button).",
+        "New level-up upgrade: \"Gatling: shots before overheating +25%\", for a tougher Gatling that heats up slower.",
+        "You can save at any moment: from the pause menu even with enemies all over you, during a challenge or mid-jump, and the autosave no longer waits for things to calm down.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-sito-indirizzi",
     data: "2026-11-09",
     progetto: "sito",
