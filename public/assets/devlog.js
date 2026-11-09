@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-frenesia-l1",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "La Frenesia passa su L1 + R1", en: "Frenzy moves to L1 + R1" },
+    punti: {
+      it: [
+        "La Frenesia ora si scatena con L1 + R1 insieme (da tastiera L + J), non più con L2 + R1: il colpo potente su L2 parte sempre subito.",
+        "A Frenesia piena la Gatling aspetta un attimo prima di sparare, così premendo L1 e R1 non sprechi colpi né benzina. Sugli schermi touch resta il tasto Frenesia.",
+      ],
+      en: [
+        "Frenzy is now unleashed with L1 + R1 together (L + J on the keyboard) instead of L2 + R1: the power strike on L2 always fires right away.",
+        "With a full Frenzy bar the Gatling waits a moment before firing, so pressing L1 and R1 doesn't waste shots or fuel. On touch screens the Frenzy button stays.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-musica-tutorial",
     data: "2026-11-09",
     progetto: "ciccio",
