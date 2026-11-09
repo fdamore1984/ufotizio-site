@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-sito-indirizzi",
+    data: "2026-11-09",
+    progetto: "sito",
+    titolo: { it: "Un solo indirizzo per ogni pagina", en: "One address for every page" },
+    punti: {
+      it: [
+        "Gli indirizzi con la barra finale (per esempio /en/devlog/) ora portano alla pagina giusta invece di dare \"pagina non trovata\".",
+        "Il vecchio indirizzo /contatti porta a /contattami, e la pagina non trovata risponde davvero \"non trovata\" anche ai motori di ricerca: così Google non vede più pagine doppie.",
+      ],
+      en: [
+        "Addresses with a trailing slash (for example /en/devlog/) now lead to the right page instead of \"page not found\".",
+        "The old /contatti address now leads to /contattami, and the not-found page really answers \"not found\" to search engines too, so Google no longer sees duplicate pages.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-gatling",
     data: "2026-11-09",
     progetto: "ciccio",
