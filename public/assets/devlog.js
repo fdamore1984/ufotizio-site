@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-tregue",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Musica del boss, tregue e Gatling su L1", en: "Boss music, truces and the Gatling on L1" },
+    punti: {
+      it: [
+        "Nell'arena del boss parte finalmente la sua musica, anche nel browser; sconfitto il boss torna quella del sotterraneo.",
+        "In città i combattimenti non vanno più avanti senza sosta: dopo un po' che combatti, e dopo ogni orda, arriva una tregua di quasi un minuto senza nemici nuovi né orde, segnata da un avviso all'inizio e uno alla fine.",
+        "L'avviso della benzina compare appena sta per finire, non più solo quando un attacco resta a secco.",
+        "Benzina e batteria si consumano il doppio: colpi potenti, slam, missili, Gatling, attacchi, schivate e salti vanno dosati.",
+        "Sul controller la Gatling passa su L1 e il colpo potente su L2. Le bombe H cadono il doppio delle volte dai nemici e il boss ne lascia due.",
+      ],
+      en: [
+        "The boss arena finally plays its own music, in the browser too; once the boss is down the dungeon music comes back.",
+        "Fights in the city no longer go on nonstop: after a while of fighting, and after every horde, comes a truce of almost a minute with no new enemies or hordes, with a tip when it starts and one when it ends.",
+        "The fuel tip shows up as soon as it's running low, not only when an attack fails for lack of it.",
+        "Fuel and battery drain twice as fast: power strikes, slams, missiles, the Gatling, attacks, dodges and jumps all need to be rationed.",
+        "On the controller the Gatling moves to L1 and the power strike to L2. Enemies drop H-bombs twice as often and the boss leaves two.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-avvisi",
     data: "2026-11-09",
     progetto: "ciccio",
