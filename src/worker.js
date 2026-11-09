@@ -58,6 +58,24 @@ async function rispondi(request, env) {
     const modello = await env.ASSETS.fetch(new URL(trovata.pagina.modello, url.origin));
     if (modello.ok) return rendi(modello, trovata, linguaPaese(request));
   }
+
+  // Altri indirizzi della stessa pagina, che Google trova come duplicati
+  // senza canonical o come 404: con la barra finale (/devlog/, /en/contact/)
+  // o col nome del modello quando è diverso dall'indirizzo (/contatti). Un
+  // 301 all'indirizzo giusto.
+  if (!trovata) {
+    const senzaBarra = path.length > 1 && path.endsWith("/") ? path.slice(0, -1) : "";
+    const alias = senzaBarra && trova(senzaBarra) ? senzaBarra
+      : Object.values(PAGINE).find((pagina) => pagina.modello === path)?.percorso.it;
+    if (alias) return Response.redirect(url.origin + alias + url.search, 301);
+  }
+
+  // La pagina non trovata aperta col suo nome risponde comunque 404, non 200
+  // (altrimenti è un "soft 404" per i motori di ricerca).
+  if (path === "/404" || path === "/404.html") {
+    const pagina = await env.ASSETS.fetch(new URL("/404", url.origin));
+    return new Response(pagina.body, { status: 404, headers: pagina.headers });
+  }
   return env.ASSETS.fetch(request);
 }
 
