@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-09-ciccio-bilanciamento",
+    data: "2026-11-09",
+    progetto: "ciccio",
+    titolo: { it: "Ciccio è meno invincibile, i nemici resistono di più", en: "Cheech is less invincible, enemies last longer" },
+    punti: {
+      it: [
+        "Ciccio parte più debole: meno vita (80 invece di 100), meno benzina (40 invece di 60), meno batteria (80 invece di 100) e più lenta a ricaricarsi, due bombe H invece di tre e due colpi potenti di fila invece di tre.",
+        "Motosega, missili e Gatling fanno meno danni, e la Frenesia dura 4 secondi e raddoppia i danni invece di triplicarli. Per abbattere un nemico serve circa un terzo dei colpi in più, e la Gatling non spazza più via tutto in un attimo.",
+        "La vita dei nemici non è più a segmenti: è una barra continua, come la tua, e ogni colpo la accorcia esattamente del danno che fai, quello che vedi nei numeri.",
+        "Le sferette lasciate dai nemici danno un po' meno benzina, batteria e vita. I salvataggi restano validi: i personaggi già creati prendono i nuovi valori, con i potenziamenti scelti.",
+      ],
+      en: [
+        "Cheech starts weaker: less health (80 instead of 100), less fuel (40 instead of 60), less battery (80 instead of 100) that recharges more slowly, two H-bombs instead of three and two power strikes in a row instead of three.",
+        "The chainsaw, missiles and the Gatling deal less damage, and Frenzy lasts 4 seconds and doubles your damage instead of tripling it. Taking down an enemy takes about a third more hits, and the Gatling no longer wipes everything out in a flash.",
+        "Enemy health is no longer split into segments: it's a smooth bar, like yours, and every hit shortens it by exactly the damage you deal, the one you see in the numbers.",
+        "The orbs enemies drop give a little less fuel, battery and health. Your saves still work: existing characters get the new values, with the upgrades they already picked.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-gatling-calore",
     data: "2026-11-09",
     progetto: "ciccio",
