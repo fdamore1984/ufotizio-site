@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-10-ciccio-sotterranei",
+    data: "2026-11-10",
+    progetto: "ciccio",
+    titolo: { it: "Sotterranei più divertenti: meno nemici, un custode per piano e bidoni di benzina", en: "Better dungeons: fewer enemies, a keeper on every floor and fuel drums" },
+    punti: {
+      it: [
+        "Negli edifici abbandonati e nella metropolitana i nemici sono circa la metà: i corridoi sono vuoti e qualche stanza pure, così fra uno scontro e l'altro si respira. In cambio là sotto ogni nemico dà il 50% di esperienza in più.",
+        "Ogni piano, tranne l'ultimo, ha un custode: un élite che sta nella stanza delle scale e le tiene chiuse con una saracinesca. Lo trovi seguendo il lucchetto rosso sulla minimappa; quando lo abbatti le scale si aprono e lui lascia un pieno di benzina.",
+        "Nei sotterranei ci sono i bidoni di benzina, rossi con le fasce gialle: due o tre per piano, più uno all'ingresso dell'arena del boss. Si rompono con un colpo qualsiasi e lasciano mezzo serbatoio in sfere arancioni.",
+        "Là sotto le sfere arancioni dei nemici colpiti valgono di più (3 invece di 2) e tutte le sfere restano a terra 15 secondi invece di 8.",
+        "I salvataggi di prima funzionano: se ne riprendi uno a metà di un piano, quel piano ha le scale già aperte.",
+      ],
+      en: [
+        "Abandoned buildings and metro stations now hold about half the enemies: corridors are empty and so are some rooms, so you get a breather between fights. In return every enemy down there gives 50% more experience.",
+        "Every floor but the last has a keeper: an elite who stands in the stairs room and keeps the stairs shut behind a roller shutter. Follow the red padlock on the minimap to find him; take him down and the stairs open, and he drops a full tank of fuel.",
+        "Dungeons now have fuel drums, red with yellow bands: two or three per floor, plus one at the entrance of the boss arena. Any hit breaks them, and they spill half a tank in orange orbs.",
+        "Down there the orange orbs from the enemies you hit are worth more (3 instead of 2), and all orbs stay on the ground for 15 seconds instead of 8.",
+        "Older saves still work: if you resume one in the middle of a floor, that floor's stairs are already open.",
+      ],
+    },
+  },
+  {
     id: "2026-11-10-ciccio-armi-dei-boss",
     data: "2026-11-10",
     progetto: "ciccio",
