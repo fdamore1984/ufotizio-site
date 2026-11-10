@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-10-ciccio-tirapugni",
+    data: "2026-11-10",
+    progetto: "ciccio",
+    titolo: { it: "Il pugno col tirapugni e la raffica A-TATATATA", en: "Brass knuckles and the A-TATATATA barrage" },
+    punti: {
+      it: [
+        "Su R2 (da tastiera V) ora c'è il pugno: Ciccio sferra un cazzottone con un tirapugni a tre punte di ferro. È lento e arriva solo ai nemici attaccati a te, ma picchia forte e li sbalza via; costa batteria ma niente benzina. Ce l'hai da subito, anche nel tutorial. La modalità focus non c'è più.",
+        "Con la Frenesia scatenata il pugno diventa una raffica: Ciccio aggancia un nemico, gli scatta addosso e lo tempesta di pugni urlando A-TATATATA, poi lo sbalza via con un montante. Durante la raffica niente gli fa male.",
+        "Ogni colpo di motosega ora consuma un po' di benzina (con la Frenesia niente): se il serbatoio è vuoto si va avanti a pugni. Sugli schermi touch c'è il nuovo tasto Pugno sopra Attacco.",
+      ],
+      en: [
+        "R2 (V on the keyboard) is now a punch: Cheech throws a haymaker with brass knuckles topped by three iron spikes. It's slow and only reaches the enemies right next to you, but it hits hard and sends them flying; it costs battery but no fuel. You have it from the start, tutorial included. Focus mode is gone.",
+        "During an unleashed Frenzy the punch becomes a barrage: Cheech locks onto an enemy, rushes at it and pounds it screaming A-TATATATA, then sends it flying with an uppercut. Nothing can hurt him during the barrage.",
+        "Every chainsaw strike now burns a little fuel (none during the Frenzy): when the tank is empty, keep going with your fists. On touch screens there's a new Punch button above Attack.",
+      ],
+    },
+  },
+  {
     id: "2026-11-09-ciccio-frenesia-l1",
     data: "2026-11-09",
     progetto: "ciccio",
