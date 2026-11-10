@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-10-ciccio-armi-dei-boss",
+    data: "2026-11-10",
+    progetto: "ciccio",
+    titolo: { it: "Tre armi nuove dai boss: fucile a pompa, plasma e Cetriolone", en: "Three new weapons from the bosses: shotgun, plasma and the Big Cucumber" },
+    punti: {
+      it: [
+        "I primi tre boss che sconfiggi nei sotterranei ora lasciano un'arma da fuoco: il primo il fucile a pompa, il secondo il fucile al plasma, il terzo il Cetriolone. Se li avevi già sconfitti, le armi ti aspettano al prossimo caricamento.",
+        "Il fucile a pompa spara una rosa a corto raggio che fa più male da vicino; il fucile al plasma spara sfere verdi che fanno parecchi danni ed esplodono; il Cetriolone è un cannone che accende un raggio laser verde gigantesco: chi ci finisce dentro sparisce all'istante (i boss li brucia soltanto).",
+        "Tutte e tre consumano benzina. Il Cetriolone la consuma tutta: il raggio resta acceso finché ce n'è.",
+        "Le impugni al posto della motosega con la croce del controller (sinistra pompa, destra plasma, giù Cetriolone; da tastiera 1, 2 e 3) e spari col tasto dell'attacco; premendo di nuovo la stessa freccia torna la motosega. Quando raccogli un'arma il gioco ti spiega come si usa. Su telefoni e tablet ci sono tre tasti piccoli in alto a sinistra.",
+        "Nel laboratorio iniziale le istruzioni non stanno più in un riquadro in alto: sono una striscia bassa in fondo allo schermo, che lascia vedere la scena.",
+        "Col controller ora si può dare Avanti e Salta nel laboratorio: tieni premuto A (il salto) finché la barra si riempie. Da tastiera vale il tasto del salto.",
+      ],
+      en: [
+        "The first three bosses you beat underground now drop a firearm: the first the pump shotgun, the second the plasma rifle, the third the Big Cucumber. If you had already beaten them, the weapons are waiting for you the next time you load your game.",
+        "The pump shotgun fires a short-range spread that hurts more up close; the plasma rifle fires green orbs that deal heavy damage and explode; the Big Cucumber is a cannon that switches on a giant green laser beam: whoever gets caught in it is gone instantly (bosses only get burned).",
+        "All three burn fuel. The Big Cucumber burns all of it: the beam stays on as long as there is any left.",
+        "You hold them in place of the chainsaw with the controller's D-pad (left shotgun, right plasma, down Big Cucumber; 1, 2 and 3 on the keyboard) and fire with the attack button; press the same arrow again to go back to the chainsaw. When you pick up a weapon the game explains how to use it. On phones and tablets there are three small buttons at the top left.",
+        "In the opening lab the instructions no longer sit in a box at the top: they are a low strip at the bottom of the screen, so you can see the scene.",
+        "With a controller you can now give Next and Skip in the lab: hold A (jump) until the bar fills up. On the keyboard the jump key does the same.",
+      ],
+    },
+  },
+  {
     id: "2026-11-10-ciccio-laboratorio-web",
     data: "2026-11-10",
     progetto: "ciccio",
