@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-10-ciccio-musica-calma",
+    data: "2026-11-10",
+    progetto: "ciccio",
+    titolo: { it: "La musica del tutorial nei momenti di calma", en: "The tutorial music in the quiet moments" },
+    punti: {
+      it: [
+        "In tutti i livelli, all'aperto e nei sotterranei, quando non combatti da un po' (5 secondi di calma piena) torna la canzone del tutorial, con chitarra e basso. Appena arrivano i nemici riparte la musica del posto, in un attimo.",
+        "Arrivando in un posto nuovo si parte con la musica della calma; l'arena del boss resta com'è.",
+        "Tornando al menù dalla partita la musica non si interrompe: continua quella del gioco, più tranquilla.",
+      ],
+      en: [
+        "In every level, outdoors and underground, when you haven't fought for a while (5 seconds of full calm) the tutorial song comes back, with guitar and bass. As soon as enemies show up the music of the place kicks back in, instantly.",
+        "When you reach a new place the calm music plays first; the boss arena stays as it is.",
+        "Going back to the menu from a game, the music doesn't stop: the game's song keeps playing, calmer.",
+      ],
+    },
+  },
+  {
     id: "2026-11-10-ciccio-tirapugni",
     data: "2026-11-10",
     progetto: "ciccio",
