@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-10-ciccio-laboratorio-web",
+    data: "2026-11-10",
+    progetto: "ciccio",
+    titolo: { it: "Il laboratorio iniziale anche nel browser e sul telefono", en: "The opening lab in the browser and on your phone too" },
+    punti: {
+      it: [
+        "Anche qui sul sito una nuova partita può cominciare dal laboratorio sotterraneo: Ciccio esce dalla capsula criogenica e impara una cosa per stanza, trovando le armi strada facendo, fino al montacarichi che porta in città. Chi conosce già il gioco può saltarlo.",
+        "Su telefoni e tablet il laboratorio spiega i tasti a schermo: all'inizio c'è solo il Pugno, poi Attacco, Slam e Gatling compaiono quando trovi l'arma. Torcia, salto, parata e piastre di kevlar Ciccio li fa da solo, e il laboratorio te lo dice al momento giusto.",
+        "Il vecchio tutorial giocabile del menù non c'è più: lo sostituisce il laboratorio. Il tutorial a pagine resta.",
+      ],
+      en: [
+        "Here on the site too, a new game can start in the underground lab: Cheech crawls out of the cryo pod and learns one thing per room, finding his weapons along the way, up to the freight elevator to the city. If you already know the game you can skip it.",
+        "On phones and tablets the lab teaches the on-screen buttons: at first there's only Punch, then Attack, Slam and Gatling appear when you find the weapon. Flashlight, jumping, parrying and the Kevlar plates Cheech handles by himself, and the lab tells you so at the right moment.",
+        "The old playable tutorial in the menu is gone: the lab replaces it. The page-by-page tutorial stays.",
+      ],
+    },
+  },
+  {
     id: "2026-11-10-ciccio-musica-calma",
     data: "2026-11-10",
     progetto: "ciccio",
