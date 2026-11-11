@@ -14,6 +14,20 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-basso-altoparlanti",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Basso più pulito sugli altoparlanti dello Steam Deck", en: "Cleaner bass on the Steam Deck speakers" },
+    punti: {
+      it: [
+        "Via la versione del basso con le armoniche, che sugli altoparlanti suonava male: con l'opzione Audio su \"altoparlanti piccoli\" ora il basso originale è più forte e la batteria più bassa, così il basso si sente senza distorcere.",
+      ],
+      en: [
+        "The bass version with added harmonics is gone, since it sounded bad on speakers: with the Sound option set to \"small speakers\" the original bass is now louder and the drums quieter, so you can hear the bass without distortion.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-armi-audio-taniche",
     data: "2026-11-11",
     progetto: "ciccio",
