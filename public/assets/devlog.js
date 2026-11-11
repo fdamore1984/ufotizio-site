@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-musica-a-strati",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Musica che cresce con l'azione: canzoni intere, dalla chitarra sola al brano completo", en: "Music that grows with the action: whole songs, from a lone guitar to the full track" },
+    punti: {
+      it: [
+        "Le canzoni del gioco (menù, tutorial, città, sotterranei e boss) ora suonano intere, dall'inizio alla fine, e poi ripartono da capo, invece di ripetere solo un pezzo.",
+        "Quanti strumenti senti dipende da quanto si mena: nella calma c'è solo la chitarra, con qualche nemico entra il basso, in pieno combattimento la batteria e, nei momenti più duri (boss, élite, Frenesia, vita agli sgoccioli o tanti nemici addosso), tutto il resto: synth, tastiere, voci e fiati, cioè il brano completo.",
+        "Ogni posto tiene la sua canzone anche quando è tutto tranquillo, e contro il boss la musica parte già con chitarra e basso.",
+        "Nel browser l'audio va a 32 kHz, così le canzoni intere occupano meno memoria; il primo caricamento è un po' più lungo.",
+      ],
+      en: [
+        "The game's songs (menu, tutorial, city, dungeons and bosses) now play in full, from start to finish, and then start over, instead of repeating just one section.",
+        "How many instruments you hear depends on how hard you're fighting: when it's quiet there's only the guitar, with a few enemies the bass comes in, in a full fight the drums, and in the toughest moments (bosses, elites, Frenzy, health running out or lots of enemies on you) everything else: synths, keyboards, vocals and horns, that is the full track.",
+        "Every place keeps its own song even when things are calm, and against a boss the music starts with guitar and bass already playing.",
+        "In the browser audio runs at 32 kHz, so the whole songs take less memory; the first load takes a little longer.",
+      ],
+    },
+  },
+  {
     id: "2026-11-10-ciccio-sotterranei",
     data: "2026-11-10",
     progetto: "ciccio",
