@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-musica-serie",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Musica che si scatena solo con le serie di uccisioni, più sfere e meno nemici", en: "Music that only kicks in on kill streaks, more orbs and fewer enemies" },
+    punti: {
+      it: [
+        "Nel menù titolo la canzone suona subito intera, con tutti gli strumenti, anche quando torni dalla partita; nel menù di pausa continua la canzone del livello.",
+        "La musica a strati cambia ordine: nella calma suona solo il basso, con qualche nemico attorno entra la batteria, poi la chitarra, poi tutto il resto.",
+        "Chitarra e brano intero arrivano solo con una serie di uccisioni ravvicinate (3 in pochi secondi per la chitarra, 6 per il brano intero; contro il boss contano anche i colpi), e se smetti di uccidere la musica scende un passo alla volta. Nei sotterranei non martella più per tutto il piano.",
+        "Più sfere: a ogni colpo i nemici perdono il doppio delle sferette di benzina e batteria, la sfera rossa cura il 5%, gli zombie delle orde ne lasciano più spesso e quello che distruggi rende di più (un palazzo crollato vale un pieno).",
+        "Circa un terzo di nemici in meno all'aperto, nelle orde, negli edifici e nella metropolitana, e ognuno vale più esperienza: si sale di livello allo stesso ritmo.",
+      ],
+      en: [
+        "On the title menu the song now plays in full right away, with every instrument, even when you come back from a game; on the pause menu the level's song keeps going.",
+        "The layered music changes order: when things are calm only the bass plays, with a few enemies around the drums come in, then the guitar, then everything else.",
+        "The guitar and the full track only come in on a kill streak (3 quick kills for the guitar, 6 for the full track; against the boss your hits count too), and if you stop killing the music steps down one layer at a time. Underground it no longer pounds for the whole floor.",
+        "More orbs: every hit makes enemies drop twice as many fuel and battery orbs, the red orb heals 5%, horde zombies drop them more often and whatever you destroy pays more (a collapsed building is worth a full tank).",
+        "About a third fewer enemies outdoors, in hordes, in buildings and in the metro, and each one is worth more experience: you level up at the same pace.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-distruzione",
     data: "2026-11-11",
     progetto: "ciccio",
