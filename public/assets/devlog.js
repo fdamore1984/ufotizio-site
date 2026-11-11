@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-musica-rimasterizzata",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Colonna sonora rimasterizzata e strati che entrano in un ordine nuovo", en: "Remastered soundtrack and layers that come in a new order" },
+    punti: {
+      it: [
+        "Nuove versioni rimasterizzate delle canzoni del menù, delle strade, di edifici e metro e del boss.",
+        "La musica cresce in un ordine nuovo: nella calma suonano synth, tastiere, voci, archi e fiati, quando i nemici si avvicinano entra il basso, nel combattimento la batteria e al massimo della carneficina la chitarra.",
+      ],
+      en: [
+        "New remastered versions of the songs for the menu, the streets, buildings and metro, and the boss.",
+        "The music builds up in a new order: when it's calm you hear synths, keys, vocals, strings and brass, the bass comes in when enemies close in, the drums when the fight breaks out and the guitar at the peak of the carnage.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-basso-altoparlanti",
     data: "2026-11-11",
     progetto: "ciccio",
