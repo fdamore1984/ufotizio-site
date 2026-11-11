@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-distruzione",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Si spacca tutto: ostacoli e palazzi distruttibili, e niente più burroni", en: "Everything breaks: destructible obstacles and buildings, and no more ravines" },
+    punti: {
+      it: [
+        "Ogni colpo di Ciccio (motosega, tirapugni, slam, bomba H, Gatling, missili, fucili e Cetriolone) rompe quello che tocca: alberi, lampioni, pensiline, panchine, macerie e rottami saltano in aria con un lampo e una nuvola di polvere, all'aperto come negli edifici abbandonati e nella metropolitana, e lasciano detriti a terra.",
+        "Anche i palazzi si abbattono: colpendone le pareti si riempiono di crepe e alla fine crollano in un mare di macerie, con polvere, onda d'urto e lo schermo che trema. Con la Gatling una casa bassa cade in una decina di secondi, un grattacielo in mezzo minuto.",
+        "Quello che rompi ti ripaga: metà benzina e metà batteria. Un oggetto piccolo vale circa un decimo del serbatoio, uno grande un quinto, un palazzo quasi un pieno, in 10-14 sferette.",
+        "Restano in piedi i palazzi con la porta di un edificio abbandonato, l'ingresso della metropolitana, casse, commercianti, sirene, scale e tutto il laboratorio iniziale. Quello che hai distrutto resta distrutto anche nei salvataggi.",
+        "Le fessure dei terremoti non ci sono più: niente più cadute nei burroni, la città si gira tutta a piedi.",
+      ],
+      en: [
+        "Every Cheech attack (chainsaw, brass knuckles, slam, H-bomb, Gatling, missiles, shotguns and the Big Cucumber) breaks whatever it hits: trees, street lamps, bus shelters, benches, rubble and wrecks blow apart in a flash and a cloud of dust, outdoors as well as in abandoned buildings and metro stations, and leave debris on the ground.",
+        "Buildings come down too: hit their walls and they crack more and more until they collapse into a sea of rubble, with dust, a shockwave and the screen shaking. With the Gatling a low house falls in about ten seconds, a skyscraper in half a minute.",
+        "What you break pays you back: half fuel and half battery. A small object is worth about a tenth of the tank, a big one a fifth, a building almost a full tank, in 10-14 orbs.",
+        "Buildings with the door of an abandoned building, metro entrances, chests, traders, sirens, stairs and the whole starting lab stay standing. What you destroy stays destroyed in your saves too.",
+        "The earthquake fissures are gone: no more falling into ravines, you can walk the whole city.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-fucile-a-pompa",
     data: "2026-11-11",
     progetto: "ciccio",
