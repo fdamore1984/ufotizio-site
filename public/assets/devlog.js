@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-armi-audio-taniche",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Fucile a pompa a bruciapelo, plasma a raffica, basso anche sullo Steam Deck e taniche di riserva", en: "Point-blank shotgun, rapid-fire plasma, bass on the Steam Deck too and reserve fuel cans" },
+    punti: {
+      it: [
+        "Il fucile a pompa è devastante a bruciapelo (più di una volta e mezza i danni di prima) e perde forza in fretta da lontano.",
+        "Il fucile al plasma spara a raffica come un mitra: tenendo premuto escono circa 9 piccole sfere al secondo, ognuna con meno danni e meno benzina.",
+        "Nuova opzione Audio (altoparlanti piccoli o cuffie): sullo Steam Deck parte dagli altoparlanti, dove il basso ora si sente grazie a una versione con le armoniche e la batteria è più bassa.",
+        "Nella calma la batteria suona a metà volume, e chitarra e brano intero arrivano molto prima: bastano 2 uccisioni ravvicinate per la chitarra e 4 per il brano intero, e contano anche i colpi a segno.",
+        "Colpire oggetti e palazzi ora si sente: ogni materiale ha il suo suono, saltano schegge e polvere, gli oggetti tremano e si crepano man mano, e Ciccio arretra un po' a ogni colpo di motosega o di pugno.",
+        "Nuovo potenziamento raro, la tanica di riserva: aggiunge una riga di benzina nel pannello in alto a sinistra, fino a 5.",
+      ],
+      en: [
+        "The pump shotgun is devastating point-blank (more than one and a half times the damage it did before) and loses its punch fast at range.",
+        "The plasma rifle now fires in bursts like a submachine gun: hold the button for about 9 small orbs a second, each dealing less damage and burning less fuel.",
+        "New Sound option (small speakers or headphones): on the Steam Deck it starts on speakers, where you can now hear the bass thanks to a version with added harmonics, and the drums are quieter.",
+        "When things are calm the drums play at half volume, and the guitar and full track come in much sooner: 2 quick kills for the guitar and 4 for the full track, and your hits count too.",
+        "Hitting objects and buildings now feels like it: every material has its own sound, chips and dust fly, objects shake and crack as they wear down, and Cheech bounces back a little on every chainsaw or punch hit.",
+        "New rare upgrade, the reserve fuel can: it adds a fuel bar to the panel at the top left, up to 5.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-musica-serie",
     data: "2026-11-11",
     progetto: "ciccio",
