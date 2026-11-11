@@ -14,6 +14,26 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-fucile-a-pompa",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "Il fucile a pompa ora spacca: più potente, più rumoroso, con rinculo", en: "The pump shotgun now hits like a truck: stronger, louder, with recoil" },
+    punti: {
+      it: [
+        "Ogni colpo è un boato: uno schiocco secco, un corpo profondo e un sub-basso che rimbomba per quasi un secondo, poi due scatti pesanti della pompa. I fucili dei nemici e del boss hanno di nuovo il loro suono.",
+        "La rosa è più grossa: 12 pallini spessi invece di 7, una grande fiammata alla bocca che illumina il terreno, fumo che sale e scintille dove i pallini finiscono la corsa o sbattono contro un muro.",
+        "L'arma scatta indietro e in alto e torna, lo schermo trema di più, il controller ha la sua vibrazione e Ciccio arretra di qualche passo col rinculo, anche in aria.",
+        "Fa più male (4,2 volte un colpo di motosega da vicino, invece di 3) e spinge più lontano, ma consuma più benzina: 13 a colpo invece di 8. Cadenza, gittata e apertura restano uguali.",
+      ],
+      en: [
+        "Every shot is a roar: a sharp crack, a deep body and a sub-bass that rumbles for almost a second, then two heavy pump clacks. Enemy and boss shotguns get their own sound back.",
+        "The spread is bigger: 12 thick pellets instead of 7, a huge muzzle flash that lights up the ground, rising smoke, and sparks where the pellets end their flight or hit a wall.",
+        "The gun kicks back and up and settles again, the screen shakes harder, the controller gets its own rumble, and Cheech is pushed back a few steps by the recoil, in mid-air too.",
+        "It hits harder (4.2 times a chainsaw hit up close, instead of 3) and knocks enemies farther, but burns more fuel: 13 per shot instead of 8. Fire rate, range and spread stay the same.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-musica-a-strati",
     data: "2026-11-11",
     progetto: "ciccio",
