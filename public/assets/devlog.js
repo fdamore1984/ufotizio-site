@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-nemici-non-tornano",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "I nemici uccisi non tornano più, e ce ne sono di più", en: "Killed enemies never come back, and there are more of them" },
+    punti: {
+      it: [
+        "I nemici non si rigenerano più: le strade ripulite restano vuote, e negli edifici e nella metro un piano ripulito resta pulito anche se esci e rientri. In compenso in città e nei sotterranei i nemici sono di più.",
+        "I nemici deboli sono più deboli e quelli forti, élite e boss più forti.",
+        "Benzina e batteria cadono solo quando il nemico muore, non a ogni colpo; i nemici più forti e i boss ne perdono a caso anche mentre li colpisci, ogni tot colpi.",
+        "Il pugno col tirapugni è molto più rapido e lo tiri camminando, senza fermarti.",
+        "Il fucile a pompa è molto più potente, spara più spesso e fa male anche da lontano.",
+        "La tanica di riserva esce molto più spesso fra i potenziamenti.",
+      ],
+      en: [
+        "Enemies no longer respawn: cleared streets stay empty, and in buildings and the metro a cleared floor stays clean even if you leave and come back. To make up for it, there are more enemies in the city and underground.",
+        "Weak enemies are weaker, and tough ones, elites and bosses are tougher.",
+        "Fuel and battery drop only when an enemy dies, not on every hit; the toughest enemies and bosses also spill some at random while you hit them, every few hits.",
+        "The brass knuckles punch is much faster and you throw it while walking, without stopping.",
+        "The pump shotgun is much more powerful, fires more often and still hurts from afar.",
+        "The reserve fuel can shows up among the upgrades much more often.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-musica-piano-boss",
     data: "2026-11-11",
     progetto: "ciccio",
