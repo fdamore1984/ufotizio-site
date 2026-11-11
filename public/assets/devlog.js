@@ -14,6 +14,20 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-11-ciccio-musica-piano-boss",
+    data: "2026-11-11",
+    progetto: "ciccio",
+    titolo: { it: "La canzone del boss per tutto l'ultimo piano", en: "The boss song for the whole last floor" },
+    punti: {
+      it: [
+        "All'ultimo piano di edifici e metro la canzone del boss parte appena arrivati e resta per tutto il piano, anche dopo averlo sconfitto; nel laboratorio iniziale resta sempre la canzone del tutorial.",
+      ],
+      en: [
+        "On the last floor of buildings and the metro the boss song starts as soon as you arrive and plays for the whole floor, even after you beat the boss; in the starting lab the tutorial song keeps playing.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-musica-rimasterizzata",
     data: "2026-11-11",
     progetto: "ciccio",
