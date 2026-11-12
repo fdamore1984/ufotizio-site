@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-12-ciccio-taniche-boss",
+    data: "2026-11-12",
+    progetto: "ciccio",
+    titolo: { it: "I boss danno armi e taniche, gli oggetti esplodono e i nemici schivano", en: "Bosses give weapons and fuel cans, objects blow up and enemies dodge" },
+    punti: {
+      it: [
+        "La tanica di riserva non è più fra i potenziamenti: ogni boss sconfitto te ne dà una in più, fino a cinque. Chi le aveva già prese le tiene, e chi ha già battuto dei boss riceve le sue.",
+        "Quando sconfiggi un boss il gioco si ferma e un messaggio ti dice cosa hai ottenuto: l'arma nuova arriva subito, senza doverla raccogliere, insieme alla tanica.",
+        "A inizio partita, quando appare la città, un messaggio ti spiega che i boss nelle metro e nei palazzi danno armi nuove e che i mercanti offrono missioni con ricompense.",
+        "I palazzi hanno circa metà della vita di prima e tremano a ogni colpo.",
+        "Alberi, panchine, lampioni, rottami e bidoni distrutti esplodono in una palla di fuoco, con frammenti, fumo e un botto.",
+        "I nemici cercano di scansare i tuoi colpi con uno scatto di lato, non sempre: i più agili spesso, i lenti e i boss di rado, gli zombie mai.",
+      ],
+      en: [
+        "The reserve fuel can is no longer an upgrade: every boss you beat gives you one more, up to five. If you already had some you keep them, and if you have already beaten bosses you get yours.",
+        "When you beat a boss the game pauses and a message tells you what you got: the new weapon is yours right away, no need to pick it up, along with the fuel can.",
+        "At the start of a new game, when the city appears, a message explains that the bosses in the metro stations and buildings give new weapons and that traders offer missions with rewards.",
+        "Buildings have about half the health they used to and shake with every hit.",
+        "Destroyed trees, benches, lamp posts, wrecks and drums blow up in a fireball, with shards, smoke and a bang.",
+        "Enemies try to dodge your hits with a quick sidestep, though not always: the nimble ones often, the slow ones and bosses rarely, zombies never.",
+      ],
+    },
+  },
+  {
     id: "2026-11-11-ciccio-nemici-non-tornano",
     data: "2026-11-11",
     progetto: "ciccio",
