@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-16-ciccio-slam-bazooka-touch",
+    data: "2026-11-16",
+    progetto: "ciccio",
+    titolo: { it: "Slam touch sistemato, tasto Bazooka e riserva di benzina", en: "Touch slam fixed, a Bazooka button and a fuel reserve" },
+    punti: {
+      it: [
+        "Con i comandi touch il tasto Slam funziona sempre: prima restava quasi sempre grigio. Se lo tocchi un attimo prima che lo slam possa partire, aspetta, e non si annulla più se tieni premuto anche Attacco.",
+        "Con i comandi touch Attacco non spara più missili da solo: il bazooka ha il suo tasto, che tenuto premuto spara verso il nemico più vicino.",
+        "Quando la benzina sta per finire, una piccola riserva si ricarica da sola: sotto un quarto del serbatoio, dopo un paio di secondi senza consumarne, risale piano fino a un quarto.",
+        "Il pugno col tirapugni parte all'istante, senza carica.",
+        "Fra i potenziamenti non ci sono più colpi della combo, colpi potenti concatenati, schivate, salti e la scheda in più: nelle partite già iniziate quelle abilità tornano ai valori di partenza.",
+      ],
+      en: [
+        "With touch controls the Slam button now always works: before, it stayed grey almost all the time. If you tap it just before the slam can start, it waits, and it no longer gets cancelled if you're also holding Attack.",
+        "With touch controls Attack no longer fires missiles on its own: the bazooka has its own button, which fires at the nearest enemy while you hold it.",
+        "When fuel runs low, a small reserve refills on its own: below a quarter of the tank, after a couple of seconds without using any, it slowly climbs back up to a quarter.",
+        "The brass knuckles punch is instant, with no wind-up.",
+        "Combo hits, chained power strikes, dodges, jumps and the extra card are no longer among the upgrades: in games already under way those abilities go back to their starting values.",
+      ],
+    },
+  },
+  {
     id: "2026-11-12-ciccio-taniche-boss",
     data: "2026-11-12",
     progetto: "ciccio",
