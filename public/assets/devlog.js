@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-16-ciccio-campagna-periferia",
+    data: "2026-11-16",
+    progetto: "ciccio",
+    titolo: { it: "Arriva la campagna: livello 1, la Periferia", en: "The campaign begins: level 1, the Suburbs" },
+    punti: {
+      it: [
+        "Uscito dal laboratorio, Ciccio non entra più in una città generata a caso: comincia una campagna di livelli fatti a mano, da attraversare strada per strada fino alla torre del signore della guerra.",
+        "Il primo livello è la Periferia: un incrocio con i bracci bloccati da un'auto ribaltata e da una barricata in fiamme, un viale pieno di auto abbandonate, un distributore di benzina dove la strada si chiude alle spalle finché l'ultima ondata non è a terra, un rifugio e un ponte crollato.",
+        "Ci sono i checkpoint: arrivandoci la partita si salva e, se cadi, riparti da lì. C'è anche un vicolo segreto da trovare dietro un'auto da abbattere.",
+        "Le auto e le pompe di benzina si fanno a pezzi ed esplodono. Il commerciante ti aspetta nel rifugio.",
+        "I nemici abbattuti non tornano più. Alla fine del livello vedi il tempo, i nemici abbattuti e i segreti trovati. Gli altri sette livelli arrivano uno alla volta con i prossimi aggiornamenti.",
+        "Non ci sono più le missioni dei commercianti né il ciclo del giorno e della notte: ogni livello ha la sua luce. Le partite salvate in città ripartono dal livello 1 con il personaggio com'era.",
+      ],
+      en: [
+        "Out of the lab, Cheech no longer walks into a randomly generated city: a campaign of handcrafted levels begins, to fight through street by street all the way to the warlord's tower.",
+        "The first level is the Suburbs: a crossroads with its side roads blocked by a flipped car and a burning barricade, an avenue full of abandoned cars, a gas station where the way shuts behind you until the last wave is down, a shelter and a collapsed bridge.",
+        "There are checkpoints: reaching one saves your game and, if you fall, you start again from there. There's also a secret alley to find behind a car you can smash.",
+        "Cars and fuel pumps break apart and blow up. The trader is waiting for you in the shelter.",
+        "Enemies you take down never come back. At the end of the level you see your time, the enemies you took down and the secrets you found. The other seven levels arrive one at a time with the next updates.",
+        "Trader missions and the day and night cycle are gone: every level has its own light. Games saved in the city start again from level 1 with your character as it was.",
+      ],
+    },
+  },
+  {
     id: "2026-11-16-ciccio-urlo-raffica",
     data: "2026-11-16",
     progetto: "ciccio",
