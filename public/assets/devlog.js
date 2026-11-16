@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-16-ciccio-urlo-raffica",
+    data: "2026-11-16",
+    progetto: "ciccio",
+    titolo: { it: "Un urlo vero per la raffica di pugni", en: "A real scream for the punch flurry" },
+    punti: {
+      it: [
+        "Durante la raffica di pugni della Frenesia Ciccio urla \"A-TATATATA... TAAA!\" con una voce ruvida e tirata, come un vero urlo da combattimento, invece del verso pulito da videogioco di prima.",
+        "I \"TA\" sono legati, uno a ogni pugno, la voce è più alta e il \"TAAA!\" finale sul montante è più lungo e acuto.",
+      ],
+      en: [
+        "During the Frenzy punch flurry Cheech now screams \"A-TATATATA... TAAA!\" in a rough, strained voice, like a real battle cry, instead of the clean video-game blip from before.",
+        "The \"TA\"s run together, one per punch, the voice is higher and the final \"TAAA!\" on the uppercut is longer and sharper.",
+      ],
+    },
+  },
+  {
     id: "2026-11-16-ciccio-slam-bazooka-touch",
     data: "2026-11-16",
     progetto: "ciccio",
