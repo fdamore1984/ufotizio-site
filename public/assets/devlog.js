@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-titoli",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Titoli di coda: chi ha disegnato Ciccio e i ringraziamenti", en: "Credits: who drew Cheech, and thank-yous" },
+    punti: {
+      it: [
+        "Nei titoli di coda, alla fine della Torre, ora c'è anche chi ha disegnato Ciccio: Valle88.",
+        "E i ringraziamenti a GG, Ivan e a tutti gli amici che hanno provato il gioco, lasciato feedback e supportato.",
+      ],
+      en: [
+        "The credits at the end of the Tower now also name who drew Cheech: Valle88.",
+        "And the thank-yous to GG, Ivan and all the friends who played the game, left feedback and cheered us on.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-torre",
     data: "2026-11-17",
     progetto: "ciccio",
