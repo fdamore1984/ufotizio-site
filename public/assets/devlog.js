@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-ospedale",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 6: l'Ospedale, tra agguati e luci che saltano", en: "Level 6: the Hospital, ambushes and failing lights" },
+    punti: {
+      it: [
+        "Dal pozzo delle fogne Ciccio risale in un ospedale abbandonato: è il sesto livello della campagna.",
+        "I corridoi sono stretti e silenziosi, ma non è un buon segno: passando davanti alle stanzette i nemici sbucano tutti insieme, e più avanti i mutanti cadono dal soffitto.",
+        "La porta in fondo vuole una tessera magnetica: è nell'obitorio, su un cadavere. Prenderla però sveglia qualcuno nelle celle frigorifere.",
+        "In radiologia la luce va e viene come un neon guasto, e lì ti aspetta uno stalker più forte degli altri.",
+        "Nella sala operatoria l'ultima arena, con un bruto élite. Poi il garage delle ambulanze e la strada per la fabbrica.",
+        "Mancano gli ultimi due livelli, fino alla torre del signore della guerra.",
+      ],
+      en: [
+        "From the sewer shaft, Cheech climbs up into an abandoned hospital: it's the sixth level of the campaign.",
+        "The corridors are narrow and quiet, but that's not a good sign: walking past the side rooms, enemies burst out all at once, and further on mutants drop from the ceiling.",
+        "The door at the end needs a keycard: it's in the morgue, on a corpse. Grabbing it, though, wakes something up in the cold-storage drawers.",
+        "In radiology the lights keep flickering out like a broken neon tube, and a stalker tougher than the rest is waiting there.",
+        "The operating theatre holds the last arena, with an elite brute. Then the ambulance garage and the road to the factory.",
+        "Only the last two levels are left, all the way to the warlord's tower.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-fogne",
     data: "2026-11-17",
     progetto: "ciccio",
