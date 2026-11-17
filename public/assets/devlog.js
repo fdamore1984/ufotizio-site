@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-supermercato",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 2: il Supermercato (e il fucile a pompa)", en: "Level 2: the Supermarket (and the pump shotgun)" },
+    punti: {
+      it: [
+        "Dal ponte crollato della Periferia Ciccio cade nel parcheggio coperto di un ipermercato saccheggiato: è il secondo livello della campagna, il primo al chiuso.",
+        "Corsie strette tra scaffali ancora pieni di merce, che si scavalcano con un salto, e predoni appostati in fondo alle corsie con lance e fucili.",
+        "In gastronomia la serranda si chiude alle spalle e dalle celle frigo esce un'orda di zombie; quando è a terra arrivano i predoni.",
+        "Nel magazzino ti aspettano il checkpoint, il commerciante e il fucile a pompa, devastante da vicino. Dietro una pila di scatoloni da abbattere ci sono gli uffici segreti.",
+        "I carrelli e i pallet di scatoloni si fanno a pezzi. Gli altri sei livelli arrivano uno alla volta con i prossimi aggiornamenti.",
+      ],
+      en: [
+        "From the Suburbs' collapsed bridge, Cheech falls into the covered car park of a looted hypermarket: it's the second level of the campaign, and the first one indoors.",
+        "Narrow aisles between shelves still full of goods, which you can hop over with a jump, and raiders lurking at the end of the aisles with spears and shotguns.",
+        "In the deli the shutter slams down behind you and a zombie horde pours out of the freezers; once it's down, the raiders arrive.",
+        "In the warehouse you'll find a checkpoint, the trader and the pump shotgun, devastating up close. Behind a stack of boxes you can smash lie the secret offices.",
+        "Shopping carts and pallets of boxes break apart. The other six levels arrive one at a time with the next updates.",
+      ],
+    },
+  },
+  {
     id: "2026-11-16-ciccio-campagna-periferia",
     data: "2026-11-16",
     progetto: "ciccio",
