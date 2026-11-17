@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-torre",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 8: la Torre e il boss finale. La campagna è completa!", en: "Level 8: the Tower and the final boss. The campaign is complete!" },
+    punti: {
+      it: [
+        "Dal montacarichi della fabbrica Ciccio arriva ai piedi della torre del signore della guerra: è l'ottavo e ultimo livello della campagna.",
+        "Cinque piani da scalare, uno dopo l'altro: l'atrio con le guardie, gli uffici con le barricate di scrivanie e i tiratori dietro, i laboratori con un élite in ogni stanza vetrata e un custode che tiene chiuse le scale, l'attico per tirare il fiato.",
+        "Sul tetto ti aspetta il Signore della Guerra, in tre fasi: prima con la mazza e la doppietta, poi si ripara dietro uno scudo alimentato da tre generatori mentre arrivano i rinforzi, e alla fine, furioso, fa crollare i bordi del tetto.",
+        "Abbattuto il boss, dall'eliporto parte il finale con i titoli di coda.",
+        "La campagna è completa: otto livelli fatti a mano, dal laboratorio sotterraneo fino alla cima della torre. Grazie a chi ha giocato e giocherà!",
+      ],
+      en: [
+        "From the factory lift, Cheech reaches the foot of the warlord's tower: it's the eighth and last level of the campaign.",
+        "Five floors to climb, one after another: the lobby with the guards, the offices with desk barricades and gunners behind them, the labs with an elite in every glass room and a keeper holding the stairs shut, the penthouse to catch your breath.",
+        "On the roof the Warlord awaits, in three phases: first with his sledgehammer and shotgun, then he hides behind a shield powered by three generators while reinforcements pour in, and in the end, furious, he brings the edges of the roof crashing down.",
+        "Once the boss falls, the ending and the credits roll from the helipad.",
+        "The campaign is complete: eight handmade levels, from the underground lab to the top of the tower. Thanks to everyone who played and will play!",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-fabbrica",
     data: "2026-11-17",
     progetto: "ciccio",
