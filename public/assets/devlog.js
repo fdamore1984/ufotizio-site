@@ -14,6 +14,32 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-granate-taser",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Granate, taser, zombie che mordono e una bomba H da super guerriero", en: "Grenades, a taser, biting zombies and a super-warrior H-bomb" },
+    punti: {
+      it: [
+        "Granate infinite: croce sinistra (G da tastiera) ne lancia una sul nemico agganciato, che esplode su tutti quelli attorno. Ognuna costa benzina.",
+        "Taser: croce destra (T) dà la scossa al nemico più vicino davanti a te. Pochi danni, ma resta immobile per qualche secondo; costa batteria e ai boss non fa niente.",
+        "Croce giù (Q) ora cambia arma a giro: motosega, fucile a pompa, fucile al plasma e Cetriolone, fra quelle che hai trovato.",
+        "Gli zombie non scoppiano più addosso a Ciccio: gli si aggrappano e lo mordono, togliendo poca vita alla volta. Al più tre insieme; con loro addosso rallenti e non puoi schivare, ma un pugno o un colpo di motosega ne stacca uno, e lo scudo li scrolla via tutti.",
+        "Bomba H: se ti colpiscono mentre la carichi perdi vita, ma la bomba non si ferma. A carica piena Ciccio resta sospeso a mezz'aria con gli occhi rossi, un'aura dorata che gli gira attorno e un urlo che dura finché non la scagli a terra.",
+        "I boss però hanno uno scudo anti-bomba: la bomba H non li scalfisce più.",
+        "Il tutorial insegna anche granate e taser. La sala criogenica ora è tutta illuminata e la corrente salta quando arriva il momento della torcia; da lì in poi si resta in penombra. E tenendo premuto A per saltare un passo, Ciccio non salta più.",
+      ],
+      en: [
+        "Unlimited grenades: left on the D-pad (G on the keyboard) throws one at the locked enemy, and it explodes on everyone around. Each one costs fuel.",
+        "Taser: right on the D-pad (T) zaps the nearest enemy in front of you. Little damage, but it can't move for a few seconds; it costs battery and does nothing to bosses.",
+        "Down on the D-pad (Q) now cycles your weapons: chainsaw, pump shotgun, plasma rifle and Big Cucumber, among the ones you have found.",
+        "Zombies no longer burst on Cheech: they cling to him and bite, a little at a time. No more than three at once; with them on you, you slow down and can't dodge, but a punch or a chainsaw strike tears one off, and the shield shakes them all off.",
+        "H-bomb: getting hit while you charge it costs health, but the bomb doesn't stop. At full charge Cheech floats in mid-air with red eyes, a golden aura spinning around him and a scream that lasts until you slam it down.",
+        "Bosses, though, now have an H-bomb shield: the bomb no longer scratches them.",
+        "The tutorial now teaches grenades and the taser too. The cryo room is fully lit, and the power goes out right when it's time for the flashlight; from there on it stays dim. And holding A to skip a step no longer makes Cheech jump.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-titoli",
     data: "2026-11-17",
     progetto: "ciccio",
