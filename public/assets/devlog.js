@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-fabbrica",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 7: la Fabbrica, tra nastri, presse e fiamme", en: "Level 7: the Factory, belts, presses and flames" },
+    punti: {
+      it: [
+        "Dalla rampa dell'ospedale Ciccio arriva in una fabbrica ancora in funzione: è il settimo livello della campagna, il primo diviso in due parti.",
+        "Si comincia nel cortile all'aperto, tra camion abbandonati e predoni, poi il portone porta dentro i capannoni.",
+        "Nel capannone i nastri trasportatori ti portano via mentre combatti; seguendone uno fino in fondo si trova un deposito segreto con il Cetriolone, il raggio che disintegra tutto.",
+        "Nel corridoio delle presse bisogna leggere il ritmo: calano con un sibilo e la spia rossa, e schiacciano chi c'è sotto. La leva della sala controllo, sorvegliata da due golem, le ferma per qualche secondo e apre il cancello.",
+        "Nella fonderia l'ultima arena, tra getti di fiamma a tempo e un golem élite.",
+        "Manca solo l'ultimo livello: la torre del signore della guerra.",
+      ],
+      en: [
+        "From the hospital ramp, Cheech reaches a factory that's still running: it's the seventh level of the campaign, the first one split in two parts.",
+        "You start in the open yard, among abandoned trucks and raiders, then the big gate leads into the sheds.",
+        "In the shed, conveyor belts carry you off while you fight; follow one all the way to the end and you'll find a secret storeroom with the Big Cucumber, the beam that disintegrates everything.",
+        "In the press corridor you have to read the rhythm: they come down with a hiss and a red light, and crush whoever is underneath. The lever in the control room, guarded by two golems, stops them for a few seconds and opens the gate.",
+        "The foundry holds the last arena, among timed flame jets and an elite golem.",
+        "Only the last level is left: the warlord's tower.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-ospedale",
     data: "2026-11-17",
     progetto: "ciccio",
