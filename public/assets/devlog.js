@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-centro",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 3: il Centro, di notte", en: "Level 3: Downtown, at night" },
+    punti: {
+      it: [
+        "Fuori dal supermercato, Ciccio arriva nel centro della città: è notte, tra torri e uffici in rovina. È il terzo livello della campagna.",
+        "Nella piazza della fontana una sirena d'allarme chiude la strada: accendila e resisti trenta secondi ai predoni che arrivano da tutte le parti per aprire il passaggio. Se cadi, la sirena torna pronta e si riprova.",
+        "Nella galleria commerciale c'è un palazzo da abbattere: a furia di colpi crolla in macerie e apre un cortile segreto.",
+        "L'incrocio grande è l'arena più larga finora: tre ondate, l'ultima con due bruti e un roteatore élite. Poi si scende nella metropolitana.",
+        "Gli altri cinque livelli arrivano uno alla volta con i prossimi aggiornamenti.",
+      ],
+      en: [
+        "Out of the supermarket, Cheech reaches downtown: it's night, among ruined towers and offices. It's the third level of the campaign.",
+        "In the fountain square an alarm siren blocks the way: switch it on and hold out for thirty seconds against raiders coming from every side to open the passage. If you fall, the siren is ready again and you can retry.",
+        "In the shopping arcade there's a building you can bring down: keep hitting it and it collapses into rubble, opening a secret courtyard.",
+        "The big crossroads is the widest arena so far: three waves, the last with two brutes and an elite whirler. Then it's down into the metro.",
+        "The other five levels arrive one at a time with the next updates.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-supermercato",
     data: "2026-11-17",
     progetto: "ciccio",
