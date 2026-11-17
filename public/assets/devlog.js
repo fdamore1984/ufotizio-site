@@ -14,6 +14,30 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-fogne",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 5: le Fogne e l'acqua tossica", en: "Level 5: the Sewers and the toxic water" },
+    punti: {
+      it: [
+        "Dalla grata della metro Ciccio cade nelle fogne: è il quinto livello della campagna e apre il secondo atto.",
+        "Nel collettore scorre un canale d'acqua tossica: ci si può camminare, ma rallenta e brucia la vita a ogni passo, anche se salti. Dall'altra sponda i mutanti ti sputano acido.",
+        "La chiusa più avanti è allagata e non si attraversa: bisogna trovare la sala pompe e girare la valvola. Svuotata, sul fondo fangoso ti aspettano i mutanti a ondate.",
+        "I mutanti gonfi, quando muoiono, scoppiano in una nube velenosa: meglio allontanarsi in fretta.",
+        "Nel labirinto di tubi scegli tu: la via breve dritta nell'acqua tossica o quella lunga ai lati, piena di mutanti. E dietro una grata arrugginita c'è un segreto.",
+        "Sotto il cofano, via tutto il codice della vecchia città generata a caso: il gioco è più leggero e i salvataggi mostrano il livello della campagna.",
+      ],
+      en: [
+        "From the subway grate, Cheech drops into the sewers: it's the fifth level of the campaign and it opens the second act.",
+        "A channel of toxic water runs through the collector: you can walk in it, but it slows you down and burns your health with every step, even if you jump. From the other bank, mutants spit acid at you.",
+        "The lock further on is flooded and can't be crossed: you have to find the pump room and turn the valve. Once drained, the mutants wait for you in waves on the muddy bottom.",
+        "Bloated mutants burst into a poison cloud when they die: better get away fast.",
+        "In the pipe maze it's your call: the short way straight through the toxic water or the long way around the sides, crawling with mutants. And behind a rusty grate there's a secret.",
+        "Under the hood, all the code of the old randomly generated city is gone: the game is lighter and saves show your campaign level.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-metro",
     data: "2026-11-17",
     progetto: "ciccio",
