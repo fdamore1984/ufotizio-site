@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-17-ciccio-metro",
+    data: "2026-11-17",
+    progetto: "ciccio",
+    titolo: { it: "Livello 4: la Metro, e finisce il primo atto", en: "Level 4: the Subway, and the first act is done" },
+    punti: {
+      it: [
+        "Dalla scalinata del Centro Ciccio scende nella metropolitana: è il quarto livello della campagna e chiude il primo atto.",
+        "È buio pesto e serve la torcia. Sulla banchina si salta giù sui binari e si risale fra i vagoni abbandonati, mentre arrivano un'orda di zombie e i primi mutanti.",
+        "In fondo al tunnel la porta è chiusa: la corrente si ridà con la leva della cabina elettrica, in una stanza laterale.",
+        "Nel deposito treni c'è il primo mini-boss, l'abominio, con la sua barra della vita e la musica del boss. Abbattilo e ti lascia il fucile al plasma.",
+        "Gli altri quattro livelli, fino alla torre del signore della guerra, arrivano uno alla volta con i prossimi aggiornamenti.",
+      ],
+      en: [
+        "From Downtown's stairway, Cheech goes down into the subway: it's the fourth level of the campaign and it closes the first act.",
+        "It's pitch dark and you need your flashlight. On the platform you jump down onto the tracks and climb back up between abandoned carriages, while a zombie horde and the first mutants arrive.",
+        "At the end of the tunnel the door is shut: you bring the power back with the lever in the electrical room, off to the side.",
+        "In the train depot waits the first mini-boss, the abomination, with its health bar and the boss music. Take it down and it leaves you the plasma rifle.",
+        "The other four levels, all the way to the warlord's tower, arrive one at a time with the next updates.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-centro",
     data: "2026-11-17",
     progetto: "ciccio",
