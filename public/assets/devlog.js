@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-19-ciccio-comandi-mine-molotov",
+    data: "2026-11-19",
+    progetto: "ciccio",
+    titolo: { it: "Mira libera, torcia automatica, mine elettriche e molotov", en: "Free aiming, an automatic flashlight, electric mines and molotovs" },
+    punti: {
+      it: [
+        "Sul controller la levetta destra muove Ciccio e la sinistra decide dove guarda e mira: colpi, armi da fuoco, granate e molotov vanno da quella parte. Con tastiera e mouse Ciccio guarda sempre il cursore. L'aggancio dei nemici non c'è più.",
+        "La torcia si accende da sola appena fa un po' buio e si spegne con la luce piena, e il suo cono si vede sempre, anche in penombra.",
+        "Granata su L3 e taser su R3. Sulla croce a sinistra (B da tastiera) la mina elettrica: la lasci a terra e quando un nemico si avvicina scatta e immobilizza tutti quelli attorno (costa batteria, al massimo due). Sulla croce a destra (H) la molotov: lascia una pozza di fuoco che brucia i nemici per qualche secondo (costa benzina).",
+        "Nelle arene dell'abominio, nella Metro, e del boss finale, sul tetto della Torre, ci sono fusti di benzina e colonnine di batterie: si prendono con Interagisci e dopo un po' tornano pieni.",
+        "La raffica di pugni della Frenesia non urla più: resta solo la scritta A-TATATATA. Il tutorial insegna la mira, le mine e le molotov.",
+      ],
+      en: [
+        "On a controller the right stick moves Cheech and the left one decides where he looks and aims: strikes, guns, grenades and molotovs go that way. With keyboard and mouse Cheech always faces the cursor. Locking on to enemies is gone.",
+        "The flashlight switches on by itself as soon as it gets a little dark and off in full light, and its beam always shows, even in dim light.",
+        "Grenades on L3 and the taser on R3. Left on the D-pad (B on the keyboard) drops an electric mine: when an enemy comes close it goes off and freezes everyone around (it costs battery, two at most). Right on the D-pad (H) throws a molotov: it leaves a pool of fire that burns enemies for a few seconds (it costs fuel).",
+        "In the arenas of the abomination, in the Subway, and of the final boss, on the Tower roof, there are fuel drums and battery stations: take them with Interact and after a while they refill.",
+        "The Frenzy punch barrage no longer screams: only the A-TATATATA lettering is left. The tutorial teaches aiming, mines and molotovs.",
+      ],
+    },
+  },
+  {
     id: "2026-11-17-ciccio-granate-taser",
     data: "2026-11-17",
     progetto: "ciccio",
