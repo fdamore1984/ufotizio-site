@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-20-ciccio-benzina-ritmo",
+    data: "2026-11-20",
+    progetto: "ciccio",
+    titolo: { it: "Chi uccide si ricarica: benzina bilanciata e combattimenti più frenetici", en: "Killing refuels you: balanced fuel and more frantic fights" },
+    punti: {
+      it: [
+        "La motosega non consuma più benzina quando colpisce: costa solo il colpo a vuoto, e gira anche col serbatoio vuoto. Ogni nemico abbattuto ridà benzina in base a quanto era duro da buttare giù, e di più se lo finisci di motosega o a pugni: la motosega fa il pieno, armi da fuoco ed esplosivi lo spendono.",
+        "Quando raccogli benzina compare un \"+\" arancione accanto alla barra, a fine ondata le sfere rimaste ti volano addosso da sole e, se resti a secco, la riserva risale da sola fino a un colpo potente in pochi secondi.",
+        "La Gatling consuma meno a colpo e cresce coi livelli come la motosega; anche il fucile al plasma consuma meno.",
+        "Batteria più leggera: colpi, schivate, salti e pugni costano meno e si ricarica prima, così dopo una combo intera puoi ancora schivare. Ciccio parte subito appena tocchi la levetta e si ferma prima.",
+        "Nemici più aggressivi e meno spugne: attaccano fino a quattro insieme, decidono e ripartono più in fretta e ti girano attorno più vicini, ma i nemici comuni vanno giù con una combo o poco più a ogni livello.",
+      ],
+      en: [
+        "The chainsaw no longer burns fuel when it lands: only misses cost a little, and it keeps running with an empty tank. Every enemy you take down gives fuel back depending on how tough it was, and more if you finish it with the chainsaw or your fists: the chainsaw fills you up, firearms and explosives spend it.",
+        "When you pick up fuel an orange \"+\" shows next to the bar, the orbs left at the end of a wave fly to you by themselves and, if you run dry, the reserve climbs back to a power strike's worth in a few seconds.",
+        "The Gatling burns less per shot and grows with your level like the chainsaw; the plasma rifle burns less too.",
+        "Lighter battery: strikes, dodges, jumps and punches cost less and it recharges sooner, so after a full combo you can still dodge. Cheech gets going as soon as you touch the stick and stops sooner.",
+        "More aggressive, less spongy enemies: up to four attack at once, they decide and come back faster and circle you closer, but common enemies go down in about one combo at every level.",
+      ],
+    },
+  },
+  {
     id: "2026-11-19-ciccio-comandi-mine-molotov",
     data: "2026-11-19",
     progetto: "ciccio",
