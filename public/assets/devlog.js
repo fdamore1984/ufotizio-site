@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-20-ciccio-nemici-diversi",
+    data: "2026-11-20",
+    progetto: "ciccio",
+    titolo: { it: "Nemici tutti diversi: ognuno con la sua faccia", en: "No two enemies alike: each one has its own face" },
+    punti: {
+      it: [
+        "I nemici restano tondi come Ciccio, ma ogni tipo ha la sua pelle e la sua faccia: occhi tondi e spiritati, a fessura, infossati, uno grande e uno piccolo, la benda, gli occhialoni, tre occhi; denti storti, dente mancante, denti di sotto che sporgono, bocca cucita, zanne, lingua di fuori; creste, ciuffi, baffoni, cicatrici, lentiggini, pustole e strisce di vernice.",
+        "Anche braccia e gambe cambiano: lo scout è magro con le gambe lunghe, il bruto e il colosso hanno braccia enormi e gambe tozze, lo stalker mutante ha le braccia lunghissime.",
+        "E nessuno è uguale all'altro: la pelle è un po' più chiara o più scura, la testa più grande o più piccola, e ogni tipo ha qualche variante con altri capelli, altri occhi o altri segni sul viso.",
+      ],
+      en: [
+        "Enemies are still round like Cheech, but every kind has its own skin and face: wild round eyes, slit eyes, sunken eyes, one big and one small, an eye patch, goggles, three eyes; crooked teeth, a missing tooth, jutting lower teeth, a stitched mouth, fangs, a tongue sticking out; mohawks, tufts, big mustaches, scars, freckles, pustules and war paint.",
+        "Arms and legs change too: the scout is skinny with long legs, the brute and the colossus have huge arms and stubby legs, the mutant stalker has extremely long arms.",
+        "And no two are alike: skin a little lighter or darker, a bigger or smaller head, and every kind has a few variants with other hair, other eyes or other marks on the face.",
+      ],
+    },
+  },
+  {
     id: "2026-11-20-ciccio-benzina-ritmo",
     data: "2026-11-20",
     progetto: "ciccio",
