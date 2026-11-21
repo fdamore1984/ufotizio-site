@@ -14,6 +14,28 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-21-ciccio-nemici-nuovi-livelli",
+    data: "2026-11-21",
+    progetto: "ciccio",
+    titolo: { it: "Otto nemici nuovi e livelli senza tregua", en: "Eight new enemies and levels with no respite" },
+    punti: {
+      it: [
+        "Bombaroli che ti corrono addosso con la dinamite accesa: scoppiano anche se li abbatti prima, e feriscono i loro compagni (tirali in mezzo al gruppo!). Celerini con lo scudo antisommossa, che para tutto da davanti: prendili alle spalle o buttalo giù con un colpo potente.",
+        "Piromani col lanciafiamme che lasciano pozze di fuoco, lanciatori di molotov col cerchio rosso dove cadranno, cani mutanti in branco, dottori dei predoni che curano e proteggono i compagni (colpiscili per primi), mutanti che morendo si dividono in tre e cecchini col laser che si blocca un attimo prima dello sparo.",
+        "Tutti gli otto livelli hanno più nemici, a gruppi misti, e agguati che ti sbucano addosso da tombini, corsie, gallerie e capannoni: da 240 a circa 400 nemici in tutta la campagna, senza lunghi tratti a vuoto.",
+        "Nelle arene l'ondata dopo arriva quando della precedente ne restano due, con i cerchi rossi a terra che dicono dove compariranno; le arene grandi hanno un'ondata in più.",
+        "Si sale di livello allo stesso ritmo di prima. Nel browser, in Modalità Touch, la mira automatica punta prima dottori e bombaroli e Ciccio salta da solo quando una dinamite vicina sta per scoppiare.",
+      ],
+      en: [
+        "Bombers rushing at you with a lit fuse: they blow up even if you take them down first, and hurt their own mates (send them into the crowd!). Riot cops with shields that block everything from the front: get behind them or knock the shield down with a power strike.",
+        "Flamethrowers leaving pools of fire, molotov throwers with a red circle where it will land, mutant hound packs, raider medics healing and shielding their mates (hit them first), mutants that split in three when they die and snipers whose laser locks a moment before the shot.",
+        "All eight levels have more enemies, in mixed groups, and ambushes that burst out of manholes, aisles, tunnels and sheds: from 240 to about 400 enemies over the whole campaign, with no long empty stretches.",
+        "In arenas the next wave arrives when two of the previous one are left, with red circles on the ground showing where they will appear; big arenas have one more wave.",
+        "You level up at the same pace as before. In the browser's Touch Mode, auto-aim goes for medics and bombers first and Cheech jumps by himself when a nearby fuse is about to blow.",
+      ],
+    },
+  },
+  {
     id: "2026-11-20-ciccio-nemici-diversi",
     data: "2026-11-20",
     progetto: "ciccio",
