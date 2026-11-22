@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-22-ciccio-aggancio",
+    data: "2026-11-22",
+    progetto: "ciccio",
+    titolo: { it: "Torna l'aggancio dei nemici", en: "Enemy lock-on is back" },
+    punti: {
+      it: [
+        "Col controller Ciccio aggancia di nuovo da solo il nemico più vicino che vede: lo guarda, il nemico diventa rosso con un anello rosso ai piedi, e colpi, armi da fuoco, granate e molotov vanno su di lui.",
+        "La levetta destra serve a scegliere il bersaglio: inclinala verso un altro nemico e Ciccio aggancia quello, finché non lo abbatti o si allontana troppo.",
+        "Granate e molotov cadono addosso al nemico agganciato. Con tastiera e mouse non cambia niente: Ciccio guarda sempre il cursore.",
+      ],
+      en: [
+        "With a controller Cheech once again locks on by himself to the nearest enemy he can see: he faces it, the enemy turns red with a red ring at its feet, and strikes, guns, grenades and molotovs go its way.",
+        "The right stick picks the target: tilt it towards another enemy and Cheech locks onto that one, until you take it down or it gets too far away.",
+        "Grenades and molotovs land right on the locked enemy. Nothing changes with keyboard and mouse: Cheech always faces the cursor.",
+      ],
+    },
+  },
+  {
     id: "2026-11-22-ciccio-levette",
     data: "2026-11-22",
     progetto: "ciccio",
