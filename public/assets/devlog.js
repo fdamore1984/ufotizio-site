@@ -14,6 +14,20 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-22-ciccio-levette",
+    data: "2026-11-22",
+    progetto: "ciccio",
+    titolo: { it: "Levette scambiate sul controller", en: "Controller sticks swapped" },
+    punti: {
+      it: [
+        "Sul controller ora la levetta sinistra muove Ciccio e la destra decide dove guarda e mira, come nella maggior parte dei giochi. Chi aveva rimappato le levette dalle opzioni tiene i suoi comandi.",
+      ],
+      en: [
+        "On a controller the left stick now moves Cheech and the right one decides where he looks and aims, as in most games. If you remapped the sticks in the options, your bindings stay as they are.",
+      ],
+    },
+  },
+  {
     id: "2026-11-21-ciccio-nemici-nuovi-livelli",
     data: "2026-11-21",
     progetto: "ciccio",
