@@ -14,6 +14,20 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-23-ciccio-aggancio-steam-deck",
+    data: "2026-11-23",
+    progetto: "ciccio",
+    titolo: { it: "L'aggancio funziona anche sullo Steam Deck", en: "Lock-on now works on the Steam Deck too" },
+    punti: {
+      it: [
+        "Sullo Steam Deck l'aggancio dei nemici e la levetta destra non facevano niente: ora Ciccio aggancia da solo il nemico più vicino e con la levetta destra scegli il bersaglio, come con gli altri controller.",
+      ],
+      en: [
+        "On the Steam Deck enemy lock-on and the right stick did nothing: now Cheech locks on by himself to the nearest enemy and the right stick picks the target, as with any other controller.",
+      ],
+    },
+  },
+  {
     id: "2026-11-22-ciccio-aggancio",
     data: "2026-11-22",
     progetto: "ciccio",
