@@ -33,7 +33,15 @@ account e salvataggi su **Supabase**, file dei giochi su **Cloudflare R2**.
   Redirect URLs `https://ufotizio.com/**`, `https://www.ufotizio.com/**` e
   `https://ufotizio-site.fabriziodamore1984.workers.dev/**` per le prove (mai
   `*.workers.dev` generico: accetterebbe Worker di chiunque). URL del progetto e chiave publishable stanno in
-  `public/account/cloud.js` (sono pubbliche).
+  `public/account/cloud.js` (sono pubbliche). Le email di accesso (magic
+  link) partono con **Resend**, impostato in *Authentication → Emails → SMTP
+  Settings* (host `smtp.resend.com`, porta 465, utente `resend`, password una
+  chiave API di Resend di solo invio dedicata a Supabase, mittente su
+  `ufotizio.com`): il servizio email predefinito di Supabase scrive solo ai
+  membri del team del progetto e ha un limite di poche email all'ora, quindi
+  i visitatori non ricevevano il link. Con l'SMTP proprio il limite orario si
+  regola in *Authentication → Rate Limits*. Il piano gratuito di Resend (100
+  email al giorno, 3.000 al mese) è condiviso con il modulo Contattami.
 - **Cloudflare Worker** `ufotizio-site`: collegato a questo repo, deploy
   con `npx wrangler deploy` a ogni push su `main`; il bucket R2 è collegato
   da `wrangler.jsonc` (deve esistere prima del deploy); domini
