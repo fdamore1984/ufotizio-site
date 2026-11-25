@@ -14,6 +14,20 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-25-sito-email-accesso",
+    data: "2026-11-25",
+    progetto: "sito",
+    titolo: { it: "Le email di accesso arrivano", en: "Sign-in emails now arrive" },
+    punti: {
+      it: [
+        "Chi provava a registrarsi o ad accedere con Accedi non riceveva l'email con il link: ora le email partono davvero. Se avevi provato senza successo, riprova pure.",
+      ],
+      en: [
+        "If you tried to sign up or sign in with Sign in, the email with the link never came: now the emails really go out. If it didn't work for you before, give it another try.",
+      ],
+    },
+  },
+  {
     id: "2026-11-23-ciccio-aggancio-steam-deck",
     data: "2026-11-23",
     progetto: "ciccio",
