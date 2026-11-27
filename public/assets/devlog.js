@@ -14,6 +14,24 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-27-ciccio-uscite-livelli",
+    data: "2026-11-27",
+    progetto: "ciccio",
+    titolo: { it: "Da un livello all'altro si passa davvero", en: "You really travel from one level to the next" },
+    punti: {
+      it: [
+        "Addio al cavalletto da lavori in corso alla fine di ogni livello: ogni uscita ora è un pezzo del posto, con un leggero bagliore che ti guida. Il ponte crollato della Periferia, la saracinesca del carico merci, la scalinata della metro con la M accesa, una botola che scende nelle fogne, un pozzo con la scala a pioli, il garage delle ambulanze, il montacarichi della fabbrica.",
+        "Uscendo, Ciccio fa davvero il passaggio: salta giù dal ponte, scende le scale, si butta nella botola, si arrampica, parte con l'ambulanza o sale col montacarichi. E nel livello dopo lo ritrovi da dove è arrivato: cade dal buco nel soffitto del parcheggio, esce da un tombino, scende dall'ambulanza schiantata contro la recinzione.",
+        "Sul tetto della Torre, sconfitto il signore della guerra, arriva un elicottero: ci sali e voli via verso il finale.",
+      ],
+      en: [
+        "Goodbye to the roadworks barrier at the end of every level: each exit is now part of the place, with a soft glow to guide you. The collapsed bridge in the Suburbs, the loading dock shutter, the subway stairs with the lit M sign, a hatch down to the sewers, a shaft with a ladder, the ambulance garage, the factory's freight lift.",
+        "When you leave, Cheech really makes the trip: jumps off the bridge, walks down the stairs, drops through the hatch, climbs up, speeds off in the ambulance or rides the freight lift. And in the next level you find Cheech right where the trip ends: falling through the hole in the parking garage ceiling, climbing out of a manhole, stepping out of the ambulance crashed into the fence.",
+        "On the Tower roof, once the warlord is down, a helicopter lands: climb aboard and fly off to the ending.",
+      ],
+    },
+  },
+  {
     id: "2026-11-25-sito-email-accesso",
     data: "2026-11-25",
     progetto: "sito",
