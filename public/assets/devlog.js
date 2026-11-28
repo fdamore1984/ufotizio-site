@@ -14,6 +14,22 @@ export const PROGETTI = {
 
 export const DEVLOG = [
   {
+    id: "2026-11-28-ciccio-terreno",
+    data: "2026-11-28",
+    progetto: "ciccio",
+    titolo: { it: "Strade, marciapiedi e tetti pieni di dettagli", en: "Streets, sidewalks and rooftops full of detail" },
+    punti: {
+      it: [
+        "L'asfalto ora ha rattoppi, crepe, buche (a volte piene d'acqua), macchie d'olio, segni di frenata e tombini; i marciapiedi le lastre, il cordolo, lastre rotte ed erbacce; le piazze la pavimentazione a quadri con qualche lastra mancante. Dappertutto carte, vetri e lattine.",
+        "Al chiuso piastrelle rotte o mancanti, crepe e macchie d'umido. E i tetti dei palazzi non sono più distese tutte uguali: tegole e comignoli sulle case, condizionatori, sfiati, cisterne e lucernari sugli altri.",
+      ],
+      en: [
+        "The asphalt now has patches, cracks, potholes (sometimes full of water), oil stains, skid marks and manholes; sidewalks have slabs, curbs, broken slabs and weeds; squares have checkered paving with a few missing slabs. Paper, glass and cans everywhere.",
+        "Indoors, broken or missing tiles, cracks and damp stains. And the rooftops are no longer flat, identical expanses: tiles and chimneys on houses, air conditioners, vents, water tanks and skylights on the other buildings.",
+      ],
+    },
+  },
+  {
     id: "2026-11-27-ciccio-uscite-livelli",
     data: "2026-11-27",
     progetto: "ciccio",
